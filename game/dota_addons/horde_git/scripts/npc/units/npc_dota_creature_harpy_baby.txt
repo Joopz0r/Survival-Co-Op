@@ -1,11 +1,11 @@
 	//=================================================================================	
-	// Creature: Harpy Mum
+	// Creature: Harpy Baby
 	//=================================================================================
-	"npc_dota_creature_harpy_mum"	
+	"npc_dota_creature_harpy_baby"	
 	{
 		// General
 		//----------------------------------------------------------------
-		"Model"						"models/creeps/neutral_creeps/n_creep_harpy_b/n_creep_harpy_b.vmdl"	// Model.
+		"Model"						"models/creeps/neutral_creeps/n_creep_harpy_a/n_creep_harpy_a.vmdl"	// Model.
 		"BaseClass"					"npc_dota_creature"
 		"SoundSet"					"n_creep_Ranged"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
@@ -14,7 +14,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"dragon_nethertoxin"			// Ability 1
+		"Ability1"					""			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4

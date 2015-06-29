@@ -1378,7 +1378,7 @@
 		{			
 			"WaitForTime"			"10"
 			
-			"NPCName"				"npc_creature_wolf_baby"
+			"NPCName"				"npc_dota_creature_wolf_baby"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"15"
@@ -1387,7 +1387,7 @@
 		{
 			"GroupWithUnit"			"UnitMelee_1"
 
-			"NPCName"				"npc_creature_wolf_dad"
+			"NPCName"				"npc_dota_creature_wolf_dad"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
 		}
@@ -1403,20 +1403,20 @@
 		"FixedXP"					"11500"
 
 		// Stage 1 ================================================
-		"UnitMelee_1"
+		"UnitRange_1"
 		{			
 			"WaitForTime"			"10"
 			
-			"NPCName"				"npc_creature_harpy_baby"
+			"NPCName"				"npc_dota_creature_harpy_baby"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"15"
 		}
-		"UnitRange_1"
+		"UnitRange_1a"
 		{
 			"GroupWithUnit"			"UnitMelee_1"
 
-			"NPCName"				"npc_creature_harpy_mum"
+			"NPCName"				"npc_dota_creature_harpy_mum"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
 		}
@@ -1436,7 +1436,7 @@
 		{			
 			"WaitForTime"			"10"
 			
-			"NPCName"				"npc_creature_centaur_medium"
+			"NPCName"				"npc_dota_creature_centaur_medium"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"15"
@@ -1445,7 +1445,7 @@
 		{
 			"GroupWithUnit"			"UnitMelee_1"
 
-			"NPCName"				"npc_creature_centaur_large"
+			"NPCName"				"npc_dota_creature_centaur_large"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
 		}
@@ -1453,7 +1453,7 @@
 		{	
 			"GroupWithUnit"			"UnitMelee_1"
 
-			"NPCName"				"npc_creature_centaur_boss"
+			"NPCName"				"npc_dota_creature_centaur_boss"
 			"TotalUnitsToSpawn"		"8"
 			"UnitsPerSpawn"			"1"
 		}
