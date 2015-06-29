@@ -183,9 +183,11 @@ end
 -- When game state changes set state in script
 function CHoldoutGameMode:OnGameRulesStateChange()
 	local nNewState = GameRules:State_Get()
-	if nNewState == DOTA_GAMERULES_STATE_PRE_GAME then
+	--[[if nNewState == DOTA_GAMERULES_STATE_PRE_GAME then
 		ShowGenericPopup( "#holdout_instructions_title", "#holdout_instructions_body", "", "", DOTA_SHOWGENERICPOPUP_TINT_SCREEN )
-	elseif nNewState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
+	]]
+	if nNewState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
+
 		self._flPrepTimeEnd = GameRules:GetGameTime() + self._flPrepTimeBetweenRounds
 	end
 end

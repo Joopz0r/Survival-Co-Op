@@ -5,7 +5,7 @@
 {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityTextureName"			"sven_gods_strength"
+	"AbilityTextureName"			"holdout_gods_strength"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 	

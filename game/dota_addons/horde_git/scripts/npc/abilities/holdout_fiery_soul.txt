@@ -5,7 +5,7 @@
 {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityTextureName"			"lina_fiery_soul"
+	"AbilityTextureName"			"holdout_fiery_soul"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	
 	// Casting

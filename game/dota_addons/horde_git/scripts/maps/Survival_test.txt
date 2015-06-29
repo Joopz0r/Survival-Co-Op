@@ -1299,7 +1299,7 @@
 			"NPCName"				"npc_skeleton_warrior"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"15"
+			"SpawnInterval"			"5"
 		}
 		"UnitRange_1"
 		{
@@ -1344,7 +1344,7 @@
 			"NPCName"				"npc_dota_creature_green_dragon_baby"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"15"
+			"SpawnInterval"			"5"
 		}
 		"UnitRange_1"
 		{
@@ -1381,7 +1381,7 @@
 			"NPCName"				"npc_dota_creature_wolf_baby"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"15"
+			"SpawnInterval"			"5"
 		}
 		"UnitMelee_1a"
 		{
@@ -1403,16 +1403,16 @@
 		"FixedXP"					"11500"
 
 		// Stage 1 ================================================
-		"UnitRange_1"
+		"UnitRange_1a"
 		{			
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_dota_creature_harpy_baby"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"15"
+			"SpawnInterval"			"5"
 		}
-		"UnitRange_1a"
+		"UnitRange_1b"
 		{
 			"GroupWithUnit"			"UnitMelee_1"
 
@@ -1439,7 +1439,7 @@
 			"NPCName"				"npc_dota_creature_centaur_medium"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"15"
+			"SpawnInterval"			"5"
 		}
 		"UnitRange_1"
 		{
@@ -1449,7 +1449,7 @@
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
 		}
-		"UnitRange_1b"
+		"UnitRange_2"
 		{	
 			"GroupWithUnit"			"UnitMelee_1"
 
@@ -1476,7 +1476,7 @@
 			"NPCName"				"npc_dota_creature_creep_radiant_melee_baby"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"15"
+			"SpawnInterval"			"5"
 		}
 		"UnitRange_1"
 		{
@@ -1496,6 +1496,7 @@
 			"NPCName"				"npc_dota_creature_creep_radiant_melee_dad"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
+			"SpawnInterval"			"5"
 		}
 		"UnitRange_2"
 		{	
@@ -1524,7 +1525,7 @@
 			"NPCName"				"npc_dota_creature_creep_ghost_green_melee"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"15"
+			"SpawnInterval"			"5"
 		}
 		"UnitMelee_2"
 		{
@@ -1586,7 +1587,7 @@
 			"NPCName"				"npc_dota_creature_roshan_mini_baby_red"
 			"TotalUnitsToSpawn"		"40"
 			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"15"
+			"SpawnInterval"			"5"
 		}
 		"UnitMelee_1a"
 		{

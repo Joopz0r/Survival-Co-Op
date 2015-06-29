@@ -5,14 +5,14 @@
 {
 	"precache"		
 	{		
-		"particlefile"				"particles/units/heroes/hero_drow.pcf"		
+		"particlefile"				"particles/units/heroes/hero_medusa.pcf"		
 	}
 	// General
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
-
+	"AbilityTextureName"			"holdout_multishot"
 	
 	// Casting
 	//-------------------------------------------------------------------------------------------------------------

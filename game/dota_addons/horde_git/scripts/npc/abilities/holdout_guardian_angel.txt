@@ -6,7 +6,7 @@
 	// General
 	//-------------------------------------------------------------------------------------------------------------
 	"BaseClass"						"ability_datadriven"
-	"AbilityTextureName"			"omniknight_guardian_angel"
+	"AbilityTextureName"			"holdout_guardian_angel"
 	"ItemBaseLevel"					"0"
 	
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
