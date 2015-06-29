@@ -1,0 +1,27 @@
+"creature_drain_hp"
+{
+
+    // General  
+    // ----------------------------------------------------------------------------------------
+    "BaseClass"              "necrolyte_heartstopper_aura"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    
+    // Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1200"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aura_radius"		"1200"		// If you change this, also change the AbilityCastRange above
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"aura_damage"		"-10.6 -10.9 -10.2 -10.5" 
+			} 
+		}
+}
