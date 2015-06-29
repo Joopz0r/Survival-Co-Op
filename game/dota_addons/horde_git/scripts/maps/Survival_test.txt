@@ -1154,9 +1154,9 @@
 			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_ancient_apparition"
-			"TotalUnitsToSpawn"		"3"
+			"TotalUnitsToSpawn"		"6"
 			"UnitsPerSpawn"			"1"
-			"SpawnInterval"			"25"
+			"SpawnInterval"			"15"
 		}
 		
 		"UnitMelee_1"
@@ -1297,7 +1297,7 @@
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_skeleton_warrior"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"5"
 		}
@@ -1306,7 +1306,7 @@
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_skeleton_archer"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 		}
 		"UnitRange_1b"
@@ -1314,7 +1314,7 @@
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_frost_skeleton_archer"
-			"TotalUnitsToSpawn"		"8"
+			"TotalUnitsToSpawn"		"4"
 			"UnitsPerSpawn"			"1"
 		}
 		"UnitRange_1c"
@@ -1322,7 +1322,7 @@
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_burning_skeleton_archer"
-			"TotalUnitsToSpawn"		"8"
+			"TotalUnitsToSpawn"		"4"
 			"UnitsPerSpawn"			"1"
 		}
 	}
@@ -1342,7 +1342,7 @@
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_dota_creature_green_dragon_baby"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"5"
 		}
@@ -1351,7 +1351,7 @@
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_dota_creature_green_dragon_dad"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 		}
 		"UnitRange_1b"
@@ -1359,7 +1359,7 @@
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_dota_creature_green_dragon_mum"
-			"TotalUnitsToSpawn"		"8"
+			"TotalUnitsToSpawn"		"4"
 			"UnitsPerSpawn"			"1"
 		}
 	}
@@ -1379,7 +1379,7 @@
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_dota_creature_wolf_baby"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"5"
 		}
@@ -1388,7 +1388,7 @@
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_dota_creature_wolf_dad"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 		}
 	}
@@ -1408,16 +1408,16 @@
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_dota_creature_harpy_baby"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"5"
 		}
 		"UnitRange_1b"
 		{
-			"GroupWithUnit"			"UnitMelee_1"
+			"GroupWithUnit"			"UnitRange_1a"
 
 			"NPCName"				"npc_dota_creature_harpy_mum"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 		}
 	}
@@ -1437,24 +1437,24 @@
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_dota_creature_centaur_medium"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"5"
 		}
-		"UnitRange_1"
+		"UnitMelee_2"
 		{
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_dota_creature_centaur_large"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 		}
-		"UnitRange_2"
+		"UnitMelee_3"
 		{	
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_dota_creature_centaur_boss"
-			"TotalUnitsToSpawn"		"8"
+			"TotalUnitsToSpawn"		"4"
 			"UnitsPerSpawn"			"1"
 		}
 	}
@@ -1474,7 +1474,7 @@
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_dota_creature_creep_radiant_melee_baby"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"5"
 		}
@@ -1483,18 +1483,18 @@
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_dota_creature_creep_radiant_range_baby"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 		}
 		
 		// Stage 2 ================================================
 		"UnitMelee_2"
 		{	
-			"WaitForUnit"			"UnitRange_1"
+			"WaitForUnit"			"UnitMelee_1"
 			"WaitForTime"			"20"
 
 			"NPCName"				"npc_dota_creature_creep_radiant_melee_dad"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 			"SpawnInterval"			"5"
 		}
@@ -1503,7 +1503,7 @@
 			"GroupWithUnit"			"UnitMelee_2"
 
 			"NPCName"				"npc_dota_creature_creep_radiant_range_dad"
-			"TotalUnitsToSpawn"		"40"
+			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
 		}
 	}
