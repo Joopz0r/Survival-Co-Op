@@ -32,15 +32,6 @@ function CHoldoutGameRound:ReadConfiguration( kv, gameMode, roundNumber )
 	end
 end
 
-function CHoldoutGameRound:CheckDominated()
-        for i, units in pairs( self.vEnemiesRemaining ) do
-                if IsDominated(units);
-                        table.remove( self._vEnemiesRemaining, i )
-                        break
-                end
-        end
-end
-
 function CHoldoutGameRound:Precache()
 	for _, spawner in pairs( self._vSpawners ) do
 		spawner:Precache()
@@ -321,4 +312,13 @@ function CHoldoutGameRound:StatusReport( )
 	for _,s in pairs( self._vSpawners ) do
 		s:StatusReport()
 	end
+end
+
+function CHoldoutGameRound:CheckDominated()
+        for i, units in pairs( self.vEnemiesRemaining ) do
+                if IsDominated(units) then
+                        table.remove( self._vEnemiesRemaining, i )
+                        break
+                end
+        end
 end
