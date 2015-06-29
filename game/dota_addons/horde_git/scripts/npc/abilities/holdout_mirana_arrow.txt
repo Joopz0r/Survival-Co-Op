@@ -1,0 +1,71 @@
+//=================================================================================================================
+// Ability: Mirana Arrow
+//=================================================================================================================
+"holdout_mirana_arrow"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"BaseClass"						"mirana_arrow"
+	"AbilityTextureName"			"mirana_arrow"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"3000"
+	"AbilityCastPoint"				"0.5 0.5 0.5 0.5"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"8.0 7.0 6.0 5.0"
+	"AbilityDuration"				"3.11 3.11 3.11 3.11"
+
+	// Damage.
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityDamage"					"150 300 450 600"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"25 25 25 25"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"arrow_speed"		"857.0"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"arrow_width"		"115"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"arrow_range"		"3000"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"arrow_max_stunrange"	"1500"
+		}
+		"05"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"arrow_min_stun"	"0.25"
+		}
+		"06"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"arrow_max_stun"	"1.0"
+		}
+		"07"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"arrow_bonus_damage"	"100"
+		}
+	}
+}

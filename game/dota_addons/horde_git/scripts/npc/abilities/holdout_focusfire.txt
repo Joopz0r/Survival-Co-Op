@@ -1,0 +1,126 @@
+//=================================================================================================================
+// Holdout: Windrunner: Focus Fire
+//=================================================================================================================
+"holdout_focusfire"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"windrunner_focusfire"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	"ItemBaseLevel"					"0"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0.3 0.3 0.3"
+	
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"60.0 60.0 60.0"
+	"AbilityDuration"				"20.0 20.0 20.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"100 125 150"
+
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"Target" "CASTER"
+			"ModifierName" "focusfire_buff"
+		}
+	}
+
+	"Modifiers"
+	{
+		"focusfire_buff"
+		{
+			"OnCreated"
+			{
+				"AttachEffect"
+				{
+					"Target" "CASTER"
+					"EffectName" "particles/econ/generic/generic_buff_1/generic_buff_1.vpcf"
+					"EffectAttachType" "follow_overhead"
+					"EffectLifeDurationScale" "1"
+					"EffectColorA" "25 150 0"
+					"EffectAlphaScale" "1"
+				}
+			}
+
+			"Duration" "20.0"
+
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_attack_speed"
+				"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%focusfire_damage_reduction"
+			}
+			"OnAttackLanded"
+			{
+			
+				"Random"
+				{
+					"Chance" "%bonus_arrow_chance"
+					"PseudoRandom" "DOTA_PSEUDO_RANDOM_ITEM_MKB"
+					"OnSuccess"
+					{
+						"CreateBonusAttack"
+						{
+							"Target"
+							{
+								"Center"		"TARGET"
+								"Radius"		"%bonus_arrow_radius"
+								"Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+								"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+								"MaxTargets"	"%bonus_arrows"
+								"Random"		"1"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"focusfire_damage_reduction"	"-50 -40 -30"
+		}
+		"02"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"cooldown_scepter"				"15.0 15.0 15.0"
+		}
+		"03"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"bonus_attack_speed"			"400"
+		}
+		"04"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"bonus_arrow_chance"			"50 60 70"
+		}
+		"05"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"bonus_arrow_radius"			"200 250 300"
+		}
+		"06"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"bonus_arrows"					"1 1 2"
+		}
+	}
+}

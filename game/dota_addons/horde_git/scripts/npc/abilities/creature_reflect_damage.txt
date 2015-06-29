@@ -1,0 +1,126 @@
+//=================================================================================================================
+// Ability: Reflect Damage
+//=================================================================================================================
+"creature_reflect_damage"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"            "item_blade_mail"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"20.0"
+	"AbilityManaCost"				"0"
+	"AbilityChannelTime"			"1.5"
+
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"Target"		"CASTER"
+			"ModifierName"	"modifier_channel_start"
+		}
+	}
+	
+	"OnChannelSucceeded"
+	{
+		"ApplyModifier"
+		{
+			"Target"		"CASTER"
+			"ModifierName"	"modifier_reflect"
+		}
+		
+		"RemoveModifier"
+		{
+			"Target"		"CASTER"
+			"ModifierName"	"modifier_channel_start"
+		}
+
+		"FireSound"
+		{
+			"EffectName"	"Ability.ReflectDamage"
+			"Target"		"CASTER"
+		}
+	}
+	
+	"OnChannelInterrupted"
+	{
+		"RemoveModifier"
+		{
+			"Target"		"CASTER"
+			"ModifierName"	"modifier_channel_start"
+		}
+	}
+
+	"Modifiers"
+	{
+		"modifier_channel_start"
+		{
+			"OnCreated"
+			{
+				"AttachEffect"
+				{
+					"EffectName"		"particles/test_particle/channel_field_2.vpcf"
+					"EffectAttachType"	"follow_origin"
+					"Target"			"CASTER"
+				
+					"ControlPoints"
+					{
+						"00"		"0 0 5"
+					}
+				}
+			}
+		}
+		
+		"modifier_reflect"
+		{
+			"Duration"		"%reflect_duration"
+			"EffectName"	"particles/test_particle/creature_spiked_carapace.vpcf"
+			"IsDebuff"		"1"
+			"OnTakeDamage"
+			{
+				"Damage"
+				{
+					"Type"		"DAMAGE_TYPE_MAGICAL"
+					"Damage"	"%reflect_damage"
+					"Target"	"ATTACKER"
+				}
+				
+				"Stun"
+				{
+					"Duration"	"%stun_duration"
+					"Target"	"ATTACKER"
+				}
+				
+				"FireSound"
+				{
+					"EffectName"	"Ability.ReflectDamageStun"
+					"Target"		"ATTACKER"
+				}
+			}
+		}			
+	}
+
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"reflect_damage"	"280"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"reflect_duration"	"6.0"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"stun_duration"		"2.0"
+		}
+	}
+}

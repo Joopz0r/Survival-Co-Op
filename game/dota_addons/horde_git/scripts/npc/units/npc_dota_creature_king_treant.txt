@@ -1,0 +1,125 @@
+//=================================================================================
+// Creature: King Treant
+//=================================================================================
+"npc_dota_creature_king_treant"
+{
+	// General
+	//
+	"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
+	"Model"						"models/heroes/treant_protector/treant_protector.vmdl"	// Model.
+	"SoundSet"					""					// Name of sound set.
+	"ModelScale"				"1.65"
+	"Level"						"4"
+	"ConsideredHero"			"1"
+	"MinimapIcon"				"minimap_enemyicon"
+	"MinimapIconSize"			"275"
+	"precache"
+	{
+		"particle_folder"	"particles/units/heroes/hero_treant"
+	}
+	// Abilities
+	//----------------------------------------------------------------
+	"Ability1"					"treant_living_armor"	// Ability 1.
+	"Ability2"					"generic_gold_bag_fountain_200"			// Ability 2.
+	"Ability3"					""			// Ability 3.
+	"Ability4"					""			// Ability 4.
+	"Ability5"					""			// Ability 5.
+	"Ability6"					""			// Ability 6 - Extra.
+	"Ability7"					""			// Ability 7 - Extra.
+	"Ability8"					""			// Ability 8 - Extra.
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"10"			// Physical protection.
+	"MagicalResistance"			"25"		// Magical protection (percentage).
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"			"300"		// Damage range min.
+	"AttackDamageMax"			"500"		// Damage range max.
+	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+	"AttackRate"				"1.9"			// Speed of attack.
+	"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"5000"		// Range within a target can be acquired.
+	"AttackRange"				"128"		// Range within a target can be attacked.
+	"ProjectileModel"			"particles/base_attacks/ranged_goodguy.vpcf" // Particle system model for projectile.
+	"ProjectileSpeed"			"1000"		// Speed of projectile.
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"100"		// Experience earn.
+	"BountyGoldMin"				"105"		// Gold earned min.
+	"BountyGoldMax"				"125"		// Gold earned max.
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
+	"RingRadius"				"190"
+	"HealthBarOffset"			"400"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+	"MovementSpeed"				"120"		// Speed
+	"MovementTurnRate"			"1.0"		// Turning rate.
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"1750"		// Base health.
+	"StatusHealthRegen"			"20"		// Health regeneration rate.
+	"StatusMana"				"500"		// Base mana.
+	"StatusManaRegen"			"5"			// Mana regeneration rate.
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"					"DOTA_TEAM_NEUTRALS"			// Team name.
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_LIGHT"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"1400"		// Range of vision during day light.
+	"VisionNighttimeRange"		"1400"		// Range of vision at night time.
+
+	"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
+	"VoiceFile"					"soundevents/voscripts/game_sounds_vo_treant.vsndevts"
+
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{
+		"CanRespawn"				"0"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"75.0"
+			}
+		}
+
+		"DefaultState"				"Invade"
+
+		"DefensiveAbilities"
+		{
+			"Ability1"				
+			{
+				"Name"				"treant_living_armor"
+				"Buff"				"1"
+			}
+		}
+
+		"AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "227" }
+			"Wearable2"	{ "ItemDef" "228" }
+			"Wearable3"	{ "ItemDef" "229" }
+			"Wearable4"	{ "ItemDef" "230" }
+			"Wearable5" { "ItemDef" "231" }
+		}
+	}
+}	

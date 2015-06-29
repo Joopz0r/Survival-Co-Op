@@ -1,0 +1,149 @@
+//=================================================================================================================
+// Ability: Zombie Rage
+//=================================================================================================================
+"creature_zombie_rage"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityName"					"zombie_rage"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"            "item_mask_of_madness"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"16.0"
+	"AbilityManaCost"				"0"
+	"AbilityChannelTime"			"2.0"
+	"AbilityCastAnimation"			"ACT_DOTA_TELEPORT"
+
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"Target"		"CASTER"
+			"ModifierName"	"modifier_channel_start"
+		}
+		
+		"FireSound"
+		{
+			"EffectName"		"Ability.ZombieRage.Cast"
+			"Target"			"CASTER"
+		}
+	}
+	
+	"OnChannelSucceeded"
+	{
+		"ApplyModifier"
+		{
+			"Target"		"CASTER"
+			"ModifierName"	"modifier_rage"
+		}
+		
+		"RemoveModifier"
+		{
+			"Target"		"CASTER"
+			"ModifierName"	"modifier_channel_start"
+		}
+
+		"FireSound"
+		{
+			"EffectName"	"Ability.ZombieRage"
+			"Target"		"CASTER"
+		}
+	}
+	
+	"OnChannelInterrupted"
+	{
+		"RemoveModifier"
+		{
+			"Target"		"CASTER"
+			"ModifierName"	"modifier_channel_start"
+		}
+	}
+
+	"Modifiers"
+	{
+		"modifier_channel_start"
+		{
+			"OnCreated"
+			{
+				"AttachEffect"
+				{
+					"EffectName"		"particles/test_particle/channel_field_1.vpcf"
+					"EffectAttachType"	"follow_origin"
+					"Target"			"CASTER"
+				
+					"ControlPoints"
+					{
+						"00"		"0 0 5"
+					}
+				}
+			}
+		}
+		
+		"modifier_rage"
+		{
+			"Duration"		"%rage_duration"
+			
+			"OnCreated"
+			{
+				"AttachEffect"
+				{
+					"EffectName"		"particles/test_particle/damage_immunity.vpcf"
+					"EffectAttachType"	"follow_origin"
+					"Target"			"CASTER"
+				}
+			}
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"		"%rage_bonus_damage"
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%rage_bonus_speed"
+				"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-100"
+				"MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE" "-100"
+			}
+			
+			"OnDestroy"
+			{
+				"Stun"
+				{
+					"Duration"			"%stun_duration"
+					"Target"			"CASTER"
+				}
+				
+				"FireSound"
+				{
+					"EffectName"	"Ability.ZombieRage.Stun"
+					"Target"		"CASTER"
+				}
+			}
+		}
+	}
+
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"rage_bonus_damage"	"280"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"rage_bonus_speed"	"185"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"rage_duration"		"6.0"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"stun_duration"		"3.0"
+		}
+	}
+}

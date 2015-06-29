@@ -1,0 +1,70 @@
+//=================================================================================================================
+// Zombie Bomb: Explode
+//=================================================================================================================
+"creature_zombie_explode"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass" 					"ability_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"Level"							"1"
+	
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0.0"
+	"AbilityCooldown"				"1 1 1 1"
+	//"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	"AbilityManaCost"				"0 0 0 0"
+
+	"OnOwnerDied"
+	{
+		"FireEffect"
+		{
+			"Target"
+			{
+				"Center" 	"CASTER"
+				"Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+			}			
+			"EffectName"				"particles/econ/generic/generic_aoe_shockwave_1/generic_aoe_explosion_sphere_1.vpcf"
+			"EffectAttachType"			"follow_origin"
+			"EffectRadius"				"300"
+			"EffectDurationScale"		"1"
+			"EffectLifeDurationScale"	"1"
+			"EffectColorA"				"25 150 25"
+			"EffectColorB"				"25 150 25"
+		}
+		
+		"FireSound"
+		{
+			"EffectName"		"Catapult.Impact"
+			"Target"
+			{
+				"Center" 	"CASTER"
+				"Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+			}			
+		}
+	}
+
+	"Modifiers"
+	{
+		"acid_spray_fx"
+		{
+			"Passive"			"1"
+			"OnCreated"
+			{
+				"AttachEffect"
+				{
+					"Target"					"CASTER"
+					"EffectName"				"particles/econ/generic/generic_buff_1/generic_buff_1.vpcf"
+					"EffectAttachType"			"follow_overhead"
+					"EffectLifeDurationScale"	"1"
+					"EffectColorA"				"175 100 100"
+					"EffectAlphaScale"			"1"
+				}
+			}
+		}
+	}
+}

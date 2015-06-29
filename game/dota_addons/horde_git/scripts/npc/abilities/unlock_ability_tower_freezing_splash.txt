@@ -1,0 +1,33 @@
+//=================================================================================================================
+// Unlock Tower Ability: Freezing Splash
+//=================================================================================================================
+"unlock_ability_tower_freezing_splash"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"			"lich_chain_frost"
+	"AbilitySharedWithTeammates"	"1"
+
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0.0"
+	"AbilityManaCost"				"250"
+
+	"OnSpellStart"
+	{
+		"RemoveAbility"
+		{
+			"Target" "CASTER"
+			"AbilityName" "unlock_ability_tower_freezing_splash"
+		}
+
+		"AddAbility"
+		{
+			"Target" "CASTER"
+			"AbilityName" "tower_freezing_splash"
+		}
+	}
+}

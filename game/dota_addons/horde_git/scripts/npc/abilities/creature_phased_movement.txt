@@ -1,0 +1,26 @@
+//=================================================================================================================
+// Creature: Phased Movement
+//=================================================================================================================
+"creature_phased_movement"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"item_phase_boots"
+
+	// Modifiers
+	//-------------------------------------------------------------------------------------------------------------
+	"Modifiers"
+	{
+		"modifier_phased_movement"
+		{
+			"IsHidden"				"1"
+			"Passive"				"1"
+			"States"
+			{
+				"MODIFIER_STATE_NO_UNIT_COLLISION"		"MODIFIER_STATE_VALUE_ENABLED"
+			}
+		}
+	}
+}

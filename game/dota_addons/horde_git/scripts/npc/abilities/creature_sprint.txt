@@ -1,0 +1,47 @@
+//=================================================================================================================
+// Creature: Sprint
+//=================================================================================================================
+"creature_sprint"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	"BaseClass"						"slardar_sprint"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0.0"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"28"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"50"
+
+	"precache"
+	{
+		"particle_folder"				"particles/units/heroes/hero_slardar"
+	}
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_damage"				"15"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_speed"				"20"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"duration"					"20.0"
+		}
+	}
+}	

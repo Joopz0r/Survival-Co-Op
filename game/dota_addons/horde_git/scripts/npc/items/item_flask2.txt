@@ -1,0 +1,47 @@
+//=================================================================================================================
+// Custom: Flask
+//=================================================================================================================
+"item_flask2"
+{
+	"ID"							"1004"
+
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+	"BaseClass"						"item_flask"
+	"AbilityTextureName"			"item_flask"
+	"Model"							"models/props_gameplay/salve.vmdl"
+	
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"100"
+	"AbilityCastPoint"				"0.0"
+	
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"ItemCost"						"100"
+	"ItemShopTags"					"consumable"
+	"ItemQuality"					"consumable"
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+	"ItemStackable"					"1"
+	"ItemPermanent"					"0"
+	"ItemInitialCharges"			"1"
+
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"buff_duration"			"10"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"total_health"			"400"
+		}
+	}
+}

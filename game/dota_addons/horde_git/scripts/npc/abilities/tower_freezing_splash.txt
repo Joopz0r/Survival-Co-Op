@@ -1,0 +1,89 @@
+//=================================================================================================================
+// Tower: Freezing Splash
+//=================================================================================================================
+"tower_freezing_splash"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"lich_chain_frost"
+
+	// Modifiers
+	//-------------------------------------------------------------------------------------------------------------
+	"Modifiers"
+	{
+		"tower_orb_freezing_splash"
+		{
+			"IsHidden"				"0"
+			"Passive"				"1"
+			"Orb"
+			{
+				"Priority"			"DOTA_ORB_PRIORITY_ABILITY"
+			}
+			
+			"OnOrbImpact"
+			{
+				"ApplyModifier"
+				{
+					"ModifierName" "tower_freezing_splash_slow"
+					"Target"
+					{
+						"Center" "TARGET"
+						"Radius" "%slow_radius"
+						"Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+						"Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_OTHER"
+					}
+				}
+
+				"FireEffect"
+				{
+					"Target" "TARGET"
+					"EffectName" "particles/units/heroes/hero_lich/lich_frost_nova.vpcf"
+					"EffectAttachType" "follow_origin"
+					"EffectRadius" "slow_radius"
+				}
+			}
+		}
+
+		"tower_freezing_splash_slow"
+		{
+			"Duration" "%slow_duration"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%move_slow"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%attack_slow"
+			}
+
+			"StatusEffectName" "status_effect_frost_lich"
+			"StatusEffectPriority" "9"
+			"EffectName" "particles/units/heroes/hero_lich/lich_slowed_cold.vpcf"
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"slow_radius"				"150"
+		}
+		"02"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"slow_duration"					"0.5"
+		}
+		"03"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"move_slow"						"-20"
+		}
+		"04"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"attack_slow"						"-10"
+		}
+	}
+}

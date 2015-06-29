@@ -1,0 +1,75 @@
+//=================================================================================================================
+// Holdout: Skewer
+//=================================================================================================================
+"magnataur_skewer_holdout"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"magnataur_skewer"
+	"AbilityTextureName"			"magnataur_skewer"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"30.0 25.0 20.0 15.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"80 80 80 80"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"skewer_speed"					"950"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"skewer_radius"				"125"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"max_targets"			"5 10 15 20"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"slow_duration"				"2.5"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"slow_pct"				"40 40 40 40"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"skewer_damage"			"70 140 210 280"
+		}
+		"07"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"range"					"600 800 1000 1200"
+		}
+		"08"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"tree_radius"				"200"
+		}
+		"09"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"affects_creeps"		"1"
+		}
+	}
+}

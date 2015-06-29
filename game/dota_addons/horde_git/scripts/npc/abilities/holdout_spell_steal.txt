@@ -1,0 +1,57 @@
+//=================================================================================================================
+// Holdout: Spell Steal
+//=================================================================================================================
+"holdout_spell_steal"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"rubick_spell_steal"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_ALL"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0.1 0.1 0.1 0.1"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"20.0 18.0 16.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"25 25 25"
+	
+	// Cast Range
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"1000 1000 1000"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"duration"					"180.0 240.0 300.0"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"projectile_speed"			"900"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"cast_range_scepter"			"1400"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"cooldown_scepter"			"5"
+		}
+	}
+}		

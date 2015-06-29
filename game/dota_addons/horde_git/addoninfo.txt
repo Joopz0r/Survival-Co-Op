@@ -1,0 +1,13 @@
+"AddonInfo"
+{
+	maps			"Survival Survival_test"
+	"IsPlayable"	"1"
+	"Survival"
+	{				
+			"MaxPlayers"                    "5"
+	}
+	"Survival_test"
+	{
+			"MaxPlayers"					"5"
+	}
+}

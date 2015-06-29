@@ -1,0 +1,88 @@
+//=================================================================================================================
+// Ability: Permanent Rot
+//=================================================================================================================
+"creature_aura_rot"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"BaseClass"						"ability_datadriven"
+			
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"ModifierName"			"aura_rot"
+			"Target"
+			{
+				"Center"			"CASTER"
+				"Radius"			"%radius_rot"
+				"Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_OTHER"
+			}
+		}
+	}
+	
+	// Modifiers
+	//-------------------------------------------------------------------------------------------------------------
+	"Modifiers"
+	{
+		"aura_rot_fx"
+		{
+			"Passive"				"1"
+			"IsHidden"				"1"
+			"OnCreated"
+			{
+				"AttachEffect"
+				{
+					"Target"			"CASTER"
+					"EffectName"		"particles/units/heroes/hero_pudge/pudge_rot.vpcf"
+					"EffectAttachType"	"follow_origin"
+					
+					"ControlPoints"
+					{
+						"00"	"0 0 0"
+						"01"	"%radius_rot 0 0"
+					}
+				}
+			}
+		}
+		
+		"aura_rot"
+		{
+			"IsHidden"				"0"
+			"Passive"				"1"				
+			"Aura"					"aura_modifier"
+			"Aura_Radius"			"%radius_rot"
+			"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+			"Aura_Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"	
+		}
+		
+		"aura_modifier"
+		{
+			"IsDebuff"				"1"
+			
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE" 	"-5"
+				"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE"		"-1"
+			}
+		}
+	}
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"radius_rot"			"200"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"damage"				"25.0"
+		}
+	}
+}

@@ -1,0 +1,65 @@
+//=================================================================================================================
+// Holdout: Ball Lightning
+//=================================================================================================================
+"holdout_ball_lightning"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"storm_spirit_ball_lightning"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	
+		// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0.3 0.3 0.3"
+	
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"15 15 15 15"
+	
+	/ Damage.
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityDamage"					"16 24 32"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"										"FIELD_INTEGER"
+			"ball_lightning_initial_mana_percentage"		"3"		
+		}
+		"02"
+		{
+			"var_type"										"FIELD_INTEGER"
+			"ball_lightning_initial_mana_base"				"15"		
+		}
+		"03"
+		{
+			"var_type"							"FIELD_INTEGER"
+			"ball_lightning_move_speed"			"1250 1875 2500"		
+		}
+		"04"
+		{
+			"var_type"							"FIELD_INTEGER"
+			"ball_lightning_aoe"				"125 200 275"		
+		}
+		"05"
+		{
+			"var_type"							"FIELD_INTEGER"
+			"ball_lightning_travel_cost_base"	"5"		
+		}
+		"06"
+		{
+			"var_type"								"FIELD_INTEGER"
+			"ball_lightning_travel_cost_percent"	"1"		
+		}
+		"07"
+		{
+			"var_type"								"FIELD_INTEGER"
+			"ball_lightning_vision_radius"			"1000"		
+		}
+	}
+}

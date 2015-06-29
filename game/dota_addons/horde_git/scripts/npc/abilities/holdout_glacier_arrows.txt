@@ -1,0 +1,119 @@
+//=================================================================================================================
+// Holdout: Glacier Arrows
+//=================================================================================================================
+"holdout_glacier_arrows"
+{
+	"precache"		
+	{		
+		"particlefile"				"particles/units/heroes/hero_drow.pcf"		
+	}
+
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"holdout_glacier_arrows"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"625"
+	"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"0.0 0.0 0.0 0.0"
+	//"AbilityDuration"				"0.25 0.5 0.75 1.0"
+
+	// Damage.
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityDamage"					"0 0 0 0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"6"
+
+	// Data-Driven
+	//-------------------------------------------------------------------------------------------------------------
+	"Modifiers"
+	{
+		"modifier_holdout_glacier_arrow_owner"
+		{
+			"Passive"               "1"
+			"IsHidden"				"1"
+			"Orb"
+			{
+				"Priority"			"DOTA_ORB_PRIORITY_ABILITY"
+				"ProjectileName"	"drow_frost_arrow"
+				"CastAttack"		"1"
+			}
+
+			"OnOrbFire"
+			{
+				"SpendMana"
+				{
+					"Mana"	"%AbilityManaCost"
+				}
+				"FireSound"
+				{
+					"EffectName"			"Hero_DrowRanger.FrostArrows"
+					"Target"				"CASTER"
+				}
+			}
+
+			"OnOrbImpact"
+			{
+				"RemoveModifier"
+				{
+					"Target"			"TARGET"
+					"ModifierName"		"modifier_knockback"
+				}
+				
+				"ApplyModifier"
+				{
+					"Target"			"TARGET"
+					"ModifierName"		"modifier_drow_ranger_frost_arrows_slow"
+					"Duration"			"%slow_duration"
+				}
+
+				"Knockback"
+				{
+					"Target"		"TARGET"
+					"Center"		"CASTER"
+					"Duration"		"%duration"
+					"Distance"		"%knockback_distance"
+					"Height"		"0"
+					"ShouldStun"	"0"
+				}
+			}
+		}
+	}
+
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"duration"						"0.1"
+		}
+		"02"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"knockback_distance"			"10 15 20 25"
+		}
+		"03"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"slow_duration"					"1.0 1.5 2.0 2.5"
+		}
+		"04"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"frost_arrows_movement_speed"	"-11 -15 -18 -20"
+		}
+	}
+}

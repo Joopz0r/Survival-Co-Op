@@ -1,0 +1,92 @@
+//================================================================================================================
+// Holdout: Voodoo
+//=================================================================================================================
+"holdout_voodoo"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"shadow_shaman_voodoo"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"500"
+	"AbilityCastPoint"				"0"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"13.0 13.0 13.0 13.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"80 90 100 110"
+	"AOERadius"						"%radius"
+	
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"ModifierName" "modifier_holdout_voodoo"
+			"Target"
+			{
+				"Center" "POINT"
+				"Radius" "%radius"
+				"Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+			}
+		}	
+		"FireSound"
+		{
+			"EffectName" "General.Chicken"
+		}	
+	}
+	
+	// Modifiers
+	//-------------------------------------------------------------------------------------------------------------
+	"Modifiers"
+	{
+		"modifier_holdout_voodoo"
+		{
+			"EffectName"									 "particles/units/heroes/hero_shadowshaman/shadowshaman_voodoo.vpcf"
+			"ModelName"										 "models/props_gameplay/chicken.vmdl"
+			"Duration"										 "%duration"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_MOVESPEED_BASE_OVERRIDE"	"%movespeed"
+			}
+			"States"
+			{
+				"MODIFIER_STATE_SILENCED"		    "MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_MUTED"			    "MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_DISARMED"           "MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_PASSIVES_DISABLED"  "MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_BLOCK_DISABLED"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_EVADE_DISABLED"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_HEXED"				"MODIFIER_STATE_VALUE_ENABLED"
+			}
+		}
+	}
+
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"movespeed"					"100 100 100 100"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"duration"					"2.0 2.5 3.0 3.5"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"radius"					"200 250 300 350"
+		}
+	}
+}

@@ -1,0 +1,113 @@
+//=================================================================================================================
+// Rock Golem: Impale
+//=================================================================================================================
+"rock_golem_impale"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"lion_impale"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"500"
+	"AbilityCastPoint"				"1.5" 						// Time before spell goes off when cast
+	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"	// Activity
+	"AnimationPlaybackRate"			"1.0"						// Animation speed multiplier
+	
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"12.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"100"
+	
+	"OnSpellStart"
+	{
+		"LinearProjectile"
+		{
+			"EffectName"			"particles/units/heroes/hero_lion/lion_spell_impale.vpcf"
+			"MoveSpeed"				"%speed"
+			"StartRadius"			"%width"
+			"EndRadius"				"%width"
+			"FixedDistance"			"%length"
+			"TargetTeams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+			"TargetTypes"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+			"TargetFlags"			"DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+			"HasFrontalCone"		"0"
+			"ProvidesVision"		"1"
+			"VisionRadius"			"300"
+		}
+		"FireSound"
+		{
+			"EffectName"			"Hero_Lion.Impale"
+		}
+	}
+
+	"OnProjectileHitUnit"
+	{
+		"DeleteOnHit"				"false"
+
+		"Damage"
+		{
+			"Target"				"TARGET"
+			"Type"					"DAMAGE_TYPE_MAGICAL"
+			"Damage"				"%damage"
+		}
+		"Knockback"
+		{
+			"Target"				"TARGET"
+			"Center"				"PROJECTILE"
+			"Distance"				"0"						// Just up
+			"IsFixedDistance"		"1"
+			"Height"				"%knockback_height"
+			"Duration"				"%knockback_duration"
+		}
+		"FireSound"
+		{
+			"Target"				"TARGET"
+			"EffectName"			"Hero_Lion.ImpaleHitTarget"
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"width"				"125"
+		}
+		"02"
+		{	
+			"var_type"			"FIELD_FLOAT"
+			"knockback_duration" "1.02"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"length"			"825"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"speed"				"1600"
+		}
+		"05"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"damage"			"60"
+		}
+		"06"
+		{	
+			"var_type"			"FIELD_INTEGER"
+			"knockback_height"	"175"
+		}
+	}
+}

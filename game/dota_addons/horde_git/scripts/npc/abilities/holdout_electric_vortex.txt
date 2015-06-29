@@ -1,0 +1,96 @@
+//=================================================================================================================
+// Holdout: Electric Vortex
+//=================================================================================================================
+"holdout_electric_vortex"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"storm_spirit_electric_vortex"	
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+	"AbilityCastRange"				"300 325 350 375"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"10.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"100 110 120 130"
+
+	"OnSpellStart"
+	{
+		"FireSound"
+		{
+			"EffectName"		"Hero_StormSpirit.ElectricVortexCast"
+			"Target"			"CASTER"
+		}
+		"ApplyModifier"
+		{
+			"Target"
+			{
+				"Center"			"CASTER"
+				"Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+				"Radius"			"%radius"
+			}				
+			"Duration"				"%duration"
+			"ModifierName"			"modifier_storm_spirit_electric_vortex_pull"
+		}
+		"ApplyModifier"
+		{
+			"Target"				"CASTER"
+			"Duration"				"%electric_vortex_self_slow_duration"
+			"ModifierName"			"modifier_storm_spirit_electric_vortex_self_slow"
+		}
+		"FireSound"
+		{
+			"EffectName"		"Hero_StormSpirit.ElectricVortex"
+			"Target"			"CASTER"
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"electric_vortex_pull_units_per_second"			"100"		
+		}
+		"02"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"electric_vortex_pull_tether_range"				"1200.0"		
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"electric_vortex_self_slow"						"-50"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"electric_vortex_self_slow_duration"			"3.0"
+		}	
+		"05"
+		{
+			"var_type"										"FIELD_FLOAT"
+			"duration"										"2.0 2.5 3.0 3.5"
+		}	
+		"06"
+		{
+			"var_type"										"FIELD_INTEGER"
+			"radius"										"300 325 350 375"
+		}
+	}
+}

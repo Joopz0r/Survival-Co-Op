@@ -1,0 +1,47 @@
+//=================================================================================================================
+// Generic: Gold Bag Fountain 200g
+//=================================================================================================================
+"generic_gold_bag_fountain_200"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"item_hand_of_midas"
+
+	"OnOwnerDied"
+	{
+		"CreateItem"
+		{
+			"Target"
+			{
+				"Center" 	"CASTER"
+				"Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+			}			
+			"ItemName"			"item_bag_of_gold"
+			"ItemCount"			"%bag_count"
+			"SpawnRadius"		"25"
+			"ItemChargeCount"	"%gold_value"
+			"AutoUse"			"1"
+			"LaunchHeight"		"300"
+			"LaunchDistance"	"?50 350"
+			"LaunchDuration"	"0.75"
+		}
+	}
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"gold_value"			"40"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bag_count"				"5"
+		}
+	}
+}

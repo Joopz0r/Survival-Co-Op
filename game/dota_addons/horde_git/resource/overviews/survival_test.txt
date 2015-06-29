@@ -1,0 +1,8 @@
+survival_test
+{
+	material materials/overviews/survival_test.vmat
+	pos_x -4864
+	pos_y 4736
+	scale 10.000
+}
+

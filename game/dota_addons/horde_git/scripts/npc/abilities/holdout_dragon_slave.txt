@@ -1,0 +1,59 @@
+//=================================================================================================================
+// Holdout: Dragon Slave
+//=================================================================================================================
+"holdout_dragon_slave"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"lina_dragon_slave"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"800"
+	"AbilityCastPoint"				"0.45 0.45 0.45 0.45"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"8.5 7.5 6.5 5.5"
+	"AbilityDuration"				"0.6875 0.6875 0.6875 0.6875"
+
+	// Damage.
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityDamage"					"90 150 210 280"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"90 105 125 140"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"dragon_slave_speed"		"1200"
+		}
+		
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"dragon_slave_width_initial"	"275"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"dragon_slave_width_end"		"150"
+		}
+		
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"dragon_slave_distance"			"1075"
+		}
+	}
+}

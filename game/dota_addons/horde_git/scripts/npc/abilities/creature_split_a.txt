@@ -1,0 +1,60 @@
+//=================================================================================================================
+// Creature: Splitter A
+//=================================================================================================================
+"creature_split_a"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass" 					"ability_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName"			"dark_seer_wall_of_replica"
+
+	"OnOwnerDied"
+	{
+		"FireEffect"
+		{
+			"Target"
+			{
+				"Center" 	"CASTER"
+				"Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+			}			
+			"EffectName"			"particles/creature_splitter/splitter_a.vpcf"
+			"EffectAttachType"		"follow_origin"
+		}
+		
+		"FireSound"
+		{
+			"EffectName"			"Ability.SplitA"
+			"Target"
+			{
+				"Center" 	"CASTER"
+				"Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+			}			
+		}
+
+		"SpawnUnit"
+		{
+			"UnitName"				"npc_dota_splitter_b"
+			"UnitCount"				"3"
+			"SpawnRadius"			"50"
+			"Target"
+			{
+				"Center" 	"CASTER"
+				"Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+			}			
+			"GrantsGold"			"1"
+			"GrantsXP"				"1"
+			"OnSpawn"
+			{
+				"Knockback"
+				{
+					"Target"		"TARGET"
+					"Center"		"CASTER"
+					"Duration"		"0.75"
+					"Distance"		"275"
+					"Height"		"200"
+				}
+			}
+		}
+	}
+}

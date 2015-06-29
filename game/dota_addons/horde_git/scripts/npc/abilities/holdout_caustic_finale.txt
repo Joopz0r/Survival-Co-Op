@@ -1,0 +1,35 @@
+//=================================================================================================================
+// Holdout: Caustic Finale
+//=================================================================================================================
+"holdout_caustic_finale"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"sandking_caustic_finale"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	
+	"AbilityDuration"				"1.0 2.0 4.0 8.0"
+	"AbilityDamage"					"25 75 125 175"
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"caustic_finale_radius"		"100 200 300 400"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"caustic_finale_damage"		"25 75 125 175"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"caustic_finale_duration"	"1.0 2.0 4.0 8.0"
+		}
+	}
+}

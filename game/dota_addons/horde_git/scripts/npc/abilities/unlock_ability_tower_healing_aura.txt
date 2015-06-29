@@ -1,0 +1,33 @@
+//=================================================================================================================
+// Unlock Tower Ability: Healing Aura
+//=================================================================================================================
+"unlock_ability_tower_healing_aura"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"			"enchantress_natures_attendants"
+	"AbilitySharedWithTeammates"	"1"
+
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0.0"
+	"AbilityManaCost"				"175"
+
+	"OnSpellStart"
+	{
+		"RemoveAbility"
+		{
+			"Target" "CASTER"
+			"AbilityName" "unlock_ability_tower_healing_aura"
+		}
+
+		"AddAbility"
+		{
+			"Target" "CASTER"
+			"AbilityName" "tower_healing_aura"
+		}
+	}
+}

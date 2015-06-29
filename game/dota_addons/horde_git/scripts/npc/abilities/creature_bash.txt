@@ -1,0 +1,77 @@
+//=================================================================================================================
+// Ability: Creature Bash
+//=================================================================================================================
+"creature_bash"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+	"AbilityTextureName" 			"slardar_bash"	
+	
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityModifierSupportBonus"		"25"
+	"Modifiers"
+	{
+		"creature_bash_passive"
+		{
+			"Passive" "1"
+			"OnAttackLanded"
+			{
+				"Random"
+				{
+					"Chance" "%chance"
+					"PseudoRandom" "DOTA_PSEUDO_RANDOM_SLARDAR_BASH"
+					"OnSuccess"
+					{
+						"ApplyModifier"
+						{
+							"Target" "TARGET"
+							"ModifierName" "creature_bash_ministun"
+						}							
+					}
+				}
+			}
+		}
+
+		"creature_bash_ministun"
+		{
+			"Duration" "%duration"
+			"EffectName" "particles/generic_gameplay/generic_stunned.vpcf"
+			"EffectAttachType" "follow_overhead"
+			"OverrideAnimation" "ACT_DOTA_DISABLED"
+			"States"
+			{
+				"MODIFIER_STATE_STUNNED" "MODIFIER_STATE_VALUE_ENABLED"
+			}			
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"chance"				"10 15 20 25"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_damage"			"40 50 60 70"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"1.0"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration_creep"		"2.0"
+		}
+	}
+}

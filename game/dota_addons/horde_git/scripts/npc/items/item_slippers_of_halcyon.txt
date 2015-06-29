@@ -1,0 +1,164 @@
+//=================================================================================================================
+// Slippers of Halcyon
+//=================================================================================================================
+"item_slippers_of_halcyon"
+{
+	"ID"							"1003"
+
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+	"BaseClass"						"item_datadriven"
+	"AbilityTextureName"			"item_slippers_of_halcyon"
+	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+	// Stats		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"40.0"
+	"AbilityChannelTime"			"20.0"
+
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"							"80"
+	"ItemCost"						"2075"
+	"ItemShopTags"					"move_speed;boost_mana;mana_pool"
+	"ItemQuality"					"rare"
+	"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+	"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	"ItemAlertable"					"1"
+	"ItemAliases"					"mana;mb"
+
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"Target" "CASTER"
+			"ModifierName" "modifier_slippers_of_halcyon_caster"
+		}
+	}
+
+	"OnChannelFinish"
+	{
+		"RemoveModifier"
+		{
+			"Target" "CASTER"
+			"ModifierName" "modifier_slippers_of_halcyon_caster"
+		}
+	}
+
+	"OnUnequip"
+	{
+		"RemoveModifier"
+		{
+			"Target" "CASTER"
+			"ModifierName" "modifier_slippers_of_halcyon_caster"
+		}
+	}
+
+	"Modifiers"
+	{
+		"modifier_slippers_of_halcyon"
+		{
+			"Passive"	 "1"
+			"IsHidden"	 "1"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE"  "%bonus_movement"
+				"MODIFIER_PROPERTY_HEALTH_BONUS"			 "%bonus_hp"
+				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+			}
+		}
+
+		"modifier_slippers_of_halcyon_caster"
+		{
+			"ThinkInterval"		"%tick_rate"
+			"OnIntervalThink"
+			{
+				"Heal"
+				{
+					"Target"
+					{
+						"Center"	 "CASTER"
+						"Radius"	 "%radius"
+						"Teams"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+						"Types"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+					}
+					"HealAmount"   "%hp_per_tick"
+				}
+				"AttachEffect"
+				{
+					"Target"
+					{
+						"Center" "CASTER"
+						"Radius" "%radius"
+						"Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+						"Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+					}
+					"EffectName"		"particles/neutral_fx/troll_heal.vpcf"
+					"EffectAttachType"	"follow_origin"
+				}
+				"FireSound"
+				{
+					"Target"
+					{
+						"Center" "CASTER"
+						"Radius" "%radius"
+						"Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+						"Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+					}
+					"EffectName" "n_creep_ForestTrollHighPriest.Heal"
+				}
+				"AttachEffect"
+				{
+					"Target" "CASTER"
+					"EffectName"		"particles/units/heroes/hero_huskar/huskar_inner_vitality.vpcf"
+					"EffectAttachType"	"follow_origin"
+					"EffectRadius"		"%radius"
+				}
+			
+			}
+			
+		}
+	}
+	
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movement"		"75"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_hp"				"275"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_armor"			"4"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"hp_per_tick"			"20"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"tick_rate"				"0.5"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"radius"				"700"
+		}
+		"07"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"15.0"
+		}
+	}
+}

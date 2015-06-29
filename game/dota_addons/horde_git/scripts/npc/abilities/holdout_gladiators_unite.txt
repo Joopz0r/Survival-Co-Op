@@ -1,0 +1,56 @@
+//=================================================================================================================
+// Holdout: Gladiators Unite
+//=================================================================================================================
+"holdout_gladiators_unite"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityTextureName"			"legion_commander_duel"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0.3 0.3 0.3"
+	
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"60.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"150 200 250"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"radius"					"625"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_armor_per_hero"		"5 7 9"
+		}
+		"03"
+		{	
+			"var_type"					"FIELD_INTEGER"
+			"bonus_damage_per_hero"		"10 15 20"
+		}
+		"04"
+		{	
+			"var_type"					"FIELD_INTEGER"
+			"lifesteal_per_hero"		"10 12 14"
+		}
+		"05"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"duration"					"15.0"
+		}
+	}
+}

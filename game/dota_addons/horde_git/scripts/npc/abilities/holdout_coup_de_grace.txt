@@ -1,0 +1,116 @@
+//=================================================================================================================
+// Holdout Ability: Coup De Grace
+//=================================================================================================================
+"holdout_coup_de_grace"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName" 			"phantom_assassin_coup_de_grace"
+	"ItemBaseLevel"					"0"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0.0"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"28.0 23.0 18.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"50"
+
+	
+	"OnSpellStart"
+	{
+		"ApplyModifier"
+		{
+			"ModifierName" "coup_de_grace_crit"
+			"Target"	   "CASTER"	
+		}
+	}
+
+	"Modifiers"
+	{
+		"coup_de_grace_passive"
+		{
+			"Passive"	 "1"
+			"IsHidden"	 "1"
+			"OnAttackStart"
+			{
+				"Random"
+				{
+					"Chance" "%crit_chance"
+					"PseudoRandom" "DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
+					"OnSuccess"
+					{
+						"ApplyModifier"
+						{
+							"ModifierName" "coup_de_grace_crit"
+							"Target"	   "CASTER"	
+						}	
+							
+					}
+				}
+			}
+		}
+
+		"coup_de_grace_crit"
+		{
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"   "%crit_bonus"
+			}
+			
+			"OnAttackLanded"
+			{
+				"FireEffect"
+				{
+					"EffectName"		 "particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf"
+					"EffectAttachType"	 "follow_origin"
+					"Target"			 "TARGET"
+				}	
+				"CleaveAttack"
+				{
+					"CleavePercent"		"%crit_cleave_damage"
+					"CleaveRadius"      "%crit_radius"
+				}
+				"RemoveModifier"
+				{
+					"ModifierName"		"coup_de_grace_crit"
+					"Target"			"CASTER"	
+				}
+			}
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_bonus"				"300 400 500"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_chance"				"15 15 15"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_radius"				"200 225 250"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_cleave_damage"		"50 60 70"
+		}
+	}
+}

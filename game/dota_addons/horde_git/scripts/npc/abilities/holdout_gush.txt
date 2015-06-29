@@ -1,0 +1,98 @@
+//=================================================================================================================
+// Holdout: Gush
+//=================================================================================================================
+"holdout_gush"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass" 					"ability_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityTextureName"            "tidehunter_gush"
+
+	
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"1000"
+	"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+	
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"8.0 8.0 8.0 8.0"
+	
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"75 85 95 105"
+
+	// Actions
+	//-------------------------------------------------------------------------------------------------------------
+	"OnSpellStart"
+	{
+		"LinearProjectile"
+		{
+			"Target"				"POINT"
+			"EffectName"			"particles/units/heroes/hero_morphling/morphling_waveform.vpcf"
+			"MoveSpeed"				"%projectile_speed"
+			"StartPosition"			"attach_attack2"
+			"StartRadius"			"%radius"
+			"EndRadius"				"%radius"
+			"TargetTeams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+			"TargetTypes"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+			"TargetFlags"			"DOTA_UNIT_TARGET_FLAG_NONE"
+			"HasFrontalCone"		"0"
+			"ProvidesVision"		"0"
+			"VisionRadius"			"300"
+		}
+		"FireSound"
+		{
+			"EffectName"			"Ability.GushCast"
+		}
+	}
+	
+	"OnProjectileHitUnit"
+	{
+		"DeleteOnHit"				"false"
+
+		"ApplyModifier"
+		{
+			"ModifierName"			"modifier_tidehunter_gush"
+			"Duration"				"%duration"
+			"Target"				"TARGET"
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"projectile_speed"	"4000 4000 4000 4000"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"movement_speed"	"-40 -50 -60 -70"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"armor_bonus"		"-2 -4 -6 -8"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"radius"			"250"
+		}
+		"05"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"duration"			"4.0 5.0 6.0 7.0"
+		}
+	}
+}

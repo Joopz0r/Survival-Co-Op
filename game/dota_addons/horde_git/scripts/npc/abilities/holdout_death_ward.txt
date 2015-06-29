@@ -1,0 +1,58 @@
+//=================================================================================================================
+// Holdout: Death Ward
+//=================================================================================================================
+"holdout_death_ward"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"witch_doctor_death_ward"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"600"
+	"AbilityCastPoint"				"0.35 0.35 0.35"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"80.0"
+	"AbilityChannelTime"			"10.0 10.0 10.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"100 150 200"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bounces"					"2 3 4"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"damage"					"60 90 120"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"damage_scepter"			"90 120 150"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"scepter_bounces"			"4 5 6"
+		}
+		"05"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bounce_radius"				"650 650 650"
+		}
+	}
+}

@@ -1,0 +1,47 @@
+//=================================================================================================================
+// Brood King: Gold Bag Fountain
+//=================================================================================================================
+"brood_king_gold_bag_fountain"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"item_hand_of_midas"
+
+	"OnOwnerDied"
+	{
+		"CreateItem"
+		{
+			"Target"
+			{
+				"Center" 	"CASTER"
+				"Flags"		"DOTA_UNIT_TARGET_FLAG_DEAD"
+			}			
+			"ItemName"			"item_bag_of_gold"
+			"ItemCount"			"%bag_count"
+			"SpawnRadius"		"25"
+			"ItemChargeCount"	"%gold_value"
+			"AutoUse"			"1"
+			"LaunchHeight"		"300"
+			"LaunchDistance"	"?50 750"
+			"LaunchDuration"	"0.75"
+		}
+	}
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"gold_value"			"166"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bag_count"				"50"
+		}
+	}
+}

@@ -1,0 +1,116 @@
+//=================================================================================================================
+// Dark Seer: Wall of Discord
+//=================================================================================================================
+"dark_seer_wall_of_discord"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"dark_seer_wall_of_replica"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"500 900 1300"
+	"AbilityCastPoint"				"0.4 0.4 0.4"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"70.0 70.0 70.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"150 250 350"
+
+	"OnSpellStart"
+	{
+		"CreateThinker"
+		{
+			"ModifierName"	"dark_seer_wall_of_discord_thinker"
+			"Target"		"POINT"
+		}
+	}
+
+	"Modifiers"
+	{
+		"dark_seer_wall_of_discord_thinker"
+		{
+			"Duration" "%duration"
+			"ThinkInterval" "0.25"
+			"OnIntervalThink"
+			{
+				"ApplyModifier"
+				{
+					"ModifierName"	"modifier_dark_seer_wall_of_discord_target"
+					"Target"
+					{
+						"Center"	"TARGET"
+						"Line"
+						{
+							"Length"	"1000"
+							"Thickness"	"50"
+						}
+						"Teams"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+						"Types"		"DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO"
+					}
+				}
+			}
+
+			"OnCreated"
+			{
+				"AttachEffect"
+				{
+					"Target"			"TARGET"
+					"EffectName"		"particles/units/heroes/hero_dark_seer/dark_seer_wall_of_replica.vpcf"
+					"EffectAttachType"	"start_at_customorigin"
+					"EffectLineTarget"	"TARGET"
+					"EffectLineLength"	"%width"
+				}
+			}
+		}
+		
+		"modifier_dark_seer_wall_of_discord_target"
+		{
+			"Duration" "1" // Encourage you to drag them back and forth through the wall
+			"OnCreated"
+			{
+				"Damage"
+				{
+					"Type"		"DAMAGE_TYPE_MAGICAL"
+					"Damage"	"%damage"
+					"Target"	"TARGET"
+				}
+
+				"AttachEffect"
+				{
+					"Target"			"TARGET"
+					"EffectName"		"particles/units/heroes/hero_dark_seer/dark_seer_wall_of_replica_replicate.vpcf"
+					"EffectAttachType"	"follow_origin"
+				}
+			}
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"10.0 20.0 30.0"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"damage"				"300 400 500"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"width"					"1000 1000 1000"
+		}
+	}
+}

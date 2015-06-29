@@ -1,0 +1,104 @@
+//=================================================================================================================
+// Creature: Rattletrap
+//=================================================================================================================
+"npc_dota_creature_rattletrap"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"					"npc_dota_creature"					// Class of entity of link to.
+	"Model"						"models/heroes/rattletrap/rattletrap.vmdl"		// Model.
+	"SoundSet"					"Hero_Rattletrap"													// Name of sound set.
+	"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
+	"ModelScale" 				".825"
+	"Level"						"1"
+	"CanBeDominated"			"0"
+
+	// Armor
+	//-------------------------------------------------------------------------------------------------------------
+	"ArmorPhysical"				"10"								// Physical protection.
+
+	// Attack
+	//-------------------------------------------------------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"			"86"									// Damage range min.
+	"AttackDamageMax"			"110"									// Damage range max.
+	"AttackRate"				"1.2"									// Speed of attack.
+	"AttackAnimationPoint"		"0.33"									// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"600"									// Range within a target can be acquired.
+	"AttackRange"				"128"									// Range within a target can be attacked.
+
+	// Bounds
+	//----------------------------------------------------------------
+	"RingRadius"				"70"
+	"HealthBarOffset"			"215"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"200"		// Experience earn.
+	"BountyGoldMin"				"300"		// Gold earned min.
+	"BountyGoldMax"				"300"		// Gold earned max.
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"				"250"		// Speed.
+	"MovementTurnRate"			"0.6"		// Turning rate.
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"3000"		// Base health.
+	"StatusHealthRegen"			"2"			// Health regeneration rate.
+	"StatusMana"				"3000"		// Base mana.
+	"StatusManaRegen"			"5.0"		// Mana regeneration rate.		 
+	
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"1400"		// Range of vision during day light.
+	"VisionNighttimeRange"		"800"		// Range of vision at night time.
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	//Precache
+	//---------------------------------------------------------------------
+	"VoiceFile"				"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
+
+	"vscripts"					"holdout_ai_attack_ancient.lua"
+
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{
+		//Level Up Parameters
+		//-----------------------------------------------------------------
+		"HPGain"					"75"
+		"DamageGain"				"10"
+		"ArmorGain"					"1"
+		"MagicResistGain"			"1"
+		"MoveSpeedGain"				"1"
+		"BountyGain"				"5"
+		"XPGain"					"20"
+		"DisableClumpingBehavior"   "1"
+			
+			"AttachWearables"
+		{
+			"Wearable1"
+			{
+				"ItemDef"			"446"
+			}
+			"Wearable2"
+			{
+				"ItemDef"			"484"
+			}
+			"Wearable3"
+			{
+				"ItemDef"			"485"
+			}
+		}
+	}
+}

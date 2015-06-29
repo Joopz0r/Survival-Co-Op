@@ -1,0 +1,33 @@
+//=================================================================================================================
+// Unlock Tower Ability: Fortification
+//=================================================================================================================
+"unlock_ability_tower_fortification"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"			"tiny_craggy_exterior"
+	"AbilitySharedWithTeammates"	"1"
+
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0.0"
+	"AbilityManaCost"				"125"
+
+	"OnSpellStart"
+	{
+		"RemoveAbility"
+		{
+			"Target" "CASTER"
+			"AbilityName" "unlock_ability_tower_fortification"
+		}
+
+		"AddAbility"
+		{
+			"Target" "CASTER"
+			"AbilityName" "tower_fortification"
+		}
+	}
+}

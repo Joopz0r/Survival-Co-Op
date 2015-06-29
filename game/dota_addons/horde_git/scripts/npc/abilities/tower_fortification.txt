@@ -1,0 +1,39 @@
+//=================================================================================================================
+// Tower: Fortification
+//=================================================================================================================
+"tower_fortification"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"tiny_craggy_exterior"
+	"MaxLevel"						"7"
+
+	// Modifiers
+	//-------------------------------------------------------------------------------------------------------------
+	"Modifiers"
+	{
+		"tower_fortification_modifier"
+		{
+			"IsHidden"				"0"
+			"Passive"				"1"
+
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor_bonus"
+			}
+		}
+	}
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"armor_bonus"				"9 18 27 36 45 54 63"
+		}
+	}
+}

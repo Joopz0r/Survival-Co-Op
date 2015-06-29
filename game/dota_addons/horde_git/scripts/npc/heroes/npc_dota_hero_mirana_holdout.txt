@@ -1,0 +1,10 @@
+//=================================================================================================================
+// HERO: Mirana
+//=================================================================================================================
+"npc_dota_hero_mirana_holdout"
+{
+	"override_hero"			"npc_dota_hero_mirana"
+	"Ability2"				"holdout_mirana_arrow"
+	"Ability4"				"mirana_moonfall"
+	"VisionNighttimeRange"		"1800"									// Range of vision at night time.
+}

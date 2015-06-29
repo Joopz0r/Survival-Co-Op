@@ -1,0 +1,55 @@
+//=================================================================================================================
+// Holdout: Blade Fury
+//=================================================================================================================
+"holdout_blade_fury"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityTextureName"			"juggernaut_blade_fury"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"0"
+	"AbilityCastPoint"				"0 0 0 0"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"30.0 28.0 26.0 24.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"110 110 110 110"		
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"blade_fury_damage_tick"	"0.2"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"blade_fury_radius"			"250"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"duration"					"5.0 5.0 5.0 5.0"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"damage"					"25 75 125 175"
+		}
+		"05"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_evasion"				"20 40 60 80"
+		}
+	}
+}

@@ -1,0 +1,92 @@
+//=================================================================================================================
+// Holdout: Static Remnant
+//=================================================================================================================
+"holdout_static_remnant"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"storm_spirit_static_remnant"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0 0 0 0"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"3.5"
+	"AbilityDuration"				"12.0 12.0 12.0 12.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"70 80 90 100"
+
+	
+	// Ability Actions
+	//-------------------------------------------------------------------------------------------------------------
+	"OnSpellStart"
+	{
+		"SpawnUnit"
+		{
+			"UnitName"			"npc_dota_stormspirit_remnant"
+			"UnitCount"			"1"
+			"UnitLimit"			"64"
+			"SpawnRadius"		"0"
+			"Duration"			"%duration"
+			"Target"			"CASTER"
+			"OnSpawn"
+			{
+				"ApplyModifier"
+				{
+					"Target"				"TARGET"
+					"Duration"				"%duration"
+					"ModifierName"			"modifier_holdout_static_remnant_thinker"
+				}
+
+				"FireSound"
+				{
+					"EffectName"		"Hero_StormSpirit.StaticRemnantPlant"
+					"Target"			"CASTER"
+				}
+			}
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"static_remnant_radius"		"235"		
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"static_remnant_damage_radius"	"260"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"static_remnant_delay"		"1.0"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"static_remnant_damage"			"140 180 220 260"
+		}
+		"05"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"duration"			"12.0"
+		}
+		"06"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"overload_duration"		"0.6"
+		}
+	}
+}

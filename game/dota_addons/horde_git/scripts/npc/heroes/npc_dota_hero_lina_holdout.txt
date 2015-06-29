@@ -1,0 +1,13 @@
+//=================================================================================================================
+// HERO: Lina
+//=================================================================================================================
+"npc_dota_hero_lina_holdout"
+{
+	"override_hero"				"npc_dota_hero_lina"
+	
+	"Ability1"					"holdout_dragon_slave"
+	"Ability2"					"holdout_light_strike_array"
+	"Ability3"					"holdout_fiery_soul"				
+
+	"VisionNighttimeRange"		"1800"									// Range of vision at night time.
+}

@@ -1,0 +1,106 @@
+//=================================================================================================================
+// Holdout: Shadow Strike
+//=================================================================================================================
+"holdout_queenofpain_shadow_strike"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"queenofpain_shadow_strike"	
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"5000"
+	"AbilityCastPoint"				"0.452 0.452 0.452 0.452"
+
+	"AbilityCooldown"				"20.0 16.0 12.0 8.0"
+	"AbilityDuration"				"15.0 15.0 15.0 15.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"110"
+	
+	"OnSpellStart"
+	{
+		"FireSound"
+		{
+			"EffectName"		"Hero_QueenOfPain.ShadowStrike"
+			"Target"			"CASTER"
+		}
+
+		"LinearProjectile"
+		{
+			"EffectName"			"particles/frostivus_herofx/queen_shadow_strike_linear_parent.vpcf"
+			"MoveSpeed"				"%projectile_speed"
+			"StartPosition"			"attach_attack1"
+			"FixedDistance"			"%distance"
+			"StartRadius"			"%radius"
+			"EndRadius"				"%radius"
+			"TargetTeams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+			"TargetTypes"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+			"TargetFlags"			"DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+			"HasFrontalCone"		"0"
+			"ProvidesVision"		"1"
+			"VisionRadius"			"300"
+		}
+	}
+
+	"OnProjectileHitUnit"
+	{
+		"DeleteOnHit" "false"
+		"ApplyModifier"
+		{
+			"Target" 				"TARGET"
+			"Duration"				"%duration_damage"
+			"ModifierName"			"modifier_queenofpain_shadow_strike"			
+		}
+		"Damage"
+		{
+			"Type"		"DAMAGE_TYPE_MAGICAL"
+			"Damage"	"%strike_damage"
+			"Target"	"TARGET"
+		}
+	}
+	
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"strike_damage"			"50 75 100 125"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"duration_damage"		"30 40 50 60"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"movement_slow"			"-20 -30 -40 -50"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"projectile_speed"		"900"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"distance"				"1200"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"radius"				"125"
+		}
+	}
+}

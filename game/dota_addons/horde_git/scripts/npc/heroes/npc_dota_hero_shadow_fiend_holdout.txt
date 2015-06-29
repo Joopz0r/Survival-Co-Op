@@ -1,0 +1,11 @@
+//=================================================================================================================
+// HERO: Shadow Fiend
+//=================================================================================================================
+"npc_dota_hero_shadow_fiend_holdout"
+{
+	"override_hero"			"npc_dota_hero_nevermore"
+	"Ability1"				"holdout_shadowraze1"
+	"Ability2"				"holdout_shadowraze2"
+	"Ability3"				"holdout_shadowraze3"
+	"VisionNighttimeRange"		"1800"									// Range of vision at night time.
+}

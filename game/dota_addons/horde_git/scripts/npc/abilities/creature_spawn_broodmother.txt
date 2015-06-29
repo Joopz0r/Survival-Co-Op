@@ -1,0 +1,32 @@
+//=================================================================================================================
+// Broodmother: Spawn Broodmother - Unused
+//=================================================================================================================
+"creature_spawn_broodmother"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	"BaseClass" 					"ability_datadriven"
+	"AbilityTextureName"            "broodmother_insatiable_hunger"
+	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+	// Stats		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"14.0"
+
+	// Item Info
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"0"
+
+	"OnSpellStart"
+	{
+		"SpawnUnit"
+		{
+			"UnitName"			"npc_dota_creature_broodmother"
+			"UnitCount"			"4" //?4 6
+			"UnitLimit"			"12"
+			"SpawnRadius"		"250"
+			"Target"			"CASTER"
+		}
+	}
+}

@@ -1,0 +1,57 @@
+//=================================================================================================================
+// Forest Prophet: Force of Nature
+//=================================================================================================================
+"creature_force_of_nature"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName" 			"furion_force_of_nature"
+	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+	
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"750"
+	"AbilityCastPoint"				"0.3"
+	"AbilityCooldown"				"2.0"
+	"AbilityManaCost"				"20"
+	
+	"OnSpellStart"
+	{
+		"SpawnUnit"
+		{
+			"UnitName"			"npc_dota_creature_treant"
+			"UnitCount"			"%max_treants"
+			"SpawnRadius"		"100"
+			"Target"			"POINT"
+		}
+
+		"DestroyTrees"
+		{
+			"Radius"			"%area_of_effect"
+			"Target"			"POINT"
+		}
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"area_of_effect"		"100"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"max_treants"			"1"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"60"
+		}
+	}
+}

@@ -1,0 +1,51 @@
+//=================================================================================================================
+// Holdout: Stifling Dagger
+//=================================================================================================================
+"holdout_stifling_dagger"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+	"BaseClass"						"phantom_assassin_stifling_dagger"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"1200"
+	"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+	
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"1.0"
+	"AbilityDuration"				"1.0 2.0 3.0 4.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"30 25 20 15"
+	
+	//Damage
+	"AbilityDamage"					"50 100 150 200"
+		
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"move_slow"					"-50"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"dagger_speed"			"1200 1500 1800 2100"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"duration"			"1 2 3 4"
+		}
+	}
+}

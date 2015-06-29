@@ -1,0 +1,113 @@
+//=================================================================================================================
+// Ability: AoE Slam Knockback
+//=================================================================================================================
+"creature_aoe_slam_knockback"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"AbilityTextureName" 			""
+			
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"300"
+	"AbilityCastPoint"				"2" 						// Time before spell goes off when cast
+	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"	// Activity
+	"AnimationPlaybackRate"			"1.00"						// Animation speed multiplier
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"5 5 5 5"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"0 0 0 0"
+
+	"OnSpellStart"
+	{
+		"Damage"
+		{
+			"Type"			"DAMAGE_TYPE_MAGICAL"
+			"Damage"		"%damage"
+			"Target"
+			{
+				"Center"	"CASTER"
+				"Radius"	"%impact_radius"
+				"Teams"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Types"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_OTHER"
+			}
+		}
+		
+		"Knockback"
+		{
+			"Target"
+			{
+				"Center"	"CASTER"
+				"Radius"	"%impact_radius"
+				"Teams"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+			}
+			"Duration"	"0.6"
+			"Distance"	"275"
+			"Height"	"75"
+		}
+		
+		"AttachEffect"
+		{
+			"EffectName"		"particles/econ/generic/generic_aoe_shockwave_1/generic_aoe_shockwave_1.vpcf"
+			"EffectAttachType"	"follow_origin"
+			"Target"			"CASTER"
+			"ControlPoints"
+			{
+				"00" "0 0 0"
+				"01" "%impact_radius 0 0"
+				"02" "5 0 .8" // telegraph
+				"03" "150 150 150"
+				"04" "0 0 0"
+			}
+		}
+
+		"DestroyTrees"
+		{
+			"Target"			"CASTER"
+			"Radius"			"%impact_radius"
+		}
+		
+		"FireSound"
+		{
+			"EffectName"		"Ability.SlamLand"
+			"Target"			"CASTER"
+		}
+	}
+	
+	// Modifiers
+	//-------------------------------------------------------------------------------------------------------------	
+	// "Modifiers"
+	// {
+
+
+	// }
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"impact_radius"			"450"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"damage"				"110 250 440 620"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"stun_duration"			"3.0"
+		}
+	}
+}

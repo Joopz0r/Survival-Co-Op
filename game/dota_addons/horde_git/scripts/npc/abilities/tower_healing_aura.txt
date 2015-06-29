@@ -1,0 +1,51 @@
+//=================================================================================================================
+// Tower: Healing Aura
+//=================================================================================================================
+"tower_healing_aura"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"enchantress_natures_attendants"
+
+	// Modifiers
+	//-------------------------------------------------------------------------------------------------------------
+	"Modifiers"
+	{
+		"tower_aura_health_regen"
+		{
+			"IsHidden"				"0"
+			"Passive"				"1"
+			
+			"Aura"					"health_regen"
+			"Aura_Radius"			"%health_radius"
+			"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+			"Aura_Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
+		}
+		
+		"health_regen"
+		{
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%health_regen_amount"
+			}
+		}
+	}
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"health_radius"				"550"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"health_regen_amount"		"2.5"
+		}
+	}
+}

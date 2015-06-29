@@ -1,0 +1,11 @@
+//=================================================================================================================
+// HERO: Windrunner
+//=================================================================================================================
+"npc_dota_hero_windrunner_holdout"
+{
+	"override_hero"			"npc_dota_hero_windrunner"
+	"Ability1"				"holdout_shackleshot"
+	"Ability3"				"holdout_windrun"
+	"Ability4"				"holdout_focusfire"
+	"VisionNighttimeRange"		"1800"									// Range of vision at night time.
+}

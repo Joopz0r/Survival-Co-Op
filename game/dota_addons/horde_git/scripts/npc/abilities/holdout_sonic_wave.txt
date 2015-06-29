@@ -1,0 +1,69 @@
+//=================================================================================================================
+// Holdout: Sonic Wave
+//=================================================================================================================
+"holdout_sonic_wave"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"queenofpain_sonic_wave"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"				   
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"	   
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"700"
+	"AbilityCastPoint"				"0.452 0.452 0.452"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"60 50 40"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"150 200 250"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"starting_aoe"		"100"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"distance"			"900"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"final_aoe"			"300"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"speed"				"1100"
+		}
+		"05"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"damage"			"350 475 600"
+		}
+		"06"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"cooldown_scepter"	"40 30 20"
+		}
+		"07"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"damage_scepter"	"350 530 725"
+		}
+	}
+}
