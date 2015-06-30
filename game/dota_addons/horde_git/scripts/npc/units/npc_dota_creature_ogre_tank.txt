@@ -19,7 +19,7 @@
 	//----------------------------------------------------------------
 	"Ability1"					"creature_melee_smash"			// Ability 1
 	"Ability2"					"generic_gold_bag_fountain_200"			// Ability 2
-	"Ability3"					""			// Ability 3
+	"Ability3"					"creature_reflect_damage"			// Ability 3
 	"Ability4"					""			// Ability 4
 
 	// Armor
@@ -113,6 +113,12 @@
 			{
 				"Name"				"creature_melee_smash"
 				"AOE"				"1"
+				"Radius"			"150"
+				"MinimumTargets"	"1"
+			}
+			"Ability3"
+			{
+				"Name"				"creature_reflect_damage"
 				"Radius"			"150"
 				"MinimumTargets"	"1"
 			}
