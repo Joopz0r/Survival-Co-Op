@@ -7,7 +7,7 @@
 	//-------------------------------------------------------------------------------------------------------------
 	"BaseClass"						"elder_titan_echo_stomp"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
-	"AbilityUnitDamageType"			"DAMAGE_TYPE_COMPOSITE"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 	
 	// Stats
 	//-------------------------------------------------------------------------------------------------------------

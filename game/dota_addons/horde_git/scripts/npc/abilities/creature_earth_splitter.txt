@@ -9,7 +9,7 @@
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-	"AbilityUnitDamageType"			"DAMAGE_TYPE_COMPOSITE"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 	"BaseClass"						"elder_titan_earth_splitter"
 
 	// Casting
