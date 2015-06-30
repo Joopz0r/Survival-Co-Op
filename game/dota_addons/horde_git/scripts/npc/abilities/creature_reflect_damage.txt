@@ -7,7 +7,7 @@
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 	"BaseClass" 					"ability_datadriven"
-	"AbilityTextureName"            "item_blade_mail"
+	"AbilityTextureName"            "nyx_assassin_spiked_carapace"
 	
 	// Casting
 	//-------------------------------------------------------------------------------------------------------------

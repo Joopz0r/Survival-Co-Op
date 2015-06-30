@@ -17,38 +17,12 @@
 							"value0"		"sounds/wk_holdout_reincarnate.vsnd"
 						}
 					}
-					"volume_min"
-					{
-						"value"		"1.000000"
-					}
-					"volume_max"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+										
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					"soundlevel_min"
-					{
-						"value"		"78.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"78.000000"
-					}
+					
 					"mixgroup"
 					{
 						"value"		"Ultimates"
@@ -81,18 +55,7 @@
 							"value0"		"sounds/ui/item_drop_gem_shop.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -133,18 +96,7 @@
 					{
 						"value"		"0.250000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -181,18 +133,7 @@
 					{
 						"value"		"0.500000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -211,7 +152,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"dota_src1_2d"
+				"reference_stack"		"src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -229,18 +170,7 @@
 					{
 						"value"		"0.299805"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -277,18 +207,7 @@
 					{
 						"value"		"0.399902"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -325,18 +244,7 @@
 					{
 						"value"		"0.250000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -373,18 +281,7 @@
 					{
 						"value"		"0.399902"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -421,18 +318,7 @@
 					{
 						"value"		"0.299805"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -469,18 +355,7 @@
 					{
 						"value"		"0.399902"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -509,18 +384,8 @@
 							"value0"		"sounds/tally_bags.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -553,18 +418,7 @@
 							"value0"		"sounds/tally_bags.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -605,18 +459,7 @@
 					{
 						"value"		"0.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -645,18 +488,7 @@
 							"value0"		"sounds/tally_bagsmissed.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -697,18 +529,7 @@
 					{
 						"value"		"0.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -745,18 +566,7 @@
 					{
 						"value"		"0.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -793,18 +603,7 @@
 					{
 						"value"		"0.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -833,18 +632,7 @@
 							"value0"		"sounds/ui/menu/profile_open.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -877,18 +665,7 @@
 							"value0"		"sounds/ui/menu/profile_close.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -921,18 +698,7 @@
 							"value0"		"sounds/ui/menu/report_open.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -965,18 +731,7 @@
 							"value0"		"sounds/tally_towers.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1009,18 +764,7 @@
 							"value0"		"sounds/tally_towerslost.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1052,18 +796,6 @@
 						{
 							"value0"		"sounds/tally_towerslost.vsnd"
 						}
-					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
 					}
 					"memory_type"
 					{
@@ -1108,18 +840,7 @@
 					{
 						"value"		"0.500000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"4"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1156,18 +877,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1212,18 +922,7 @@
 					{
 						"value"		"0.500000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"4"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1252,18 +951,7 @@
 							"value0"		"sounds/tally_rise.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1296,18 +984,7 @@
 							"value0"		"sounds/tally_end.vsnd"
 						}
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1349,18 +1026,7 @@
 					{
 						"value"		"0.599609"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1406,18 +1072,7 @@
 					{
 						"value"		"0.599609"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1465,18 +1120,7 @@
 					{
 						"value"		"0.799805"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1523,18 +1167,7 @@
 					{
 						"value"		"0.799805"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1580,18 +1213,7 @@
 					{
 						"value"		"0.799805"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"4"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1640,18 +1262,7 @@
 					{
 						"value"		"0.899902"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"4"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1702,18 +1313,7 @@
 					{
 						"value"		"0.699707"
 					}
-					"pitch_min"
-					{
-						"value"		"0.900000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1767,18 +1367,7 @@
 					{
 						"value"		"0.699585"
 					}
-					"pitch_min"
-					{
-						"value"		"1.050000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.150000"
-					}
-					"chan_type"
-					{
-						"value"		"4"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1825,18 +1414,7 @@
 					{
 						"value"		"0.799683"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+		
 					"memory_type"
 					{
 						"value"		"0"
@@ -1887,18 +1465,7 @@
 					{
 						"value"		"0.500000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"1"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -1950,18 +1517,7 @@
 					{
 						"value"		"0.599854"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"4"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2010,18 +1566,7 @@
 					{
 						"value"		"0.799805"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2070,18 +1615,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2118,18 +1652,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2166,18 +1689,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2214,18 +1726,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2254,38 +1755,12 @@
 							"value0"		"sounds/music/stingers/reincarnate_03.vsnd"
 						}
 					}
-					"volume_min"
-					{
-						"value"		"1.000000"
-					}
-					"volume_max"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+										
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					"soundlevel_min"
-					{
-						"value"		"81.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"81.000000"
-					}
+					
 					"mixgroup"
 					{
 						"value"		"Weapons"
@@ -2322,38 +1797,12 @@
 							"value0"		"sounds/revive.vsnd"
 						}
 					}
-					"volume_min"
-					{
-						"value"		"1.000000"
-					}
-					"volume_max"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+									
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					"soundlevel_min"
-					{
-						"value"		"78.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"78.000000"
-					}
+					
 					"mixgroup"
 					{
 						"value"		"Weapons"
@@ -2394,18 +1843,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"1"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2450,18 +1888,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"1"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2507,18 +1934,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"1"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2563,18 +1979,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2619,18 +2024,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"1"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2675,18 +2069,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2731,18 +2114,7 @@
 					{
 						"value"		"0.500000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"1"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2787,18 +2159,7 @@
 					{
 						"value"		"0.500000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"1"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2843,18 +2204,7 @@
 					{
 						"value"		"0.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -2893,66 +2243,16 @@
 							"wave2"		"sounds/weapons/hero/venomancer/venomancer_venomous_gale_impact3.vsnd"
 						}
 					}
-					"volume_min"
-					{
-						"value"		"0.399902"
-					}
-					"volume_max"
-					{
-						"value"		"0.399902"
-					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"4"
-					}
+										
 					"memory_type"
 					{
 						"value"		"0"
-					}
-					"soundlevel_min"
-					{
-						"value"		"81.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"81.000000"
 					}
 					"distance_max"
 					{
 						"value"		"2500.000000"
 					}
-					"limiter_on"
-					{
-						"value"		"1.000000"
-					}
-					"limiter_event_name"
-					{
-						"value"		"Hero_Venomancer.VenomousGaleImpact"
-					}
-					"limiter_max"
-					{
-						"value"		"3.000000"
-					}
-					"limiter_match_type"
-					{
-						"value"		"0.000000"
-					}
-					"limiter_match_entity"
-					{
-						"value"		"0.000000"
-					}
-					"limiter_match_subtring"
-					{
-						"value"		"0.000000"
-					}
+					
 				}
 			}
 		}
@@ -2985,18 +2285,7 @@
 					{
 						"value"		"0.500000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"1"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -3041,18 +2330,7 @@
 					{
 						"value"		"0.699707"
 					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"0"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -3081,37 +2359,10 @@
 							"value0"		"sounds/hellfire_eruption.vsnd"
 						}
 					}
-					"volume_min"
-					{
-						"value"		"1.000000"
-					}
-					"volume_max"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+										
 					"memory_type"
 					{
 						"value"		"0"
-					}
-					"soundlevel_min"
-					{
-						"value"		"81.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"81.000000"
 					}
 					"mixgroup"
 					{
@@ -3147,38 +2398,11 @@
 							"wave2"		"sounds/weapons/hero/shared/large_blade/whoosh03.vsnd"
 						}
 					}
-					"volume_min"
-					{
-						"value"		"0.599609"
-					}
-					"volume_max"
-					{
-						"value"		"0.999512"
-					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					"soundlevel_min"
-					{
-						"value"		"90.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"90.000000"
-					}
+					
 					"mixgroup"
 					{
 						"value"		"Weapons"
@@ -3221,37 +2445,10 @@
 							"wave2"		"sounds/weapons/hero/skeleton_king/attack03.vsnd"
 						}
 					}
-					"volume_min"
-					{
-						"value"		"0.799805"
-					}
-					"volume_max"
-					{
-						"value"		"0.999756"
-					}
-					"pitch_min"
-					{
-						"value"		"0.900000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+										
 					"memory_type"
 					{
 						"value"		"0"
-					}
-					"soundlevel_min"
-					{
-						"value"		"90.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"90.000000"
 					}
 					"mixgroup"
 					{
@@ -3301,18 +2498,7 @@
 					{
 						"value"		"0.899780"
 					}
-					"pitch_min"
-					{
-						"value"		"0.800000"
-					}
-					"pitch_max"
-					{
-						"value"		"0.900000"
-					}
-					"chan_type"
-					{
-						"value"		"1"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -3357,18 +2543,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -3413,18 +2588,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
@@ -3461,38 +2625,12 @@
 							"value0"		"sounds/altar_destruction.vsnd"
 						}
 					}
-					"volume_min"
-					{
-						"value"		"0.799805"
-					}
-					"volume_max"
-					{
-						"value"		"0.799805"
-					}
-					"pitch_min"
-					{
-						"value"		"1.000000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+										
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					"soundlevel_min"
-					{
-						"value"		"120.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"120.000000"
-					}
+					
 					"mixgroup"
 					{
 						"value"		"Ultimates"
@@ -3543,18 +2681,7 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_min"
-					{
-						"value"		"0.950000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.050000"
-					}
-					"chan_type"
-					{
-						"value"		"2"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
