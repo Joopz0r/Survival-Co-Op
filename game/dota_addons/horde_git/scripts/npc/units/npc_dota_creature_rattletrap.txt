@@ -34,9 +34,9 @@
 
 	// Bounty
 	//----------------------------------------------------------------
-	"BountyXP"					"200"		// Experience earn.
-	"BountyGoldMin"				"300"		// Gold earned min.
-	"BountyGoldMax"				"300"		// Gold earned max.
+	"BountyXP"					"0"		// Experience earn.
+	"BountyGoldMin"				"0"		// Gold earned min.
+	"BountyGoldMax"				"0"		// Gold earned max.
 
 	// Movement
 	//----------------------------------------------------------------
@@ -81,8 +81,8 @@
 		"ArmorGain"					"1"
 		"MagicResistGain"			"1"
 		"MoveSpeedGain"				"1"
-		"BountyGain"				"5"
-		"XPGain"					"20"
+		"BountyGain"				"0"
+		"XPGain"					"0"
 		"DisableClumpingBehavior"   "1"
 			
 			"AttachWearables"
