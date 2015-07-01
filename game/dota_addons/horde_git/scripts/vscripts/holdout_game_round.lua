@@ -154,6 +154,7 @@ function CHoldoutGameRound:Think()
 	for _, spawner in pairs( self._vSpawners ) do
 		spawner:Think()
 	end
+	self:Checkd()
 end
 
 
@@ -239,6 +240,14 @@ function CHoldoutGameRound:OnEntityKilled( event )
 	end
 end
 
+function CHoldoutGameRound:Checkd()
+        for i, unit in pairs( self._vEnemiesRemaining ) do
+                if unit:IsDominated() then
+                        table.remove( self._vEnemiesRemaining, i )
+                        break
+                end
+        end
+end
 
 function CHoldoutGameRound:OnHoldoutReviveComplete( event )
 	local castingHero = EntIndexToHScript( event.caster )
@@ -312,13 +321,4 @@ function CHoldoutGameRound:StatusReport( )
 	for _,s in pairs( self._vSpawners ) do
 		s:StatusReport()
 	end
-end
-
-function CHoldoutGameRound:CheckDominated()
-        for i, units in pairs( self.vEnemiesRemaining ) do
-                if IsDominated(units) then
-                        table.remove( self._vEnemiesRemaining, i )
-                        break
-                end
-        end
 end
