@@ -64,8 +64,8 @@ function CHoldoutGameMode:InitGameMode()
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
 	GameRules:GetGameModeEntity():SetCameraDistanceOverride( 1300 )
 	
-	GameRules:GetGameModeEntity():SetFogOfWarDisabled( true )
-	---GameRules:GameMode:SetFogOfWarDisabled( true ) 
+	--GameRules:GetGameModeEntity():SetFogOfWarDisabled( true )
+	
 
 --	GameRules:GetGameModeEntity():SetHUDVisible( DOTA_HUD_VISIBILITY_TOP_TIMEOFDAY, false )
 --	GameRules:GetGameModeEntity():SetHUDVisible( DOTA_HUD_VISIBILITY_TOP_HEROES, false )
