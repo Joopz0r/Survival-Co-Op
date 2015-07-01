@@ -2,7 +2,7 @@ Bug Fixes:
 Refresh main base and invunrabilitiy
 Fix: Lesser Nightcrawler: Pounce not leashing
 Fix: Tormented Soul 'Leachrac' AOE Spikes
-
+Move donkey base position
 
 
 
@@ -10,4 +10,5 @@ Fix: Tormented Soul 'Leachrac' AOE Spikes
 
 Todo:
 Finish the new units and spells for round 13-20
-Change unit on Round 8: Double the damage
+Change unit on Round 8: Double the damage or increase armor also increase splitter damage
+Round 9 hard??
