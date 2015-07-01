@@ -678,6 +678,10 @@
 	//=================================================================================================================
 	"creature_aoe_spikes"
 	{
+		"precache"		
+		{		
+			"particle_folder"				"particles/econ/items/leshrac/leshrac_tormented_staff/leshrac_split_tormented.vpcf"		
+		}
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_datadriven"
@@ -775,7 +779,7 @@
 					
 					"AttachEffect"
 					{
-						"EffectName"		"particles/units/heroes/hero_leshrac/leshrac_split_earth.vpcf"
+						"EffectName"		"particles/econ/items/leshrac/leshrac_tormented_staff/leshrac_split_tormented.vpcf"
 						"EffectAttachType"	"follow_origin"
 						"Target"			"TARGET"
 						
@@ -2131,7 +2135,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"BaseClass" 					"ability_datadriven"
-		"AbilityTextureName"            "blade_mail"
+		"AbilityTextureName"            "nyx_assassin_spiked_carapace"
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------

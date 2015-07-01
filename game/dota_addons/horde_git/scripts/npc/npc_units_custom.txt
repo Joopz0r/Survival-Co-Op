@@ -3383,7 +3383,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"treant_living_armor"	// Ability 1.
-		"Ability2"					"generic_gold_bag_fountain_200"			// Ability 2.
+		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -3818,7 +3818,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"creature_fire_breath"	// Ability 1.
-		"Ability2"					"generic_gold_bag_fountain_500"			// Ability 2.
+		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -5095,7 +5095,7 @@
 					"Name"				"creature_slithereen_crush"
 					"AOE"				"1"
 					"Radius"			"400"
-					"MinimumTargets"	"2"
+					"MinimumTargets"	"1"
 				}
 				"Ability2"				
 				{
@@ -5417,7 +5417,7 @@
 		"Model"						"models/heroes/leshrac/leshrac.vmdl"	// Model.
 		"ModelScale"				"0.75"
 		"Level"						"1"
-		
+	
 		// Abilities
 		//----------------------------------------------------------------
 		
@@ -6221,9 +6221,8 @@
 		"VisionDaytimeRange"		"1900"		// Range of vision during day light.
 		"VisionNighttimeRange"		"1600"		// Range of vision at night time.
 	}
-
 	//=================================================================================
-	// Tower: Holdout Tower_ancient
+	// Tower: Holdout Tower
 	//=================================================================================
 	"npc_dota_holdout_tower_ancient"
 	{
@@ -6250,16 +6249,16 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"20"		// Physical protection.
+		"ArmorPhysical"				"25"		// Physical protection.
 		"MagicalResistance"			"0"			// Magical protection.
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"20"		// Damage range min.
+		"AttackDamageMin"			"22"		// Damage range min.
 		"AttackDamageMax"			"45"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"				"1"			// Speed of attack.
+		"AttackRate"				"1.2"			// Speed of attack.
 		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
