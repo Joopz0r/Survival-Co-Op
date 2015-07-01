@@ -9,7 +9,7 @@
 	"Model"						"models/heroes/leshrac/leshrac.vmdl"	// Model.
 	"ModelScale"				"0.75"
 	"Level"						"1"
-	
+
 	// Abilities
 	//----------------------------------------------------------------
 	

@@ -104,7 +104,7 @@
 				"Name"				"creature_slithereen_crush"
 				"AOE"				"1"
 				"Radius"			"400"
-				"MinimumTargets"	"2"
+				"MinimumTargets"	"1"
 			}
 			"Ability2"				
 			{

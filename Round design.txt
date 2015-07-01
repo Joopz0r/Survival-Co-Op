@@ -1,0 +1,76 @@
+Round Ideas/Changes:
+Round 1: Kobolds
+
+Round 2: Zombies
+	Explodsing Zombies 'AOE Damage'
+	Hero: Summon Zombies
+
+Round 3: Ogres
+	Ogre: Reflect Damage | Bash 'Stun'
+
+Round 4: Slarks | Slardar
+	Slarks: Pounce
+	Slardar: Bash Passive | Crush 'Stun' | Sprint
+
+Round 5: Trees
+	Forest Prophet: Creates Trees | Summons Treants
+	King Treant: Living Armor 'Heal' | 
+
+Round 6: BroodMother Boss
+	Spawns Small Spiders
+
+Round 7: Roshans | Leshracs
+	Leshrac: AOE Spikes 'Stun'
+	Roshan: Fire Breath
+
+Round 8: Splitters
+	First Splitters: Doubled the damage
+	
+Round 9: Bears
+	Chieftain: Ogre Magi Bloodlust
+	Big Bear Ursa: EarthShock | Overpower | Fury Swipes | Enrage
+	
+Round 10:
+Round 11:
+Round 12: AA, MiniLich, Fodder
+	
+Round 13: Skeletons - Melee + Range
+	Basic
+	Fire Damage
+	Ice Slow
+	High Damage
+	High Armor
+
+Round 14: Dragons - Range
+	Basic
+	DOTS
+	Poison Effect - Passive
+	STUN
+
+Round 15: Wolfs - Melee
+	Basic
+	Life Steal
+
+Round 16: Harpys - Range
+	Basic
+	Mana Burn
+	Spell Reflect
+
+Round 17: Centaur - Melee
+	Boss Requires Items
+	Melee Reflect
+	Stun
+
+
+Round 18: Creep Radient Range + Melee
+	Basic
+
+Round 19: Ghosts - Range + Melee
+	Basic
+	Boss
+	Spell Immune
+
+Round 20: Roshans
+	Basic
+	Haloween
+	Boss

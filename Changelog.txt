@@ -1,0 +1,105 @@
+Bugs:
+Main base needs to get refreshed if it takes HP damage
+
+
+
+Todo List:
+Create more waves and units
+Refresh base defense Spell for towers each round
+Fix alchemist gold
+Remove all gold and xp from killing mobs
+New NPCs
+
+
+
+
+
+
+
+
+
+
+
+24/06/2015
+[b]Updates:[/b]
+Added Test Map this will be used for all changes on Round before being pushed to main map!
+
+[h1][b]Tweaks:[/b][/h1]
+Reduced round one!
+Removed Chen, Alchemist, Meepo
+Amount of gold each round
+Adjusted Creeps from running away!
+
+[h1][b]Hero Changes:[/b][/h1]
+
+[b]Keeper of the light:[/b] 
+Mana burn changed
+
+[b]Witch Doctor: [/b]
+Maledict effects Heroes and Creeps
+Death Ward effects Heroes and Creeps
+ 
+[b]Zeus:[/b] 
+Ultimate Hits 10 Targets in a 1500 area around Zeus
+
+[b]Axe:[/b] 
+Battle Hunger changed to Battle Rage
+Cast on Allies and grants life steal
+
+[b]Windranger: [/b]
+Change Shackle Shot
+Wind Run
+Focus Fire
+
+[b]Darkseer:[/b]
+Changed Wall of Replica to Wall of Discord
+Does Damage as Enemies walk though
+
+[b]Omniknight:[/b]
+Changed ultimate to Guardian Angel
+
+[b]Shadow Shaman:[/b]
+Ether Shock Changes
+Hex renamed to Voodoo has AOE effect
+Changes to shackles
+
+[b]Mirana:[/b]
+Changes to Arrow
+Changes to Moonfall
+
+[b]Phantom Assasin:[/b]
+Changes to her skills
+
+[b]Drow Ranger:[/b]
+Changes to her skills
+
+[b]Juggernaut:[/b]
+Change ultimate to work with Creeps
+
+[b]Sven:[/b]
+Changes to skills
+
+[b]Venomancer[/b]
+Changes to skills
+
+[b]Magnus:[/b]
+Changes to skills
+
+[b]Lina:[/b]
+Changes to skills
+
+[b]Sandking[/b]
+Changes to ultimate
+
+[b]Storm Spirit[/b]
+Changes to skills
+
+[b]Queen of Pain[/b]
+Changes to skills
+
+[b]Templar Assassin[/b]
+Changes to skills
+
+[b]Elder Titan[/b]
+Changes to skills
+

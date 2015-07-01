@@ -688,7 +688,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Trees_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Trees_Title"
-		"MaxGold"					"2800" //2000g from gold fountain ability (king_treant)
+		"MaxGold"					"2800" //0g from gold fountain ability (king_treant)
 		"BagCount"					"15"
 		"BagVariance"				"50"
 		"FixedXP"					"6500"
