@@ -30,8 +30,10 @@ Round 9: Bears
 	Chieftain: Ogre Magi Bloodlust
 	Big Bear Ursa: EarthShock | Overpower | Fury Swipes | Enrage
 	
-Round 10:
-Round 11:
+Round 10: Pudge
+
+Round 11: Gyrocopter
+
 Round 12: AA, MiniLich, Fodder
 	
 Round 13: Skeletons - Melee + Range
@@ -60,7 +62,6 @@ Round 17: Centaur - Melee
 	Boss Requires Items
 	Melee Reflect
 	Stun
-
 
 Round 18: Creep Radient Range + Melee
 	Basic
