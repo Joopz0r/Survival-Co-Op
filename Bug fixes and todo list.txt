@@ -12,3 +12,5 @@ Todo:
 Finish the new units and spells for round 13-20
 Change unit on Round 8: Double the damage or increase armor also increase splitter damage
 Round 9 hard??
+Sound Event Issues
+Give Slark the bash not slardar

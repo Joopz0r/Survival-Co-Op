@@ -25,30 +25,12 @@
 					{
 						"value"		"0.500000"
 					}
-					"pitch_min"
-					{
-						"value"		"1.100000"
-					}
-					"pitch_max"
-					{
-						"value"		"1.200000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+					
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					"soundlevel_min"
-					{
-						"value"		"78.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"78.000000"
-					}
+					
 				}
 			}
 		}
@@ -85,30 +67,12 @@
 					{
 						"value"		"1.000000"
 					}
-					"pitch_max"
-					{
-						"value"		"1.000000"
-					}
-					"chan_type"
-					{
-						"value"		"6"
-					}
+				
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					"soundlevel_min"
-					{
-						"value"		"81.000000"
-					}
-					"soundlevel_max"
-					{
-						"value"		"81.000000"
-					}
-					"mixgroup"
-					{
-						"value"		"Weapons"
-					}
+					
 					"spread_radius"
 					{
 						"value"		"300.000000"

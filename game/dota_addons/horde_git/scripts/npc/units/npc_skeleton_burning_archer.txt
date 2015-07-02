@@ -11,7 +11,7 @@
 		"SoundSet"                  "Hero_Lina"			
 		"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"VoiceFile"					"soundevents/voscripts/game_sounds_vo_lina.vsndevts"
-		"Level"						"3"
+		"Level"						"1"
 		
 		"UseNeutralCreepBehavior" 	"0"
 		
@@ -29,14 +29,14 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"			// Physical protection.
+		"ArmorPhysical"				"5"			// Physical protection.
 		//"MagicalResistance"			"35"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"21"								// Damage range min.
-		"AttackDamageMax"			"30"								// Damage range max.
+		"AttackDamageMin"			"150"								// Damage range min.
+		"AttackDamageMax"			"200"								// Damage range max.
 		"AttackRate"				"1.6"								// Speed of attack.
 		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"500"								// Range within a target can be acquired.
@@ -46,9 +46,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"30"		// Experience earn.
-		"BountyGoldMin"				"8"		// Gold earned min.
-		"BountyGoldMax"				"10"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -67,7 +67,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"200"			// Base health.
+		"StatusHealth"				"1250"			// Base health.
 		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
 		"StatusMana"				"300"			// Base mana.
 		"StatusManaRegen"			"0.75"			// Mana regeneration rate.

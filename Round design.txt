@@ -9,8 +9,8 @@ Round 3: Ogres
 	Ogre: Reflect Damage | Bash 'Stun'
 
 Round 4: Slarks | Slardar
-	Slarks: Pounce
-	Slardar: Bash Passive | Crush 'Stun' | Sprint
+	Slarks: Pounce | Bash Passive
+	Slardar:  Crush 'Stun' | Sprint
 
 Round 5: Trees
 	Forest Prophet: Creates Trees | Summons Treants
@@ -33,30 +33,30 @@ Round 9: Bears
 Round 10: Pudge
 
 Round 11: Gyrocopter
-
+	
 Round 12: AA, MiniLich, Fodder
 	
 Round 13: Skeletons - Melee + Range
 	Basic
 	Fire Damage
-	Ice Slow
-	High Damage
-	High Armor
+	Ice Stun
+	Skeleton Warriors: High Armor
+	Clinkz: High Damage
 
 Round 14: Dragons - Range
-	Basic
-	DOTS
-	Poison Effect - Passive
-	STUN
+	Green baby Dragon: Poison Effect 'Passive'
+	Mum Dragon: Fire Effect 'Passive'
+	Boss: STUN
 
 Round 15: Wolfs - Melee
 	Basic
-	Life Steal
+	Wolf Baby: Self Haste | Life Steal
+	Wolf Dad: Self Haste | Kraken Shell | Rage	
 
 Round 16: Harpys - Range
 	Basic
-	Mana Burn
-	Spell Reflect
+	Harpy Baby: Mana Burn
+	Harpy Mum: Drain HP
 
 Round 17: Centaur - Melee
 	Boss Requires Items

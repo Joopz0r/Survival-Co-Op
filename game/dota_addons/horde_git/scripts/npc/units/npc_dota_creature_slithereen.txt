@@ -18,7 +18,7 @@
 	
 	"Ability1"					"creature_sprint"			// Ability 1.
 	"Ability2"					"creature_slithereen_crush"			// Ability 2.
-	"Ability3"					"creature_bash"			// Ability 3.
+	"Ability3"					""			// Ability 3.
 	"Ability4"					""			// Ability 4.
 	"Ability5"					""			// Ability 5.
 	"Ability6"					""			// Ability 6 - Extra.

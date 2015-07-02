@@ -2939,14 +2939,14 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"			// Physical protection.
-		"MagicalResistance"			"45"		// Magical protection.
+		"ArmorPhysical"				"10"			// Physical protection.
+		//"MagicalResistance"			"45"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
+		"AttackDamageMin"			"150"		// Damage range min.
+		"AttackDamageMax"			"200"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
@@ -2972,7 +2972,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"1250"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
@@ -3021,8 +3021,8 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""			// Ability 1
-		"Ability2"					""			// Ability 2
+		"Ability1"					"dragon_knight_frost_breath_datadriven"			// Ability 1
+		"Ability2"					"dragon_knight_dragon_tail_datadriven"			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
 
@@ -3034,8 +3034,8 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
+		"AttackDamageMin"			"300"		// Damage range min.
+		"AttackDamageMax"			"350"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
@@ -3061,7 +3061,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"1600"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
@@ -3110,7 +3110,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""			// Ability 1
+		"Ability1"					"dragon_knight_elder_dragon_form"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -3123,8 +3123,8 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
+		"AttackDamageMin"			"250"		// Damage range min.
+		"AttackDamageMax"			"300"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
@@ -3199,21 +3199,21 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""			// Ability 1
+		"Ability1"					"lion_mana_drain_datadriven"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"			// Physical protection.
+		"ArmorPhysical"				"12"			// Physical protection.
 		"MagicalResistance"			"0"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
+		"AttackDamageMin"			"150"		// Damage range min.
+		"AttackDamageMax"			"200"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
@@ -3239,7 +3239,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"1450"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
@@ -3288,7 +3288,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""			// Ability 1
+		"Ability1"					"creature_drain_hp"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -3301,8 +3301,8 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
+		"AttackDamageMin"			"300"		// Damage range min.
+		"AttackDamageMax"			"400"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
@@ -3328,7 +3328,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"1500"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
@@ -3672,6 +3672,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"lesser_nightcrawler_pounce"			// Ability 1.
+		"Ability2"					"creature_bash"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -5009,7 +5010,7 @@
 		
 		"Ability1"					"creature_sprint"			// Ability 1.
 		"Ability2"					"creature_slithereen_crush"			// Ability 2.
-		"Ability3"					"creature_bash"			// Ability 3.
+		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
 		"Ability6"					""			// Ability 6 - Extra.
@@ -5812,7 +5813,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1
-		"Ability2"					""			// Ability 2
+		"Ability2"					"creature_self_haste"			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
 
@@ -5824,8 +5825,8 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
+		"AttackDamageMin"			"250"		// Damage range min.
+		"AttackDamageMax"			"300"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
@@ -5851,7 +5852,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"1600"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
@@ -5901,7 +5902,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					""			// Ability 1
-		"Ability2"					""			// Ability 2
+		"Ability2"					"creature_self_haste"			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
 
@@ -5913,9 +5914,9 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
-		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackDamageMin"			"300"		// Damage range min.
+		"AttackDamageMax"			"350"		// Damage range max.
+		"AttackRate"				"1.4"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
 		"AttackRange"				"200"		// Range within a target can be attacked.
@@ -5940,7 +5941,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"1800"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
@@ -7213,14 +7214,14 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"			// Physical protection.
-		//"MagicalResistance"			"35"		// Magical protection.
+		"ArmorPhysical"				"10"			// Physical protection.
+		"MagicalResistance"			"35"		// Magical protection.
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"13"								// Damage range min.
-		"AttackDamageMax"			"15"								// Damage range max.
+		"AttackDamageMin"			"200"								// Damage range min.
+		"AttackDamageMax"			"300"								// Damage range max.
 		"AttackRate"				"1.8"								// Speed of attack.
 		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"500"								// Range within a target can be acquired.
@@ -7230,9 +7231,9 @@
 	
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"30"		// Experience earn.
-		"BountyGoldMin"				"8"		// Gold earned min.
-		"BountyGoldMax"				"10"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
 	
 		// Bounds
 		//----------------------------------------------------------------
@@ -7248,7 +7249,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"180"			// Base health.
+		"StatusHealth"				"1500"			// Base health.
 		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.75"			// Mana regeneration rate.
@@ -7320,7 +7321,7 @@
 		"SoundSet"                  "Hero_Lina"			
 		"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"VoiceFile"					"soundevents/voscripts/game_sounds_vo_lina.vsndevts"
-		"Level"						"3"
+		"Level"						"1"
 		
 		"UseNeutralCreepBehavior" 	"0"
 		
@@ -7338,14 +7339,14 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"			// Physical protection.
+		"ArmorPhysical"				"5"			// Physical protection.
 		//"MagicalResistance"			"35"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"21"								// Damage range min.
-		"AttackDamageMax"			"30"								// Damage range max.
+		"AttackDamageMin"			"150"								// Damage range min.
+		"AttackDamageMax"			"200"								// Damage range max.
 		"AttackRate"				"1.6"								// Speed of attack.
 		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"500"								// Range within a target can be acquired.
@@ -7355,9 +7356,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"30"		// Experience earn.
-		"BountyGoldMin"				"8"		// Gold earned min.
-		"BountyGoldMax"				"10"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -7376,7 +7377,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"200"			// Base health.
+		"StatusHealth"				"1250"			// Base health.
 		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
 		"StatusMana"				"300"			// Base mana.
 		"StatusManaRegen"			"0.75"			// Mana regeneration rate.
@@ -7447,7 +7448,7 @@
 		"SoundSet"					"Creep_Good_Ranged"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"ModelScale"				"0.8"
-		"Level"						"3"
+		"Level"						"0"
 		
 		//"UseNeutralCreepBehavior" 	"0"
 		
@@ -7465,14 +7466,14 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"			// Physical protection.
+		"ArmorPhysical"				"5"			// Physical protection.
 		//"MagicalResistance"			"35"		// Magical protection.
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"21"								// Damage range min.
-		"AttackDamageMax"			"30"								// Damage range max.
+		"AttackDamageMin"			"150"								// Damage range min.
+		"AttackDamageMax"			"200"								// Damage range max.
 		"AttackRate"				"1.6"								// Speed of attack.
 		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"500"								// Range within a target can be acquired.
@@ -7482,9 +7483,9 @@
 	
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"20"		// Experience earn.
-		"BountyGoldMin"				"8"		// Gold earned min.
-		"BountyGoldMax"				"10"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
 	
 		// Bounds
 		//----------------------------------------------------------------
@@ -7500,7 +7501,7 @@
 		
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"250"			// Base health.
+		"StatusHealth"				"1250"			// Base health.
 		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
 		"StatusMana"				"300"			// Base mana.
 		"StatusManaRegen"			"0.75"			// Mana regeneration rate.
@@ -7531,7 +7532,7 @@
 		"BaseClass"					"npc_dota_creature"
 		"SoundSet"					"n_creep_Melee"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
-		"Level"						"3"
+		"Level"						"1"
 		"ModelScale" 				"1.6"
 		
 		//"UseNeutralCreepBehavior" 	"0"
@@ -7545,13 +7546,14 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"1"			// Physical protection.
+		"ArmorPhysical"				"55"			// Physical protection.
+		"MagicalResistance"			"0"		// Magical protection (percentage).
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"20"		// Damage range min.
-		"AttackDamageMax"			"28"		// Damage range max.	
+		"AttackDamageMin"			"200"		// Damage range min.
+		"AttackDamageMax"			"300"		// Damage range max.	
 		"AttackRate"				"2"		// Speed of attack.
 		"AttackAnimationPoint"		"0.38"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"500"		// Range within a target can be acquired.
@@ -7566,9 +7568,9 @@
 	
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"30"		// Experience earn.
-		"BountyGoldMin"				"8"		// Gold earned min.
-		"BountyGoldMax"				"10"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
 	
 		// Movement
 		//----------------------------------------------------------------
@@ -7577,7 +7579,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"320"		// Base health.
+		"StatusHealth"				"1500"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
