@@ -191,7 +191,7 @@
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"18"
 			"UnitsPerSpawn"			"6"
-			"SpawnInterval"			"8"
+			"SpawnInterval"			"10"
 		}
 		
 		"UnitZombieExploding"
@@ -208,7 +208,7 @@
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"18"
 			"UnitsPerSpawn"			"6"
-			"SpawnInterval"			"8"
+			"SpawnInterval"			"10"
 		}
 		
 		"UnitZombieExploding"
@@ -229,7 +229,7 @@
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"24"
 			"UnitsPerSpawn"			"8"
-			"SpawnInterval"			"8"
+			"SpawnInterval"			"10"
 		}
 		
 		"UnitZombieCorpseLord_2a"
@@ -255,12 +255,12 @@
 		"UnitZombie_3a"
 		{
 			"WaitForUnit"			"UnitZombie_2a"
-			"WaitForTime"			"10"
+			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"24"
 			"UnitsPerSpawn"			"8"
-			"SpawnInterval"			"6"
+			"SpawnInterval"			"10"
 		}
 		
 		"UnitZombie_3b"
@@ -271,22 +271,21 @@
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"24"
 			"UnitsPerSpawn"			"8"
-			"SpawnInterval"			"6"
+			"SpawnInterval"			"10"
 		}
 		
 		// Stage 5 ================================================
 		"UnitZombie_5a"
 		{
 			"WaitForUnit"			"UnitZombie_3a"
-			"WaitForTime"			"15"
+			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"3"
 			"UnitsPerSpawn"			"3"
 			//"SpawnInterval"			"25"
 			
-			"SpawnerName"			"spawner1"
-			"Waypoint"				"path_invader1_1"
+			
 		}
 		
 		"UnitZombieCorpseLord_5a"
@@ -297,21 +296,19 @@
 			"TotalUnitsToSpawn"		"1"
 			"UnitsPerSpawn"			"1"
 			
-			"SpawnerName"			"spawner1"
-			"Waypoint"				"path_invader1_1"
+			
 		}
 		
 		"UnitZombie_5b"
 		{
 			"WaitForUnit"			"UnitZombie_3a"
-			"WaitForTime"			"15"
+			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"3"
 			"UnitsPerSpawn"			"3"
 			
-			"SpawnerName"			"spawner2"
-			"Waypoint"				"path_invader2_1"
+			
 		}
 		
 		"UnitZombieCorpseLord_5b"
@@ -322,21 +319,19 @@
 			"TotalUnitsToSpawn"		"1"
 			"UnitsPerSpawn"			"1"
 			
-			"SpawnerName"			"spawner2"
-			"Waypoint"				"path_invader2_1"
+			
 		}
 		
 		"UnitZombie_5c"
 		{
 			"WaitForUnit"			"UnitZombie_3a"
-			"WaitForTime"			"15"
+			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"3"
 			"UnitsPerSpawn"			"3"
 			
-			"SpawnerName"			"spawner3"
-			"Waypoint"				"path_invader3_1"
+			
 		}
 		
 		"UnitZombieCorpseLord_5c"
@@ -347,8 +342,6 @@
 			"TotalUnitsToSpawn"		"1"
 			"UnitsPerSpawn"			"1"
 			
-			"SpawnerName"			"spawner3"
-			"Waypoint"				"path_invader3_1"
 		}
 		
 		"UnitZombie_5d"
@@ -360,8 +353,7 @@
 			"TotalUnitsToSpawn"		"3"
 			"UnitsPerSpawn"			"3"
 			
-			"SpawnerName"			"spawner4"
-			"Waypoint"				"path_invader4_1"
+			
 		}
 		
 		"UnitZombieCorpseLord_5d"
@@ -372,20 +364,19 @@
 			"TotalUnitsToSpawn"		"1"
 			"UnitsPerSpawn"			"1"
 			
-			"SpawnerName"			"spawner4"
-			"Waypoint"				"path_invader4_1"
+			
 		}
 		
 		// Stage Finale ================================================
 		"UnitZombieSupport_Finale"
 		{
 			"WaitForUnit"			"UnitZombie_5a"
-			"WaitForTime"			"15"
+			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"10"
-			"SpawnInterval"			"8"
+			"SpawnInterval"			"10"
 		}
 		
 		"UnitZombieCorpseLord_Finale"
@@ -401,12 +392,12 @@
 		"UnitZombieSupport_Finale_b"
 		{
 			"WaitForUnit"			"UnitZombie_5a"
-			"WaitForTime"			"15"
+			"WaitForTime"			"25"
 			
 			"NPCName"				"npc_dota_creature_basic_zombie"
 			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"10"
-			"SpawnInterval"			"8"
+			"SpawnInterval"			"10"
 		}
 		
 		"UnitZombieCorpseLord_Finale_b"
@@ -460,7 +451,7 @@
 		"UnitMelee_2" // Duration 120s + 10s WaitForTime
 		{
 			"WaitForUnit"			"UnitMelee_1"
-			"WaitForTime"			"10"
+			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_ogre_melee"
 			"TotalUnitsToSpawn"		"8"
@@ -499,7 +490,7 @@
 		"UnitMelee_2b" // Duration 120s + 10s
 		{
 			"WaitForUnit"			"UnitMelee_1"
-			"WaitForTime"			"10"
+			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_ogre_melee"
 			"TotalUnitsToSpawn"		"16"
@@ -825,7 +816,7 @@
 		"UnitSplitterSmall_2a"
 		{
 			"WaitForUnit"			"UnitSplitter_1"
-			"WaitForTime"			"15"
+			"WaitForTime"			"25"
 			
 			"NPCName"				"npc_dota_splitter_a"
 			"TotalUnitsToSpawn"		"2"
@@ -848,7 +839,7 @@
 		"UnitSplitter_3a"
 		{
 			"WaitForUnit"			"UnitSplitterSmall_2a"
-			"WaitForTime"			"20"
+			"WaitForTime"			"25"
 			
 			"NPCName"				"npc_dota_splitter_a"
 			"TotalUnitsToSpawn"		"2"
@@ -883,7 +874,7 @@
 			"NPCName"				"npc_dota_creature_small_spirit_bear"
 			"TotalUnitsToSpawn"		"9"
 			"UnitsPerSpawn"			"3"
-			"SpawnInterval"			"12"
+			"SpawnInterval"			"20"
 		}
 		"Unit2"
 		{
@@ -897,7 +888,7 @@
 			"NPCName"				"npc_dota_creature_small_spirit_bear"
 			"TotalUnitsToSpawn"		"9"
 			"UnitsPerSpawn"			"3"
-			"SpawnInterval"			"12"
+			"SpawnInterval"			"20"
 		}
 		"Unit4"
 		{
@@ -913,7 +904,7 @@
 			"NPCName"				"npc_dota_creature_small_spirit_bear"
 			"TotalUnitsToSpawn"		"4"
 			"UnitsPerSpawn"			"2"
-			"SpawnInterval"			"12"
+			"SpawnInterval"			"20"
 			"WaitForUnit"			"Unit1"
 		}
 		"Unit6"
@@ -935,7 +926,7 @@
 			"NPCName"				"npc_dota_creature_small_spirit_bear"
 			"TotalUnitsToSpawn"		"4"
 			"UnitsPerSpawn"			"2"
-			"SpawnInterval"			"12"
+			"SpawnInterval"			"20"
 			"WaitForUnit"			"Unit1"
 		}
 		"Unit9"
@@ -956,7 +947,7 @@
 		"UnitBigBear_2"
 		{	
 			"WaitForUnit"			"Unit1"
-			"WaitForTime"			"10"
+			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_big_bear"
 			"TotalUnitsToSpawn"		"1"
@@ -969,7 +960,7 @@
 			"NPCName"				"npc_dota_creature_small_spirit_bear"
 			"TotalUnitsToSpawn"		"2"
 			"UnitsPerSpawn"			"1"
-			"SpawnInterval"			"12"
+			"SpawnInterval"			"20"
 			"WaitForUnit"			"Unit5"
 		}	
 		"Unit12"
@@ -999,7 +990,7 @@
 			"NPCName"				"npc_dota_creature_small_spirit_bear"
 			"TotalUnitsToSpawn"		"2"
 			"UnitsPerSpawn"			"1"
-			"SpawnInterval"			"12"
+			"SpawnInterval"			"20"
 			"WaitForUnit"			"Unit5"
 		}	
 		"Unit16"
