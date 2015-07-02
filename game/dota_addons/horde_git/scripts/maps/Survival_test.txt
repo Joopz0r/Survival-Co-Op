@@ -434,7 +434,7 @@
 			"GroupWithUnit"			"UnitMelee_1"
 			
 			"NPCName"				"npc_dota_creature_ogre_magi"
-			"TotalUnitsToSpawn"		"4"
+			"TotalUnitsToSpawn"		"2"
 			"UnitsPerSpawn"			"2"
 		}
 
@@ -443,7 +443,7 @@
 			"GroupWithUnit"			"UnitMelee_1"
 			
 			"NPCName"				"npc_dota_creature_troll_healer"
-			"TotalUnitsToSpawn"		"2"
+			"TotalUnitsToSpawn"		"1"
 			"UnitsPerSpawn"			"1"
 		}
 		
@@ -454,7 +454,7 @@
 			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_ogre_melee"
-			"TotalUnitsToSpawn"		"8"
+			"TotalUnitsToSpawn"		"4"
 			"UnitsPerSpawn"			"4"
 			"SpawnInterval"			"40"
 		}
@@ -464,8 +464,8 @@
 			"GroupWithUnit"			"UnitMelee_2"
 			
 			"NPCName"				"npc_dota_creature_ogre_magi"
-			"TotalUnitsToSpawn"		"3"
-			"UnitsPerSpawn"			"1"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"2"
 		}
 		
 		"UnitOgreTank_2"
@@ -473,7 +473,7 @@
 			"GroupWithUnit"			"UnitMelee_2"
 			
 			"NPCName"				"npc_dota_creature_ogre_tank"
-			"TotalUnitsToSpawn"		"3"
+			"TotalUnitsToSpawn"		"1"
 			"UnitsPerSpawn"			"1"
 		}
 
@@ -493,7 +493,7 @@
 			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_ogre_melee"
-			"TotalUnitsToSpawn"		"16"
+			"TotalUnitsToSpawn"		"4"
 			"UnitsPerSpawn"			"4"
 			"SpawnInterval"			"20"
 		}
@@ -503,7 +503,7 @@
 			"GroupWithUnit"			"UnitMelee_2b"
 			
 			"NPCName"				"npc_dota_creature_ogre_magi"
-			"TotalUnitsToSpawn"		"8"
+			"TotalUnitsToSpawn"		"2"
 			"UnitsPerSpawn"			"2"
 		}
 
@@ -522,7 +522,7 @@
 			"WaitForTime"			"30"
 			
 			"NPCName"				"npc_dota_creature_ogre_melee"
-			"TotalUnitsToSpawn"		"16"
+			"TotalUnitsToSpawn"		"8"
 			"UnitsPerSpawn"			"4"
 			"SpawnInterval"			"20"
 		}
@@ -532,7 +532,7 @@
 			"GroupWithUnit"			"UnitMelee_2c"
 			
 			"NPCName"				"npc_dota_creature_ogre_magi"
-			"TotalUnitsToSpawn"		"8"
+			"TotalUnitsToSpawn"		"4"
 			"UnitsPerSpawn"			"2"
 		}
 	}
