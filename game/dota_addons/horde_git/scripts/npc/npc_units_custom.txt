@@ -1390,24 +1390,25 @@
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"Level"						"1"
 		"ModelScale" 				".9"
+		"ConsideredHero"				"1"
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"creature_drain_hp"			// Ability 1
-		"Ability2"					""			// Ability 2
-		"Ability3"					""			// Ability 3
-		"Ability4"					""			// Ability 4
+		"Ability1"					"centaur_hoof_stomp_datadriven"			// Ability 1
+		"Ability2"					"centaur_double_edge_datadriven"			// Ability 2
+		"Ability3"					"centaur_return_datadriven"			// Ability 3
+		"Ability4"					"centaur_stampede_datadriven"			// Ability 4
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"			// Physical protection.
+		"ArmorPhysical"				"35"			// Physical protection.
 		"MagicalResistance"			"0"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
+		"AttackDamageMin"			"500"		// Damage range min.
+		"AttackDamageMax"			"550"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
@@ -1433,9 +1434,9 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"2000"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
-		"StatusMana"				"0"			// Base mana.
+		"StatusMana"				"1000"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
 		
 		// Vision
@@ -1482,7 +1483,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""			// Ability 1
+		"Ability1"					"centaur_return_datadriven"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -1495,8 +1496,8 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
+		"AttackDamageMin"			"330"		// Damage range min.
+		"AttackDamageMax"			"360"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
@@ -1522,7 +1523,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"1600"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
@@ -1571,21 +1572,21 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""			// Ability 1
-		"Ability2"					""			// Ability 2
+		"Ability1"					"centaur_hoof_stomp_datadriven"			// Ability 1
+		"Ability2"					"centaur_return_datadriven"			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"22"			// Physical protection.
+		"ArmorPhysical"				"10"			// Physical protection.
 		"MagicalResistance"			"0"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"50"		// Damage range min.
-		"AttackDamageMax"			"66"		// Damage range max.
+		"AttackDamageMin"			"200"		// Damage range min.
+		"AttackDamageMax"			"250"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
@@ -1611,7 +1612,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"1200"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
@@ -2932,7 +2933,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""			// Ability 1
+		"Ability1"					"creep_poison_attack"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -3021,8 +3022,8 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"dragon_knight_frost_breath_datadriven"			// Ability 1
-		"Ability2"					"dragon_knight_dragon_tail_datadriven"			// Ability 2
+		"Ability1"					"dragon_knight_dragon_tail_datadriven"			// Ability 1
+		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
 
@@ -3063,7 +3064,7 @@
 		//----------------------------------------------------------------
 		"StatusHealth"				"1600"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
-		"StatusMana"				"0"			// Base mana.
+		"StatusMana"				"150"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
 		
 		// Vision
@@ -3110,7 +3111,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"dragon_knight_elder_dragon_form"			// Ability 1
+		"Ability1"					"creep_fire_breath"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -3150,9 +3151,9 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"600"		// Base health.
+		"StatusHealth"				"1450"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
-		"StatusMana"				"0"			// Base mana.
+		"StatusMana"				"100"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
 		
 		// Vision
@@ -3199,7 +3200,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"lion_mana_drain_datadriven"			// Ability 1
+		"Ability1"					"nyx_assassin_mana_burn_datadriven"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -3288,7 +3289,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"creature_drain_hp"			// Ability 1
+		"Ability1"					"necrolyte_heartstopper_aura_datadriven"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -5538,6 +5539,7 @@
 		"CanBeDominated"			"0"
 		"SelectionGroup"			"Furion_Treants"
 		
+		
 		// Abilities
 		//----------------------------------------------------------------
 		
@@ -5603,6 +5605,7 @@
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"1200"		// Range of vision during day light.
 		"VisionNighttimeRange"		"800"		// Range of vision at night time.
+	
 	}
 	//=================================================================================
 	// Creature: Troll Healer
@@ -5901,7 +5904,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""			// Ability 1
+		"Ability1"					"creep_unholy_aura"			// Ability 1
 		"Ability2"					"creature_self_haste"			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -7328,7 +7331,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"AbilityLayout"		""
-		"Ability1"					"creature_chaotic_offering"			// Ability 1. 
+		"Ability1"					"creep_searing_arrow"			// Ability 1. 
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.

@@ -320,6 +320,471 @@
 	
 		}
 	}
+	// Rewrite of Centaur Double Edge
+	// Author: Noya
+	// Date: 9.1.2015.
+	// Notes: Particle is fucked up in Source 2 (even the original spell)
+	"centaur_double_edge_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"centaur_double_edge"
+	
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"8.0 8.0 8.0 8.0"
+		"AbilityCastRange"				"150 150 150 150"
+		"AbilityCastPoint"				"0.5 0.5 0.5 0.5"
+	
+		//------------------------------------------------------------------------------
+		"AbilityManaCost"				"0 0 0 0"
+	
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"edge_damage"					"175 250 325 400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"190"
+			}
+		}
+	
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_double_edge.vpcf"
+		}
+	
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"Target" 			"CASTER"
+				"EffectName"		"Hero_Centaur.DoubleEdge"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_centaur/double_edge.lua"
+				"Function"		"DoubleEdgeParticle"
+			}
+			"Damage"
+			{
+				"Target"
+				{
+					"Center"  	"TARGET"
+					"Radius" 	"%radius"
+					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				}
+				"Type"			"DAMAGE_TYPE_MAGICAL"
+				"Damage"		"%edge_damage"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_centaur/double_edge.lua"
+				"Function"		"DoubleEdgeSelfDamage"
+			}
+		}
+	}
+	
+	// Rewrite of Centaur Hoof Stomp 
+	// Author: Noya
+	// Date: 9.1.2015.
+	"centaur_hoof_stomp_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"centaur_hoof_stomp"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.5 0.5 0.5 0.5"
+		"AbilityCooldown"				"10.0 10.0 10.0 10.0"
+		"AbilityManaCost"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"315"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"stun_duration"					"2.0 2.25 2.5 2.75"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stomp_damage"					"100 150 200 250"
+			}
+		}
+	
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_warstomp.vpcf"
+			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
+		}
+	
+		"OnSpellStart"
+		{
+			"FireEffect"
+			{
+				"EffectName"		"particles/units/heroes/hero_centaur/centaur_warstomp.vpcf"
+				"EffectAttachType" 	"follow_origin"
+				"EffectRadius"		"%radius"
+				"Target" 			"CASTER"
+				"ControlPoints"
+				{
+					"01"	"%radius 0 %radius"
+				}
+			}
+	
+			"FireSound"
+			{
+				"EffectName"		"Hero_Centaur.HoofStomp"
+				"Target" 			"CASTER"
+			}
+			"ActOnTargets"
+			{
+				"Target"
+				{
+					"Center"  				"CASTER"
+					"Radius" 				"%radius"
+					"Teams" 				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types" 				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				}
+	
+				"Action"
+				{
+					"Damage"
+					{
+						"Target"	"TARGET"
+						"Type"		"DAMAGE_TYPE_MAGICAL"
+						"Damage"	"%stomp_damage"
+					}
+	
+					"ApplyModifier"
+					{
+						"Target" 		"TARGET"
+						"ModifierName"	"modifier_hoof_stomp"
+					}
+				}
+			}		
+		}
+	
+		"Modifiers"
+		{
+			"modifier_hoof_stomp"
+			{
+				"IsDebuff"	"1"
+				"Duration"	"%stun_duration"
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED" "MODIFIER_STATE_VALUE_ENABLED"			
+				}
+				"OverrideAnimation"	"ACT_DOTA_DISABLED"
+				"EffectName"		"particles/generic_gameplay/generic_stunned.vpcf"
+				"EffectAttachType"	"follow_overhead"
+			}
+		}
+	}
+	
+	"centaur_khan_war_stomp_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.5"
+		"AbilityCooldown"				"10.0"
+		"AbilityDamage"					"25"
+		"AbilityManaCost"				"100"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"250"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"non_hero_stun_duration"		"3.0"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"hero_stun_duration"			"2.0"
+			}
+		}
+	}
+	
+	// Rewrite of Centaur Return
+	// Author: Noya
+	// Date: 9.1.2015.
+	// Notes: Unlike the original version, the damage is returned after the hit lands. That effect is just a legacy and not useful.
+	//		  To change it to apply the damage when the attack starts, would need to do hidden aura that applies a debuff that checks OnAttackStart on the caster and does the damage.		  
+	"centaur_return_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityTextureName"			"centaur_return"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"return_damage"				"16 18 20 22"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"strength_pct"				"26 34 42 50"
+			}
+		}
+	
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_centaur/centaur_return.vpcf"
+		}
+	
+		"Modifiers"
+		{
+			"modifier_return"
+			{
+				"Passive"	"1"
+				"OnAttacked"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_centaur/return.lua"
+						"Function"		"Return"
+					}
+					"FireEffect"
+					{
+						"EffectName"		"particles/units/heroes/hero_centaur/centaur_return.vpcf"
+						"EffectAttachType"  "attach_hitloc"
+						"Target" 			"CASTER"
+						"ControlPointEntities"
+						{
+							"CASTER" 		"attach_hitloc"
+							"ATTACKER" 		"attach_hitloc"
+						}
+					}
+				}	
+			}
+		}
+	}
+	
+	// Rewrite of Centaur Stampede
+	// Author: Noya
+	// Date: 9.1.2015.
+	"centaur_stampede_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"2"
+		"AbilityTextureName"			"centaur_stampede"
+	
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"90.0 75.0 60.0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+	
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.2"	// hits everything on the map
+	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"3.75"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"base_damage"		"0"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"strength_damage"	"1.0 2.0 3.0"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"slow_duration"		"1.5"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"105"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"slow_movement_speed"			"100"
+			}
+		}
+	
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede_overhead.vpcf"
+			"particle"	"particles/units/heroes/hero_centaur/centaur_stampede.vpcf"
+		}
+	
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_centaur/stampede.lua"
+				"Function"		"StampedeStart"
+			}
+	
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Center"  				"CASTER"
+					"Radius" 				"GLOBAL"
+					"Teams" 				"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types" 				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC" 
+					"ExcludeTypes"			"DOTA_UNIT_TARGET_BASIC"
+				}
+				"ModifierName"		"modifier_stampede"
+			}
+		}
+	
+		"Modifiers"
+		{
+			"modifier_stampede"
+			{
+				"Duration"	"%duration"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"50000"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"EffectName" 		"particles/units/heroes/hero_centaur/centaur_stampede.vpcf"
+				"EffectAttachType"	"follow_origin"
+	
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"		"particles/units/heroes/hero_centaur/centaur_stampede_overhead.vpcf"
+						"EffectAttachType"	"follow_overhead"
+						"Target"			"TARGET"
+					}
+				}
+	
+				"OnUnitMoved"
+				{
+					"Random"
+					{
+						"Chance"	"3.22"
+						"OnSuccess"
+						{
+							"FireSound"
+							{
+								"EffectName"		"Hero_Centaur.Stampede.Movement"
+								"Target" 			"UNIT"
+							}
+						}
+					}				
+				}
+	
+				"Aura"        	"modifier_stampede_collision"
+	    		"Aura_Radius" 	"%radius"
+	    		"Aura_Teams"  	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	    		"Aura_Types"  	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+			}
+	
+			"modifier_stampede_collision"
+			{
+				"IsHidden"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_centaur/stampede.lua"
+						"Function"		"Stampede"
+					}
+					"FireSound"
+					{
+						"EffectName"	"Hero_Centaur.Stampede.Stun"
+						"Target"		"TARGET"
+					}
+				}
+			}
+	
+			"modifier_stampede_debuff"
+			{
+				"IsDebuff"	"1"
+				"Duration"	"%slow_duration"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE"	"%slow_movement_speed"
+				}
+			}
+		}
+	}
+	
 	//=================================================================================================================
 	// Corpselord: Revive
 	//=================================================================================================================
@@ -1578,22 +2043,7 @@
 		"AbilityCooldown"				"2.0"
 		"AbilityManaCost"				"20"
 		
-		"OnSpellStart"
-		{
-			"SpawnUnit"
-			{
-				"UnitName"			"npc_dota_creature_treant"
-				"UnitCount"			"%max_treants"
-				"SpawnRadius"		"100"
-				"Target"			"POINT"
-			}
-	
-			"DestroyTrees"
-			{
-				"Radius"			"%area_of_effect"
-				"Target"			"POINT"
-			}
-		}
+		
 	
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -3424,6 +3874,376 @@
 			}
 		}
 	}
+	"creep_cold_arrow"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"drow_ranger_frost_arrows"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_drow/drow_frost_arrow.vpcf"
+			"particle"	"particles/generic_gameplay/generic_slowed_cold.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
+		}
+	
+		"AbilityCastRange"	"600"
+		"AbilityCastPoint"	"0.0"
+		"AbilityCooldown"	"0.0"
+		"AbilityDamage"	"0"
+		"AbilityManaCost"	"5"
+		"Modifiers"
+		{
+				"modifier_creep_cold_arrow"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+						"Orb"
+				{
+					"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
+					"ProjectileName"	"particles/units/heroes/hero_drow/drow_frost_arrow.vpcf"
+				}
+	
+						"OnOrbFire"
+				{
+								"SpendMana"
+					{
+						"Mana"	"%AbilityManaCost"
+					}
+	
+								"FireSound"
+					{
+						"EffectName"	"Hero_DrowRanger.FrostArrows"
+						"Target"	"TARGET"
+					}
+	
+				}
+	
+						"OnOrbImpact"
+				{
+								"ApplyModifier"
+					{
+						"Target"	"TARGET"
+						"ModifierName"	"modifier_creep_cold_arrow_slow"
+						"Duration"	"%slow_duration"
+					}
+	
+				}
+	
+			}
+	
+				"modifier_creep_cold_arrow_slow"
+			{
+				"IsDebuff"	"1"
+				"Duration"	"%slow_duration"
+						"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%movement_speed"
+				}
+	
+				"EffectName"	"particles/generic_gameplay/generic_slowed_cold.vpcf"
+				"EffectAttachType"	"attach_hitloc"
+				"Target"	"TARGET"
+			}
+	
+		}
+	
+		"AbilitySpecial"
+		{
+				"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"2"
+			}
+	
+				"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movement_speed"	"-25"
+			}
+	
+		}
+	
+	}
+	"creep_fire_breath"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"clinkz_searing_arrows"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+		}
+	
+		"AbilityCastRange"	"600"
+		"AbilityCastPoint"	"0.0"
+		"AbilityCooldown"	"0.0"
+		"AbilityDamage"	"0"
+		"AbilityManaCost"	"5"
+		"Modifiers"
+		{
+				"modifier_creep_fire_breath"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+						"Orb"
+				{
+					"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
+					"ProjectileName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
+				}
+	
+						"OnOrbFire"
+				{
+								"SpendMana"
+					{
+						"Mana"	"%AbilityManaCost"
+					}
+	
+				}
+	
+						"OnOrbImpact"
+				{
+								"Damage"
+					{
+						"Type"	"DAMAGE_TYPE_PHYSICAL"
+						"Damage"	"%RangeDamage"
+						"Target"	"TARGET"
+					}
+	
+				}
+	
+			}
+	
+		}
+	
+		"AbilitySpecial"
+		{
+				"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"RangeDamage"	"50"
+			}
+	
+		}
+	
+	}
+	"creep_poison_attack"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"viper_poison_attack"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"Aura_Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"MaxLevel"	"1"
+		"Modifiers"
+		{
+				"modifier_poison_attack"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+						"OnAttackLanded"
+				{
+								"ApplyModifier"
+					{
+						"ModifierName"	"modifier_poison_attack_slow"
+						"Target"	"TARGET"
+					}
+	
+								"Damage"
+					{
+						"Type"	"DAMAGE_TYPE_MAGICAL"
+						"Damage"	"%damage"
+						"Target"	"TARGET"
+					}
+	
+				}
+	
+			}
+	
+				"modifier_poison_attack_slow"
+			{
+				"IsDebuff"	"1"
+				"IsPurgable"	"0"
+				"EffectName"	"particles/neutral_fx/gnoll_poison_debuff.vpcf"
+				"EffectAttachType"	"attach_hitloc"
+				"Duration"	"%duration"
+						"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%move_speed"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_speed"
+				}
+	
+			}
+	
+		}
+	
+		"AbilitySpecial"
+		{
+				"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"1"
+			}
+	
+				"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"25"
+			}
+	
+				"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed"	"-25"
+			}
+	
+				"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"move_speed"	"-50"
+			}
+	
+		}
+	
+	}
+	"creep_searing_arrow"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"clinkz_searing_arrows"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_clinkz/clinkz_searing_arrow.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_clinkz.vsndevts"
+		}
+	
+		"AbilityCastRange"	"600"
+		"AbilityCastPoint"	"0.0"
+		"AbilityCooldown"	"0.0"
+		"AbilityDamage"	"0"
+		"AbilityManaCost"	"5"
+		"Modifiers"
+		{
+				"modifier_creep_searing_arrow"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+						"Orb"
+				{
+					"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
+					"ProjectileName"	"particles/units/heroes/hero_clinkz/clinkz_searing_arrow.vpcf"
+				}
+	
+						"OnOrbFire"
+				{
+								"SpendMana"
+					{
+						"Mana"	"%AbilityManaCost"
+					}
+	
+				}
+	
+						"OnOrbImpact"
+				{
+								"Damage"
+					{
+						"Type"	"DAMAGE_TYPE_PHYSICAL"
+						"Damage"	"%RangeDamage"
+						"Target"	"TARGET"
+					}
+	
+				}
+	
+			}
+	
+		}
+	
+		"AbilitySpecial"
+		{
+				"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"RangeDamage"	"20"
+			}
+	
+		}
+	
+	}
+	"creep_unholy_aura"
+	{
+		"MaxLevel"	"1"
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AURA | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_ALL"
+		"AbilityTextureName"	"creep_unholy_aura"
+		"AbilityCastPoint"	"0.0"
+		"AbilityCastRange"	"900"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_doom_bringer/doom_bringer_doom.vpcf"
+		}
+	
+		"AbilitySpecial"
+		{
+				"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"move_speed_bonus"	"10"
+			}
+	
+				"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"regeneration_bonus"	"1"
+			}
+	
+				"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"Range"	"900"
+			}
+	
+		}
+	
+		"Modifiers"
+		{
+				"Unholy_Aura_Modifier"
+			{
+				"EffectName"	"particles/units/heroes/hero_doom_bringer/doom_bringer_doom.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"IsBuff"	"1"
+				"Aura"	"creep_unholy_aura_bonus"
+				"Aura_Radius"	"%Range"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_ALL"
+			}
+	
+				"creep_unholy_aura_bonus"
+			{
+				"IsHidden"	"0"
+				"IsBuff"	"1"
+						"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%regeneration_bonus"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%move_speed_bonus"
+				}
+	
+			}
+	
+		}
+	
+	}
 	"custom_ogre_magi_bloodlust"
 	{
 		// General
@@ -3624,7 +4444,7 @@
 	
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"150"
+		"AbilityCastRange"				"500"
 		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
 		
 		// Time		
@@ -3637,7 +4457,7 @@
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"50 50 50 50"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -8870,6 +9690,151 @@
 			{
 				"var_type"					"FIELD_FLOAT"
 				"hit_delay"					"0.5"
+			}
+		}
+	}
+	// Rewrite of the Necrophos Heartstopper Aura ability
+	// Author: Pizzalol
+	// Date: 05.01.2015.
+	"necrolyte_heartstopper_aura_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"necrolyte_heartstopper_aura"
+		
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1200"
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aura_radius"		"1200"		// If you change this, also change the AbilityCastRange above
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"aura_damage"		"-0.6 -0.9 -1.2 -1.5" 
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"aura_damage_interval"		"0.2" 
+			}
+		}
+	
+		"Modifiers"
+		{
+			"modifier_heartstopper_aura_datadriven"
+			{
+				"Passive"		"1"
+				"IsHidden"		"1"
+	
+				"Aura" 			"modifier_heartstopper_debuff_datadriven"
+				"Aura_Radius" 	"%aura_radius"
+				"Aura_Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Aura_Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+			}
+	
+			"modifier_heartstopper_debuff_datadriven"
+			{
+				"IsDebuff"	"1"
+				"IsHidden"	"1"
+	
+				"ThinkInterval"	"%aura_damage_interval"
+	
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"scripts/vscripts/heroes/hero_necrolyte/heartstopper_aura.lua"
+						"Function"				"HeartstopperAura"
+	
+						"visibility_modifier"	"modifier_heartstopper_debuff_visibility"
+					}
+				}
+	
+				"OnDestroy"
+				{
+					"RemoveModifier"
+					{
+						"ModifierName"	"modifier_heartstopper_debuff_visibility"
+						"Target" 		"TARGET"
+					}
+				}
+			}
+	
+			"modifier_heartstopper_debuff_visibility"
+			{
+				"IsDebuff"		"1"
+				"IsHidden"		"0"
+				"IsPurgable" 	"0"
+				"Passive"		"0"
+			}
+		}
+	}
+	
+	"nyx_assassin_mana_burn_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"nyx_assassin_mana_burn"
+	
+		// Unit Targeting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"	
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500 500 500 500"
+		"AbilityCastPoint"				"0.4 0.4 0.4 0.4"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10.0 10.0 10.0 10.0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"float_multiplier"		"3.5 4 4.5 5"
+			}
+		}
+		
+		// Data drive
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"					"particles/units/heroes/hero_nyx_assassin/nyx_assassin_mana_burn_msg.vpcf"
+		}
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"			"heroes/hero_nyx_assassin/mana_burn.lua"
+				"Function"				"mana_burn_function"
 			}
 		}
 	}

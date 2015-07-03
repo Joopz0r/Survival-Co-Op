@@ -14,7 +14,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"creature_drain_hp"			// Ability 1
+		"Ability1"					"necrolyte_heartstopper_aura_datadriven"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4

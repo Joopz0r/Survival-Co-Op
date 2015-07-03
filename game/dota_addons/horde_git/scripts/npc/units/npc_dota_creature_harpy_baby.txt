@@ -14,7 +14,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"lion_mana_drain_datadriven"			// Ability 1
+		"Ability1"					"nyx_assassin_mana_burn_datadriven"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4

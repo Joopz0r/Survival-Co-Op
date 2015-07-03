@@ -17,22 +17,7 @@
 	"AbilityCooldown"				"2.0"
 	"AbilityManaCost"				"20"
 	
-	"OnSpellStart"
-	{
-		"SpawnUnit"
-		{
-			"UnitName"			"npc_dota_creature_treant"
-			"UnitCount"			"%max_treants"
-			"SpawnRadius"		"100"
-			"Target"			"POINT"
-		}
-
-		"DestroyTrees"
-		{
-			"Radius"			"%area_of_effect"
-			"Target"			"POINT"
-		}
-	}
+	
 
 	// Special
 	//-------------------------------------------------------------------------------------------------------------

@@ -5,8 +5,8 @@
 	"RestoreHPAfterRound"			"1"
 	"RestoreMPAfterRound"			"1"
 	"RewardForTowersStanding"		"1"
-	"TowerRewardAmount"				"18"
-	"TowerScalingRewardPerRound"	"2"
+	"TowerRewardAmount"				"25"
+	"TowerScalingRewardPerRound"	"5"
 	
 	"ItemDrops"
 	{
@@ -104,7 +104,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Kobolds_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Kobolds_Title"
-		"MaxGold"					"2800"
+		"MaxGold"					"3800"
 		"BagCount"					"50"
 		"BagVariance"				"30"
 		"FixedXP"					"5500"
@@ -180,7 +180,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Zombies_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Zombies_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"4500"
 		"BagCount"					"40"
 		"BagVariance"				"10"
 		"FixedXP"					"3500"
@@ -415,7 +415,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Ogre_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Ogre_Title"
-		"MaxGold"					"3500" //600g from gold fountain ability
+		"MaxGold"					"4500" //600g from gold fountain ability
 		"BagCount"					"20"
 		"BagVariance"				"75"
 		"FixedXP"					"4000"
@@ -541,7 +541,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Slithereen_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Slithereen_Title"
-		"MaxGold"					"4000"
+		"MaxGold"					"5000"
 		"BagCount"					"40"
 		"BagVariance"				"50"
 		"FixedXP"					"6500"

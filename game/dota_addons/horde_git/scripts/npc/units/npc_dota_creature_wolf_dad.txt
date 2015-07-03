@@ -14,7 +14,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					""			// Ability 1
+		"Ability1"					"creep_unholy_aura"			// Ability 1
 		"Ability2"					"creature_self_haste"			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
