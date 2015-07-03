@@ -3892,7 +3892,7 @@
 		"AbilityCastPoint"	"0.0"
 		"AbilityCooldown"	"0.0"
 		"AbilityDamage"	"0"
-		"AbilityManaCost"	"5"
+		"AbilityManaCost"	"0"
 		"Modifiers"
 		{
 				"modifier_creep_cold_arrow"
@@ -4127,13 +4127,13 @@
 		"AbilityCastPoint"	"0.0"
 		"AbilityCooldown"	"0.0"
 		"AbilityDamage"	"0"
-		"AbilityManaCost"	"5"
+		"AbilityManaCost"	"0"
 		"Modifiers"
 		{
 				"modifier_creep_searing_arrow"
 			{
 				"Passive"	"1"
-				"IsHidden"	"1"
+				"IsHidden"	"0"
 						"Orb"
 				{
 					"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
@@ -4169,7 +4169,7 @@
 				"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"RangeDamage"	"20"
+				"RangeDamage"	"50"
 			}
 	
 		}
