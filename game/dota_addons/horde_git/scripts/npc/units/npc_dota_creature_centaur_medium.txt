@@ -85,5 +85,30 @@
 			"BountyGain"				"0"
 			"XPGain"					"0"
 			"DisableClumpingBehavior"   "1"
+
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"DefaultState"				"Invade"
+			
+			"OffensiveAbilities"
+			{
+				"Ability1"				
+				{
+					"Name"				"centaur_hoof_stomp_datadriven"
+					"AOE"				"1"
+					"Radius"			"315"
+					"MinimumTargets"	"1"
+					"Debuff"			"1"
+				}	
+			}		
 		}
 	}

@@ -85,5 +85,32 @@
 			"BountyGain"				"0"
 			"XPGain"					"0"
 			"DisableClumpingBehavior"   "1"
+
+						//Basic AI State
+			//-----------------------------------------------------------------
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+			//Ability Usage Parameters
+			//-----------------------------------------------------------------
+			"DefensiveAbilities"
+			{
+				
+				"Ability2"				
+				{
+					"Name"				"creature_zombie_berserk"
+					"UseSelfishly"		"1"
+					"Buff"				"1"
+					"UseAtHealthPercent""100"
+				}
+			}
 		}
 	}

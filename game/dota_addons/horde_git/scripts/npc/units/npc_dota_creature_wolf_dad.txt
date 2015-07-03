@@ -14,7 +14,7 @@
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"creep_unholy_aura"			// Ability 1
+		"Ability1"					"creature_zombie_berserk"			// Ability 1
 		"Ability2"					"creature_self_haste"			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -85,5 +85,38 @@
 			"BountyGain"				"0"
 			"XPGain"					"0"
 			"DisableClumpingBehavior"   "1"
+
+			//Basic AI State
+			//-----------------------------------------------------------------
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+			//Ability Usage Parameters
+			//-----------------------------------------------------------------
+			"DefensiveAbilities"
+			{
+				"Ability1"				
+				{
+					"Name"				"creature_zombie_berserk"
+					"UseSelfishly"		"1"
+					"Buff"				"1"
+					"UseAtHealthPercent""100"
+				}
+				"Ability2"				
+				{
+					"Name"				"creature_zombie_berserk"
+					"UseSelfishly"		"1"
+					"Buff"				"1"
+					"UseAtHealthPercent""100"
+				}
+			}
 		}
 	}

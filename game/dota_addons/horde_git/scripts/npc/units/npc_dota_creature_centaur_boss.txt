@@ -55,9 +55,9 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"2000"		// Base health.
+		"StatusHealth"				"15000"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
-		"StatusMana"				"1000"			// Base mana.
+		"StatusMana"				"4000"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
 		
 		// Vision
@@ -86,5 +86,42 @@
 			"BountyGain"				"0"
 			"XPGain"					"0"
 			"DisableClumpingBehavior"   "1"
+
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"DefaultState"				"Invade"
+			
+			"OffensiveAbilities"
+			{
+				"Ability1"
+				{
+					"name"				"centaur_stampede_datadriven"
+					"UseSelfishly"		"1"
+				}
+
+				"Ability2"				
+				{
+					"Name"				"centaur_hoof_stomp_datadriven"
+					"AOE"				"1"
+					"Radius"			"315"
+					"MinimumTargets"	"1"
+					"Debuff"			"1"
+				}
+				"Ability3"
+				{
+					"Name"				"centaur_double_edge_datadriven"
+					"UseAtHealthPercent""60"
+				}
+				
+			}	
 		}
 	}

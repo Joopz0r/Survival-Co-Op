@@ -51,7 +51,7 @@ Round 14: Dragons - Range
 Round 15: Wolfs - Melee
 	Basic
 	Wolf Baby: Self Haste | Life Steal
-	Wolf Dad: Self Haste | Kraken Shell | Rage	
+	Wolf Dad: Self Haste | Rage	
 
 Round 16: Harpys - Range
 	Basic
