@@ -9721,7 +9721,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"aura_damage"		"-0.6 -0.9 -1.2 -1.5" 
+				"aura_damage"		"-4.6 -4.9 -6.2 -6.5" 
 			}
 			"03"
 			{
