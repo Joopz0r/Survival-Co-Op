@@ -37,8 +37,8 @@
 	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 	"AttackRate"				"0.05"						// Speed of attack.
 	"AttackAnimationPoint"		"0.3"						// Normalized time in animation cycle to attack.
-	"AttackAcquisitionRange"	"400"						// Range within a target can be acquired.
-	"AttackRange"				"400"						// Range within a target can be attacked.
+	"AttackAcquisitionRange"	"700"						// Range within a target can be acquired.
+	"AttackRange"				"700"						// Range within a target can be attacked.
 	"ProjectileModel"			"particles/base_attacks/ranged_tower_bad.vpcf"		// Particle system model for projectile.
 	"ProjectileSpeed"			"1000"						// Speed of projectile.
 
@@ -73,8 +73,8 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"				"1300"		// Base health.
-	"StatusHealthRegen"			"35"		// Health regeneration rate.
+	"StatusHealth"				"13000"		// Base health.
+	"StatusHealthRegen"			"350"		// Health regeneration rate.
 	"StatusMana"				"0"			// Base mana.
 	"StatusStartingMana"		"0"			// Base mana.
 	"StatusManaRegen"			"0"			// Mana regeneration rate.
