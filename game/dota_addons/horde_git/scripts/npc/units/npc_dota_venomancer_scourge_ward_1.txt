@@ -89,17 +89,19 @@
 				"Name"				"Invade"
 				"Aggression"		"100.0"
 				"Avoidance"			"0.0"
-				"Support"			"60.0"
+				"Support"			"0.0"
 			}
 		}
 
 		"DefaultState"				"Invade"
 
-		"DefensiveAbilities"
+		"OffensiveAbilities"
 		{
 			"Ability1"				
 			{
 				"Name"				"holdout_scourge_venomous_gale"
+				"Radius"			"125"
+				"MinimumTargets"	"1"
 			}
 		}
 	}

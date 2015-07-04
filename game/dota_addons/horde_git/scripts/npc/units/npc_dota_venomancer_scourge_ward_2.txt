@@ -74,4 +74,34 @@
 
 	//Inventory
 	"HasInventory"				"0"
+
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{
+		"CanRespawn"				"0"
+		"DisableClumpingBehavior"   "1"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+			}
+		}
+
+		"DefaultState"				"Invade"
+
+		"OffensiveAbilities"
+		{
+			"Ability1"				
+			{
+				"Name"				"holdout_scourge_venomous_gale"
+				"Radius"			"125"
+				"MinimumTargets"	"1"
+			}
+		}
+	}
 }

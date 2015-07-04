@@ -1335,23 +1335,23 @@
 			"NPCName"				"npc_dota_creature_green_dragon_baby"
 			"TotalUnitsToSpawn"		"20"
 			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"5"
+			"SpawnInterval"			"10"
 		}
 		"UnitRange_1"
 		{
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_dota_creature_green_dragon_dad"
-			"TotalUnitsToSpawn"		"20"
-			"UnitsPerSpawn"			"5"
+			"TotalUnitsToSpawn"		"8"
+			"UnitsPerSpawn"			"2"
 		}
 		"UnitRange_1b"
 		{	
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_dota_creature_green_dragon_mum"
-			"TotalUnitsToSpawn"		"4"
-			"UnitsPerSpawn"			"1"
+			"TotalUnitsToSpawn"		"16"
+			"UnitsPerSpawn"			"4"
 		}
 	}
 	
@@ -1428,8 +1428,8 @@
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_dota_creature_centaur_medium"
-			"TotalUnitsToSpawn"		"20"
-			"UnitsPerSpawn"			"5"
+			"TotalUnitsToSpawn"		"8"
+			"UnitsPerSpawn"			"2"
 			"SpawnInterval"			"5"
 		}
 		"UnitMelee_2"

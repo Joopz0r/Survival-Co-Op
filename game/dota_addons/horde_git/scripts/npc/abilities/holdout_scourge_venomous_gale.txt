@@ -34,7 +34,7 @@
 			"StartRadius"			"%radius"
 			"EndRadius"				"%radius"
 			"TargetTeams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-			"TargetTypes"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+			"TargetTypes"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BASIC"
 			"TargetFlags"			"DOTA_UNIT_TARGET_FLAG_NONE"
 			"HasFrontalCone"		"0"
 			"ProvidesVision"		"1"
