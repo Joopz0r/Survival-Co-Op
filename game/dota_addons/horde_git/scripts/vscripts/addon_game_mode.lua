@@ -35,6 +35,8 @@ end
 
 
 function CHoldoutGameMode:InitGameMode()
+	self._nDestroyedTowers = 0
+	self._invulStatus = 0
 	self._nRoundNumber = 1
 	self._currentRound = nil
 	self._flLastThinkGameTime = nil
@@ -47,6 +49,7 @@ function CHoldoutGameMode:InitGameMode()
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 0 )
 
 	self:_ReadGameConfiguration()
+	self:_ResetInvul()
 	GameRules:SetTimeOfDay( 0.75 )
 	GameRules:SetHeroRespawnEnabled( false )
 	GameRules:SetUseUniversalShopMode( true )
@@ -64,7 +67,7 @@ function CHoldoutGameMode:InitGameMode()
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
 	GameRules:GetGameModeEntity():SetCameraDistanceOverride( 1300 )
 	
-	GameRules:GetGameModeEntity():SetFogOfWarDisabled( true )
+	GameRules:GetGameModeEntity():SetFogOfWarDisabled( false )
 	
 
 --	GameRules:GetGameModeEntity():SetHUDVisible( DOTA_HUD_VISIBILITY_TOP_TIMEOFDAY, false )
@@ -198,6 +201,7 @@ end
 function CHoldoutGameMode:OnThink()
 	if GameRules:State_Get() == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 		self:_CheckForDefeat()
+		self:_UpdateTowerInvulStatus()
 		self:_ThinkLootExpiry()
 		if self._flPrepTimeEnd ~= nil then
 			self:_ThinkPrepTime()
@@ -209,6 +213,10 @@ function CHoldoutGameMode:OnThink()
 				-- Heal all players
 				self:_RefreshPlayers()
 				self:_RefreshTowers()
+				self:_RefreshAncient()
+				self:_ResetInvul()
+				self._nDestroyedTowers = 0
+				self._invulStatus = 0
 
 				self._nRoundNumber = self._nRoundNumber + 1
 				if self._nRoundNumber > #self._vRounds then
@@ -223,6 +231,24 @@ function CHoldoutGameMode:OnThink()
 		return nil
 	end
 	return 1
+end
+
+
+function CHoldoutGameMode:_UpdateTowerInvulStatus()
+	if( (self._nDestroyedTowers == 4) and ( self._invulStatus == 0 ) ) then
+		self._invulStatus = 1
+		local tier2Towers = Entities:FindAllByName('dota_goodguys_tower2_mid')
+    		for i = 1, #tier2Towers, 1 do
+        		local tower = tier2Towers[i]
+        		if tower:HasModifier('modifier_invulnerable') then
+            		tower:RemoveModifierByName('modifier_invulnerable')
+        		end
+    		end
+	elseif ( (self._nDestroyedTowers == 8) and ( self._invulStatus == 1 ) ) then
+		self._invulStatus = 2
+		self._entAncient:RemoveModifierByName('modifier_invulnerable')
+	end
+		
 end
 
 
@@ -242,15 +268,34 @@ function CHoldoutGameMode:_RefreshPlayers()
 end
 -- Search for all towers on team and respawns/max hp tower
 function CHoldoutGameMode:_RefreshTowers()
-	for _,unit in pairs( FindUnitsInRadius( DOTA_TEAM_GOODGUYS, Vector( 0, 0, 0 ), nil, FIND_UNITS_EVERYWHERE, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_BUILDING, DOTA_UNIT_TARGET_FLAG_DEAD, FIND_ANY_ORDER, false ) ) do
-		if unit:IsTower() then
-			if not unit:IsAlive() then
-				unit:RespawnUnit()
-			end
-				 unit:SetHealth( unit:GetMaxHealth() )
-			end
+
+	local towers = Entities:FindAllByClassname( 'npc_dota_holdout_tower_heavyslow')
+	
+	for i = 1, #towers, 1 do
+		local thisTower = towers[i]
+		if not thisTower:IsAlive() then
+			thisTower:RespawnUnit()
 		end
+		thisTower:SetHealth( thisTower:GetMaxHealth() )
 	end
+end
+
+function CHoldoutGameMode:_RefreshAncient()
+		self._entAncient:SetHealth( self._entAncient:GetMaxHealth() )
+end
+
+function CHoldoutGameMode:_ResetInvul()
+
+	local tier2Towers = Entities:FindAllByName('dota_goodguys_tower2_mid')
+    for i = 1, #tier2Towers, 1 do
+        local tower = tier2Towers[i]
+        if not tower:HasModifier('modifier_invulnerable') then
+            tower:AddNewModifier(nil, nil, 'modifier_invulnerable', nil)
+        end
+    end
+	self._entAncient:AddNewModifier(nil, nil, 'modifier_invulnerable', nil)
+
+end
 
 function CHoldoutGameMode:_CheckForDefeat()
 	if GameRules:State_Get() ~= DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
@@ -424,9 +469,12 @@ function CHoldoutGameMode:OnEntityKilled( event )
 		newItem:SetPurchaseTime( 0 )
 		newItem:SetPurchaser( killedUnit )
 		local tombstone = SpawnEntityFromTableSynchronous( "dota_item_tombstone_drop", {} )
+
 		tombstone:SetContainedItem( newItem )
 		tombstone:SetAngles( 0, RandomFloat( 0, 360 ), 0 )
 		FindClearSpaceForUnit( tombstone, killedUnit:GetAbsOrigin(), true )	
+	elseif killedUnit and killedUnit:IsTower() then
+		self._nDestroyedTowers = self._nDestroyedTowers + 1;
 	end
 end
 
