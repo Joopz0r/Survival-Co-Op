@@ -5,8 +5,8 @@
 	"RestoreHPAfterRound"			"1"
 	"RestoreMPAfterRound"			"1"
 	"RewardForTowersStanding"		"1"
-	"TowerRewardAmount"				"25"
-	"TowerScalingRewardPerRound"	"5"
+	"TowerRewardAmount"				"20"
+	"TowerScalingRewardPerRound"	"1"
 	
 	"ItemDrops"
 	{
