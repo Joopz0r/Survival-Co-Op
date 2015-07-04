@@ -859,278 +859,7 @@
 		}
 	}
 	
-	"Round9" // Bears!
-	{
-		"round_quest_title"			"#DOTA_Holdout_Round_BearForceOne_Quest_Title"
-		"round_title"				"#DOTA_Holdout_Round_BearForceOne_Title"
-		"MaxGold"					"3500"
-		"BagCount"					"45"
-		"BagVariance"				"100"
-		"FixedXP"					"12000"
-
-		// Part 1
-		"Unit1"
-		{
-			"NPCName"				"npc_dota_creature_small_spirit_bear"
-			"TotalUnitsToSpawn"		"9"
-			"UnitsPerSpawn"			"3"
-			"SpawnInterval"			"20"
-		}
-		"Unit2"
-		{
-			"NPCName"				"npc_dota_creature_large_spirit_bear"
-			"TotalUnitsToSpawn"		"3"
-			"UnitsPerSpawn"			"1"
-			"GroupWithUnit"			"Unit1"
-		}	
-		"Unit3"
-		{
-			"NPCName"				"npc_dota_creature_small_spirit_bear"
-			"TotalUnitsToSpawn"		"9"
-			"UnitsPerSpawn"			"3"
-			"SpawnInterval"			"20"
-		}
-		"Unit4"
-		{
-			"NPCName"				"npc_dota_creature_large_spirit_bear"
-			"TotalUnitsToSpawn"		"6"
-			"UnitsPerSpawn"			"2"
-			"GroupWithUnit"			"Unit3"
-		}	
-		
-		// Part 2
-		"Unit5"
-		{
-			"NPCName"				"npc_dota_creature_small_spirit_bear"
-			"TotalUnitsToSpawn"		"4"
-			"UnitsPerSpawn"			"2"
-			"SpawnInterval"			"20"
-			"WaitForUnit"			"Unit1"
-		}
-		"Unit6"
-		{
-			"NPCName"				"npc_dota_creature_large_spirit_bear"
-			"TotalUnitsToSpawn"		"2"
-			"UnitsPerSpawn"			"1"
-			"GroupWithUnit"			"Unit5"
-		}
-		"Unit7"
-		{
-			"NPCName"				"npc_dota_creature_bear_chieftain"
-			"TotalUnitsToSpawn"		"2"
-			"UnitsPerSpawn"			"1"
-			"GroupWithUnit"			"Unit5"
-		}
-		"Unit8"
-		{
-			"NPCName"				"npc_dota_creature_small_spirit_bear"
-			"TotalUnitsToSpawn"		"4"
-			"UnitsPerSpawn"			"2"
-			"SpawnInterval"			"20"
-			"WaitForUnit"			"Unit1"
-		}
-		"Unit9"
-		{
-			"NPCName"				"npc_dota_creature_large_spirit_bear"
-			"TotalUnitsToSpawn"		"4"
-			"UnitsPerSpawn"			"2"
-			"GroupWithUnit"			"Unit8"
-		}
-		"Unit10"
-		{
-			"NPCName"				"npc_dota_creature_bear_chieftain"
-			"TotalUnitsToSpawn"		"2"
-			"UnitsPerSpawn"			"1"
-			"GroupWithUnit"			"Unit8"
-		}
-		
-		"UnitBigBear_2"
-		{	
-			"WaitForUnit"			"Unit1"
-			"WaitForTime"			"20"
-			
-			"NPCName"				"npc_dota_creature_big_bear"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
-		}
-
-		// Part 3
-		"Unit11"
-		{
-			"NPCName"				"npc_dota_creature_small_spirit_bear"
-			"TotalUnitsToSpawn"		"2"
-			"UnitsPerSpawn"			"1"
-			"SpawnInterval"			"20"
-			"WaitForUnit"			"Unit5"
-		}	
-		"Unit12"
-		{
-			"NPCName"				"npc_dota_creature_large_spirit_bear"
-			"TotalUnitsToSpawn"		"2"
-			"UnitsPerSpawn"			"1"
-			"GroupWithUnit"			"Unit11"
-		}
-		"Unit13"
-		{
-			"NPCName"				"npc_dota_creature_bear_chieftain"
-			"TotalUnitsToSpawn"		"2"
-			"UnitsPerSpawn"			"1"
-			"GroupWithUnit"			"Unit11"
-		}	
-		"UnitBigBear_3"
-		{	
-			"WaitForUnit"			"Unit5"
-			
-			"NPCName"				"npc_dota_creature_big_bear"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
-		}
-		"Unit15"
-		{
-			"NPCName"				"npc_dota_creature_small_spirit_bear"
-			"TotalUnitsToSpawn"		"2"
-			"UnitsPerSpawn"			"1"
-			"SpawnInterval"			"20"
-			"WaitForUnit"			"Unit5"
-		}	
-		"Unit16"
-		{
-			"NPCName"				"npc_dota_creature_large_spirit_bear"
-			"TotalUnitsToSpawn"		"2"
-			"UnitsPerSpawn"			"1"
-			"GroupWithUnit"			"Unit15"
-		}
-	}
-	
-	"Round10" // Puuuuuuuuudge
-	{
-		"round_quest_title"			"#DOTA_Holdout_Round_Pudge_Quest_Title"
-		"round_title"				"#DOTA_Holdout_Round_Pudge_Title"
-		"MaxGold"					"0" // 10500 in gold bag fountain
-		"BagCount"					"0"
-		"BagVariance"				"0"
-		"FixedXP"					"350"
-
-		// Stage 1 ================================================
-		"UnitMelee_1"
-		{
-			"NPCName"				"npc_dota_creature_boss_pudge"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
-			"DontGiveGoal"    		"1"
-		}
-		"UnitMelee_2"
-		{
-			"NPCName"				"npc_dota_creature_boss_pudge"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
-			"DontGiveGoal"    		"1"
-		}
-	}
-	
-	"Round11" // Gyrocopter
-	{
-		"round_quest_title"			"#DOTA_Holdout_Round_Gyrocopter_Quest_Title"
-		"round_name"				"#DOTA_Holdout_Round_Gyrocopter"
-		"MaxGold"					"3500"
-		"BagCount"					"100"
-		"BagVariance"				"20"
-		"FixedXP"					"9000"
-
-		// Stage 1 ================================================
-		"UnitMissile_1"
-		{
-			"NPCName"				"npc_dota_creature_missile_launcher"
-			"TotalUnitsToSpawn"		"2"
-			"UnitsPerSpawn"			"1"
-			"SpawnInterval"			"15"
-			"DontGiveGoal"    		"1"
-
-		}
-
-		"UnitTank_1"
-		{
-			"NPCName"				"npc_dota_creature_rattletrap"
-			"TotalUnitsToSpawn"		"5"
-			"UnitsPerSpawn"			"1"
-			"SpawnInterval"			"8"
-			"DontGiveGoal"    		"1"
-
-		}
-		
-		"UnitTank_2"
-		{
-			"NPCName"				"npc_dota_creature_rattletrap"
-			"TotalUnitsToSpawn"		"5"
-			"UnitsPerSpawn"			"1"
-			"SpawnInterval"			"8"
-			"DontGiveGoal"    		"1"
-
-		}
-		
-		// Stage 2 ================================================
-		"UnitMissile_2a"
-		{
-			"WaitForUnit"			"UnitMissile_1"
-			"WaitForTime"			"10"
-			
-			"NPCName"				"npc_dota_creature_missile_launcher"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
-			//"SpawnInterval"			"20"
-			
-			"SpawnerName"			"spawner1"
-			"DontGiveGoal"    		"1"
-
-		}
-		
-		"UnitMissile_2b"
-		{
-			"WaitForUnit"			"UnitMissile_1"
-	 		"WaitForTime"			"10"
-			
-			"NPCName"				"npc_dota_creature_missile_launcher"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
-			//"SpawnInterval"			"20"
-			
-			"SpawnerName"			"spawner2"
-			"DontGiveGoal"    		"1"
-
-		}
-		
-		"UnitMissile_2c"
-		{
-			"WaitForUnit"			"UnitMissile_1"
-			"WaitForTime"			"10"
-			
-			"NPCName"				"npc_dota_creature_missile_launcher"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
-			//"SpawnInterval"			"20"
-			
-			"SpawnerName"			"spawner3"
-			"DontGiveGoal"    		"1"
-
-		}
-		
-		"UnitMissile_2d"
-		{
-			"WaitForUnit"			"UnitMissile_1"
-			"WaitForTime"			"10"
-			
-			"NPCName"				"npc_dota_creature_missile_launcher"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
-			//"SpawnInterval"			"20"
-			
-			"SpawnerName"			"spawner4"
-			"DontGiveGoal"    		"1"
-			
-		}
-	}
-	
-	"Round12" // AA, MiniLich, Fodder
+	"Round9" // AA, MiniLich, Fodder
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_StayFrosty_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_StayFrosty_Title"
@@ -1273,6 +1002,277 @@
 		}
 	}
 	
+	"Round10" // Puuuuuuuuudge
+	{
+		"round_quest_title"			"#DOTA_Holdout_Round_Pudge_Quest_Title"
+		"round_title"				"#DOTA_Holdout_Round_Pudge_Title"
+		"MaxGold"					"0" // 10500 in gold bag fountain
+		"BagCount"					"0"
+		"BagVariance"				"0"
+		"FixedXP"					"350"
+
+		// Stage 1 ================================================
+		"UnitMelee_1"
+		{
+			"NPCName"				"npc_dota_creature_boss_pudge"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			"DontGiveGoal"    		"1"
+		}
+		"UnitMelee_2"
+		{
+			"NPCName"				"npc_dota_creature_boss_pudge"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			"DontGiveGoal"    		"1"
+		}
+	}
+	
+	"Round11" // Gyrocopter
+	{
+		"round_quest_title"			"#DOTA_Holdout_Round_Gyrocopter_Quest_Title"
+		"round_name"				"#DOTA_Holdout_Round_Gyrocopter"
+		"MaxGold"					"3500"
+		"BagCount"					"100"
+		"BagVariance"				"20"
+		"FixedXP"					"9000"
+
+		// Stage 1 ================================================
+		"UnitMissile_1"
+		{
+			"NPCName"				"npc_dota_creature_missile_launcher"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"1"
+			"SpawnInterval"			"15"
+			"DontGiveGoal"    		"1"
+
+		}
+
+		"UnitTank_1"
+		{
+			"NPCName"				"npc_dota_creature_rattletrap"
+			"TotalUnitsToSpawn"		"5"
+			"UnitsPerSpawn"			"1"
+			"SpawnInterval"			"8"
+			
+
+		}
+		
+		"UnitTank_2"
+		{
+			"NPCName"				"npc_dota_creature_rattletrap"
+			"TotalUnitsToSpawn"		"5"
+			"UnitsPerSpawn"			"1"
+			"SpawnInterval"			"8"
+			
+
+		}
+		
+		// Stage 2 ================================================
+		"UnitMissile_2a"
+		{
+			"WaitForUnit"			"UnitMissile_1"
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_missile_launcher"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"20"
+			
+			"SpawnerName"			"spawner1"
+			"DontGiveGoal"    		"1"
+
+		}
+		
+		"UnitMissile_2b"
+		{
+			"WaitForUnit"			"UnitMissile_1"
+	 		"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_missile_launcher"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"20"
+			
+			"SpawnerName"			"spawner2"
+			"DontGiveGoal"    		"1"
+
+		}
+		
+		"UnitMissile_2c"
+		{
+			"WaitForUnit"			"UnitMissile_1"
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_missile_launcher"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"20"
+			
+			"SpawnerName"			"spawner3"
+			"DontGiveGoal"    		"1"
+
+		}
+		
+		"UnitMissile_2d"
+		{
+			"WaitForUnit"			"UnitMissile_1"
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_missile_launcher"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"20"
+			
+			"SpawnerName"			"spawner4"
+			"DontGiveGoal"    		"1"
+			
+		}
+	}
+	
+	"Round12" // Bears!
+	{
+		"round_quest_title"			"#DOTA_Holdout_Round_BearForceOne_Quest_Title"
+		"round_title"				"#DOTA_Holdout_Round_BearForceOne_Title"
+		"MaxGold"					"3500"
+		"BagCount"					"45"
+		"BagVariance"				"100"
+		"FixedXP"					"12000"
+
+		// Part 1
+		"Unit1"
+		{
+			"NPCName"				"npc_dota_creature_small_spirit_bear"
+			"TotalUnitsToSpawn"		"9"
+			"UnitsPerSpawn"			"3"
+			"SpawnInterval"			"20"
+		}
+		"Unit2"
+		{
+			"NPCName"				"npc_dota_creature_large_spirit_bear"
+			"TotalUnitsToSpawn"		"3"
+			"UnitsPerSpawn"			"1"
+			"GroupWithUnit"			"Unit1"
+		}	
+		"Unit3"
+		{
+			"NPCName"				"npc_dota_creature_small_spirit_bear"
+			"TotalUnitsToSpawn"		"9"
+			"UnitsPerSpawn"			"3"
+			"SpawnInterval"			"20"
+		}
+		"Unit4"
+		{
+			"NPCName"				"npc_dota_creature_large_spirit_bear"
+			"TotalUnitsToSpawn"		"6"
+			"UnitsPerSpawn"			"2"
+			"GroupWithUnit"			"Unit3"
+		}	
+		
+		// Part 2
+		"Unit5"
+		{
+			"NPCName"				"npc_dota_creature_small_spirit_bear"
+			"TotalUnitsToSpawn"		"4"
+			"UnitsPerSpawn"			"2"
+			"SpawnInterval"			"20"
+			"WaitForUnit"			"Unit1"
+		}
+		"Unit6"
+		{
+			"NPCName"				"npc_dota_creature_large_spirit_bear"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"1"
+			"GroupWithUnit"			"Unit5"
+		}
+		"Unit7"
+		{
+			"NPCName"				"npc_dota_creature_bear_chieftain"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"1"
+			"GroupWithUnit"			"Unit5"
+		}
+		"Unit8"
+		{
+			"NPCName"				"npc_dota_creature_small_spirit_bear"
+			"TotalUnitsToSpawn"		"4"
+			"UnitsPerSpawn"			"2"
+			"SpawnInterval"			"20"
+			"WaitForUnit"			"Unit1"
+		}
+		"Unit9"
+		{
+			"NPCName"				"npc_dota_creature_large_spirit_bear"
+			"TotalUnitsToSpawn"		"4"
+			"UnitsPerSpawn"			"2"
+			"GroupWithUnit"			"Unit8"
+		}
+		"Unit10"
+		{
+			"NPCName"				"npc_dota_creature_bear_chieftain"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"1"
+			"GroupWithUnit"			"Unit8"
+		}
+		
+		"UnitBigBear_2"
+		{	
+			"WaitForUnit"			"Unit1"
+			"WaitForTime"			"20"
+			
+			"NPCName"				"npc_dota_creature_big_bear"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+		}
+
+		// Part 3
+		"Unit11"
+		{
+			"NPCName"				"npc_dota_creature_small_spirit_bear"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"1"
+			"SpawnInterval"			"20"
+			"WaitForUnit"			"Unit5"
+		}	
+		"Unit12"
+		{
+			"NPCName"				"npc_dota_creature_large_spirit_bear"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"1"
+			"GroupWithUnit"			"Unit11"
+		}
+		"Unit13"
+		{
+			"NPCName"				"npc_dota_creature_bear_chieftain"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"1"
+			"GroupWithUnit"			"Unit11"
+		}	
+		"UnitBigBear_3"
+		{	
+			"WaitForUnit"			"Unit5"
+			
+			"NPCName"				"npc_dota_creature_big_bear"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+		}
+		"Unit15"
+		{
+			"NPCName"				"npc_dota_creature_small_spirit_bear"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"1"
+			"SpawnInterval"			"20"
+			"WaitForUnit"			"Unit5"
+		}	
+		"Unit16"
+		{
+			"NPCName"				"npc_dota_creature_large_spirit_bear"
+			"TotalUnitsToSpawn"		"2"
+			"UnitsPerSpawn"			"1"
+			"GroupWithUnit"			"Unit15"
+		}
+	}
+		
 	"Round13"	//Skeletons
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Skeletons_Quest_Title"
