@@ -1427,26 +1427,52 @@
 		{			
 			"WaitForTime"			"10"
 			
-			"NPCName"				"npc_dota_creature_centaur_medium"
-			"TotalUnitsToSpawn"		"8"
-			"UnitsPerSpawn"			"2"
-			"SpawnInterval"			"5"
-		}
-		"UnitMelee_2"
-		{
-			"GroupWithUnit"			"UnitMelee_1"
-
-			"NPCName"				"npc_dota_creature_centaur_large"
-			"TotalUnitsToSpawn"		"20"
-			"UnitsPerSpawn"			"5"
-		}
-		"UnitMelee_3"
-		{	
-			"GroupWithUnit"			"UnitMelee_1"
-
 			"NPCName"				"npc_dota_creature_centaur_boss"
-			"TotalUnitsToSpawn"		"4"
+			"TotalUnitsToSpawn"		"1"
 			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+			"SpawnerName"			"spawner1"
+			"Waypoint"				"path_invader1_1"
+			
+		}
+		
+		"UnitMelee_2"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_centaur_boss"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+			"SpawnerName"			"spawner2"
+			"Waypoint"				"path_invader2_1"
+			
+		}
+
+		"UnitMelee_3"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_centaur_boss"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+			"SpawnerName"			"spawner3"
+			"Waypoint"				"path_invader3_1"
+			
+		}
+
+		"UnitMelee_4"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_centaur_boss"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+			"SpawnerName"			"spawner4"
+			"Waypoint"				"path_invader4_1"
+			
 		}
 	}
 	

@@ -2,7 +2,7 @@
 // Author: Noya
 // Date: 9.1.2015.
 // Notes: Particle is fucked up in Source 2 (even the original spell)
-"centaur_double_edge_datadriven"
+"boss_centaur_double_edge"
 {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
@@ -32,7 +32,7 @@
 		"01"
 		{
 			"var_type"						"FIELD_INTEGER"
-			"edge_damage"					"175 250 325 400"
+			"edge_damage"					"500 500 500 500"
 		}
 		"02"
 		{

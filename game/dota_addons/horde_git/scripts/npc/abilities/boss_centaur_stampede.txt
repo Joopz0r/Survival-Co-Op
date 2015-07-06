@@ -1,7 +1,7 @@
 // Rewrite of Centaur Stampede
 // Author: Noya
 // Date: 9.1.2015.
-"centaur_stampede_datadriven"
+"boss_centaur_stampede"
 {
 	// General
 	//-------------------------------------------------------------------------------------------------------------

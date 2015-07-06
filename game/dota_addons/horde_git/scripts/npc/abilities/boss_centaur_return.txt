@@ -3,7 +3,7 @@
 // Date: 9.1.2015.
 // Notes: Unlike the original version, the damage is returned after the hit lands. That effect is just a legacy and not useful.
 //		  To change it to apply the damage when the attack starts, would need to do hidden aura that applies a debuff that checks OnAttackStart on the caster and does the damage.		  
-"centaur_return_datadriven"
+"boss_centaur_return"
 {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
@@ -20,7 +20,7 @@
 		"01"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"return_damage"				"16 18 20 22"
+			"return_damage"				"60 80 120 200"
 		}
 		"02"
 		{

@@ -102,7 +102,7 @@
 		"MagicResistGain"			"5"
 		"MoveSpeedGain"				"0"
 		"BountyGain"				"0"
-		"XPGain"					"20"
+		"XPGain"					"0"
 		"DisableClumpingBehavior"   "1"
 		
 		"DefaultState"				"Invade"
@@ -116,7 +116,7 @@
 				"Radius"			"150"
 				"MinimumTargets"	"1"
 			}
-			"Ability3"
+			"Ability2"
 			{
 				"Name"				"creature_reflect_damage"
 				"Radius"			"150"

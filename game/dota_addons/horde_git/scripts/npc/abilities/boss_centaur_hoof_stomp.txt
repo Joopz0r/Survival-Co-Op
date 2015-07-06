@@ -1,7 +1,7 @@
 // Rewrite of Centaur Hoof Stomp 
 // Author: Noya
 // Date: 9.1.2015.
-"centaur_hoof_stomp_datadriven"
+"boss_centaur_hoof_stomp"
 {
 	// General
 	//-------------------------------------------------------------------------------------------------------------

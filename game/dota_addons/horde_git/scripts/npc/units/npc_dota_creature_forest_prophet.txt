@@ -124,14 +124,6 @@
 			}
 		}
 
-		"DefensiveAbilities"
-		{
-			"Ability1"
-			{
-				"Name"				"furion_sprout"
-			}
-		}
-
 		"AttachWearables"
 		{
 			"Wearable1" { "ItemDef" "29" }

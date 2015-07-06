@@ -9,7 +9,7 @@ function Stampede( event )
 	local target = event.target
 	local ability = event.ability
 	local damage = ability:GetLevelSpecialValueFor( "base_damage" , ability:GetLevel() - 1  )
-	local casterSTR = caster:GetStrength()
+	local casterSTR = 80
 	local strength_damage = ability:GetLevelSpecialValueFor( "strength_damage" , ability:GetLevel() - 1  )
 	local damageType = ability:GetAbilityDamageType()
 	local total_damage = damage + ( casterSTR * strength_damage )

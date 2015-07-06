@@ -1386,40 +1386,52 @@
 		//----------------------------------------------------------------
 		"Model"						"models/heroes/centaur/centaur.vmdl"	// Model.
 		"BaseClass"					"npc_dota_creature"
-		"SoundSet"					"n_creep_Melee"
-		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"Level"						"1"
-		"ModelScale" 				"1.9"
-		"ConsideredHero"				"1"
+		"ModelScale" 				"1.4"
+		"ConsideredHero"			"1"
+
+		"SoundSet"					"Hero_Centaur"
+		"MinimapIcon"				"minimap_roshancamp"
+		"MinimapIconSize"			"300"
+		"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
+		"VoiceFile"					"soundevents/voscripts/game_sounds_vo_centuar.vsndevts"
+
+		//"vscripts"					"holdout_ai_pudge.lua"
+
+		// Inventory
+		//----------------------------------------------------------------
+		"HasInventory"				"1"
+
 
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"centaur_hoof_stomp_datadriven"			// Ability 1
-		"Ability2"					"centaur_double_edge_datadriven"			// Ability 2
-		"Ability3"					"centaur_return_datadriven"			// Ability 3
-		"Ability4"					"centaur_stampede_datadriven"			// Ability 4
+		"Ability1"					"boss_centaur_hoof_stomp"			// Ability 1
+		"Ability2"					"boss_centaur_double_edge"			// Ability 2
+		"Ability3"					"boss_centaur_return"			// Ability 3
+		"Ability4"					"boss_centaur_stampede"			// Ability 4
 
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"35"			// Physical protection.
-		"MagicalResistance"			"0"		// Magical protection.
+		"MagicalResistance"			"40"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"			"500"		// Damage range min.
-		"AttackDamageMax"			"550"		// Damage range max.
-		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackDamageMax"			"620"		// Damage range max.
+		"AttackRate"				"1.3"		// Speed of attack.
 		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
-		"AttackRange"				"200"		// Range within a target can be attacked.
+		"AttackAcquisitionRange"	"180"		// Range within a target can be acquired.
+		"AttackRange"				"120"		// Range within a target can be attacked.
 		"ProjectileModel"			"" // Particle system model for projectile.
-		"ProjectileSpeed"			"1500"		// Speed of projectile.		     
+		"ProjectileSpeed"			"0"		// Speed of projectile.		     
 
 		// Bounds
 		//----------------------------------------------------------------
 		"RingRadius"				"40"
-		"HealthBarOffset"			"170"
+		"HealthBarOffset"			"300"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 
 		// Bounty
 		//----------------------------------------------------------------
@@ -1430,19 +1442,19 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"270"		// Speed.			
+		"MovementSpeed"				"220"		// Speed.			
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"15000"		// Base health.
-		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
+		"StatusHealth"				"25000"		// Base health.
+		"StatusHealthRegen"			"10.5"		// Health regeneration rate.
 		"StatusMana"				"4000"			// Base mana.
-		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
+		"StatusManaRegen"			"10.0"		// Mana regeneration rate.		 
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"400"		// Range of vision during day light.
-		"VisionNighttimeRange"		"400"		// Range of vision at night time.
+		"VisionDaytimeRange"		"2000"		// Range of vision during day light.
+		"VisionNighttimeRange"		"2000"		// Range of vision at night time.
 
 		// Team
 		//----------------------------------------------------------------
@@ -1451,16 +1463,41 @@
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
+		// Hero Stats
+		"AttributePrimary"             "DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"        "25"            // Base strength
+		"AttributeStrengthGain"        "5"            // Strength bonus per level.
+		"AttributeBaseAgility"         "10"            // Base agility
+		"AttributeAgilityGain"         "5"            // Agility bonus per level.
+		"AttributeBaseIntelligence"    "10"            // Base intelligence
+		"AttributeIntelligenceGain"    "5"            // Intelligence bonus per level.
+
 		// Creature Data
 		//----------------------------------------------------------------------------------------------------------------------
 		"Creature"
 		{
+			"EquippedItems"
+			{
+				"HoodofDefiance"
+				{
+					"Item"					"item_hood_of_defiance"
+				}
+				"PhaseBoots"
+				{
+					"Item"					"item_phase_boots"
+				}
+				"BladeMail"
+				{
+					"Item"					"item_blade_mail"
+				}
+			}	
 
+			"DisableResistance"			"50.0"
 			//Level Up
-			"HPGain"					"50"
-			"DamageGain"				"2"
-			"ArmorGain"					"0.25"
-			"MagicResistGain"			"0.1"
+			"HPGain"					"500"
+			"DamageGain"				"25"
+			"ArmorGain"					"1.25"
+			"MagicResistGain"			"1.1"
 			"MoveSpeedGain"				"1"
 			"BountyGain"				"0"
 			"XPGain"					"0"
@@ -1483,24 +1520,63 @@
 			{
 				"Ability1"
 				{
-					"name"				"centaur_stampede_datadriven"
+					"name"				"boss_centaur_stampede"
 					"UseSelfishly"		"1"
 				}
-
+				
 				"Ability2"				
 				{
-					"Name"				"centaur_hoof_stomp_datadriven"
+					"Name"				"boss_centaur_hoof_stomp"
 					"AOE"				"1"
 					"Radius"			"315"
 					"MinimumTargets"	"1"
 					"Debuff"			"1"
+					"Stun"				"1"
 				}
+
 				"Ability3"
 				{
-					"Name"				"centaur_double_edge_datadriven"
-					"UseAtHealthPercent""60"
+					"Name"				"boss_centaur_double_edge"
+					"UseAtHealthPercent""70"
+					"Radius"			"190"
 				}
-				
+
+				"Ability4"
+				{
+					"Name"				"item_blade_mail"
+				}
+			}
+
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"			"358"
+				}
+				"Wearable2"
+				{
+					"ItemDef"			"359"
+				}
+				"Wearable3"
+				{
+					"ItemDef"			"360"
+				}
+				"Wearable4"
+				{
+					"ItemDef"			"361"
+				}
+				"Wearable5"
+				{
+					"ItemDef"			"362"
+				}
+				"Wearable6"
+				{
+					"ItemDef"			"363"
+				}
+				"Wearable7"
+				{
+					"ItemDef"			"364"
+				}
 			}	
 		}
 	}
@@ -2868,14 +2944,6 @@
 					"Radius"			"100"
 				}
 				"Ability2"				
-				{
-					"Name"				"furion_sprout"
-				}
-			}
-	
-			"DefensiveAbilities"
-			{
-				"Ability1"
 				{
 					"Name"				"furion_sprout"
 				}
@@ -4633,7 +4701,7 @@
 			"MagicResistGain"			"5"
 			"MoveSpeedGain"				"0"
 			"BountyGain"				"0"
-			"XPGain"					"20"
+			"XPGain"					"0"
 			"DisableClumpingBehavior"   "1"
 			
 			"DefaultState"				"Invade"
@@ -4647,7 +4715,7 @@
 					"Radius"			"150"
 					"MinimumTargets"	"1"
 				}
-				"Ability3"
+				"Ability2"
 				{
 					"Name"				"creature_reflect_damage"
 					"Radius"			"150"
