@@ -16,7 +16,7 @@
 	
 	// Abilities
 	//----------------------------------------------------------------
-	"AbilityLayout"		"5"
+	"AbilityLayout"		""
 	"Ability1"					"creep_cold_arrow"			// Ability 1. 
 	"Ability2"					""			// Ability 2.
 	"Ability3"					""			// Ability 3.
@@ -34,12 +34,12 @@
 	// Attack
 	//----------------------------------------------------------------
 	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageMin"			"150"								// Damage range min.
-	"AttackDamageMax"			"200"								// Damage range max.
+	"AttackDamageMin"			"250"								// Damage range min.
+	"AttackDamageMax"			"300"								// Damage range max.
 	"AttackRate"				"1.6"								// Speed of attack.
 	"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
-	"AttackAcquisitionRange"	"500"								// Range within a target can be acquired.
-	"AttackRange"				"600"								// Range within a target can be attacked.
+	"AttackAcquisitionRange"	"700"								// Range within a target can be acquired.
+	"AttackRange"				"700"								// Range within a target can be attacked.
 	"ProjectileModel"			"particles/items2_fx/necronomicon_archer_projectile.vpcf"				// Particle system model for projectile.
 	"ProjectileSpeed"			"800"								// Speed of projectile.
 
@@ -63,7 +63,7 @@
 	
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"				"1250"			// Base health.
+	"StatusHealth"				"1350"			// Base health.
 	"StatusHealthRegen"			"0.5"			// Health regeneration rate.
 	"StatusMana"				"300"			// Base mana.
 	"StatusManaRegen"			"0.75"			// Mana regeneration rate.

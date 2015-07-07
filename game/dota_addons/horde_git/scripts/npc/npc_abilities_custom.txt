@@ -3891,7 +3891,7 @@
 		"AbilityCastRange"	"600"
 		"AbilityCastPoint"	"0.0"
 		"AbilityCooldown"	"0.0"
-		"AbilityDamage"	"0"
+		"AbilityDamage"	"150"
 		"AbilityManaCost"	"0"
 		"Modifiers"
 		{
@@ -3954,13 +3954,13 @@
 				"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"slow_duration"	"2"
+				"slow_duration"	"4"
 			}
 	
 				"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"movement_speed"	"-25"
+				"movement_speed"	"-45"
 			}
 	
 		}
@@ -4123,10 +4123,10 @@
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_clinkz.vsndevts"
 		}
 	
-		"AbilityCastRange"	"600"
+		"AbilityCastRange"	"900"
 		"AbilityCastPoint"	"0.0"
 		"AbilityCooldown"	"0.0"
-		"AbilityDamage"	"0"
+		"AbilityDamage"	"150"
 		"AbilityManaCost"	"0"
 		"Modifiers"
 		{

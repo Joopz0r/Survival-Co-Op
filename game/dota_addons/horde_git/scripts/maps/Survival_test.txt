@@ -1288,9 +1288,9 @@
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_skeleton_warrior"
-			"TotalUnitsToSpawn"		"20"
-			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"5"
+			"TotalUnitsToSpawn"		"32"
+			"UnitsPerSpawn"			"8"
+			"SpawnInterval"			"12"
 		}
 		"UnitRange_1"
 		{
@@ -1305,16 +1305,16 @@
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_frost_skeleton_archer"
-			"TotalUnitsToSpawn"		"4"
-			"UnitsPerSpawn"			"1"
+			"TotalUnitsToSpawn"		"8"
+			"UnitsPerSpawn"			"2"
 		}
 		"UnitRange_1c"
 		{	
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_burning_skeleton_archer"
-			"TotalUnitsToSpawn"		"4"
-			"UnitsPerSpawn"			"1"
+			"TotalUnitsToSpawn"		"8"
+			"UnitsPerSpawn"			"2"
 		}
 	}
 	
@@ -1438,7 +1438,7 @@
 		
 		"UnitMelee_2"
 		{			
-			"WaitForTime"			"10"
+			"WaitForTime"			"15"
 			
 			"NPCName"				"npc_dota_creature_centaur_boss"
 			"TotalUnitsToSpawn"		"1"
@@ -1451,7 +1451,7 @@
 
 		"UnitMelee_3"
 		{			
-			"WaitForTime"			"10"
+			"WaitForTime"			"20"
 			
 			"NPCName"				"npc_dota_creature_centaur_boss"
 			"TotalUnitsToSpawn"		"1"
@@ -1464,7 +1464,7 @@
 
 		"UnitMelee_4"
 		{			
-			"WaitForTime"			"10"
+			"WaitForTime"			"25"
 			
 			"NPCName"				"npc_dota_creature_centaur_boss"
 			"TotalUnitsToSpawn"		"1"
@@ -1622,5 +1622,117 @@
 			"TotalUnitsToSpawn"		"8"
 			"UnitsPerSpawn"			"1"
 		}
+	}
+
+	"Round21"  // One of each boss
+	{
+		"round_quest_title"			"#DOTA_Holdout_Round_Bonus_Quest_Title"
+		"round_title"				"#DOTA_Holdout_Round_Bonus_Title"
+		"MaxGold"					"3500"
+		"BagCount"					"55"
+		"BagVariance"				"30"
+		"FixedXP"					"11500"
+
+		// Stage 1 ================================================
+		"Boss_1"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_bear_chieftain"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_2"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_big_bear"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_3"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_boss_pudge"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_4"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_broodking"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_5"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_centaur_boss"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_6"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_corpselord"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_7"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_ogre_tank"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_8"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_king_treant"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_9"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_mini_roshan"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_10"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_king_treant"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_11"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_basic_zombie_exploding"
+			"TotalUnitsToSpawn"		"10"
+			"UnitsPerSpawn"			"1"
+			"SpawnInterval"			"5"
+		}
+		
 	}
 }

@@ -161,11 +161,6 @@
 					"UseAtHealthPercent""70"
 					"Radius"			"190"
 				}
-
-				"Ability4"
-				{
-					"Name"				"item_blade_mail"
-				}
 			}
 
 			"AttachWearables"

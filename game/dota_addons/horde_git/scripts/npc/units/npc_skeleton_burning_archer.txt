@@ -35,12 +35,12 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"150"								// Damage range min.
-		"AttackDamageMax"			"200"								// Damage range max.
+		"AttackDamageMin"			"350"								// Damage range min.
+		"AttackDamageMax"			"400"								// Damage range max.
 		"AttackRate"				"1.6"								// Speed of attack.
 		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"500"								// Range within a target can be acquired.
-		"AttackRange"				"500"								// Range within a target can be attacked.
+		"AttackAcquisitionRange"	"900"								// Range within a target can be acquired.
+		"AttackRange"				"900"								// Range within a target can be attacked.
 		"ProjectileModel"			"particles/units/heroes/hero_clinkz/clinkz_base_attack.vpcf"				// Particle system model for projectile.
 		"ProjectileSpeed"			"900"								// Speed of projectile.
 
@@ -67,7 +67,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1250"			// Base health.
+		"StatusHealth"				"1800"			// Base health.
 		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
 		"StatusMana"				"300"			// Base mana.
 		"StatusManaRegen"			"0.75"			// Mana regeneration rate.

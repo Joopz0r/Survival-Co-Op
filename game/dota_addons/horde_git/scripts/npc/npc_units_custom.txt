@@ -1540,11 +1540,6 @@
 					"UseAtHealthPercent""70"
 					"Radius"			"190"
 				}
-
-				"Ability4"
-				{
-					"Name"				"item_blade_mail"
-				}
 			}
 
 			"AttachWearables"
@@ -7575,12 +7570,12 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"200"								// Damage range min.
-		"AttackDamageMax"			"300"								// Damage range max.
-		"AttackRate"				"1.8"								// Speed of attack.
+		"AttackDamageMin"			"300"								// Damage range min.
+		"AttackDamageMax"			"400"								// Damage range max.
+		"AttackRate"				"1.4"								// Speed of attack.
 		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"500"								// Range within a target can be acquired.
-		"AttackRange"				"500"								// Range within a target can be attacked.
+		"AttackAcquisitionRange"	"600"								// Range within a target can be acquired.
+		"AttackRange"				"600"								// Range within a target can be attacked.
 		"ProjectileModel"			"particles/units/heroes/hero_clinkz/clinkz_base_attack.vpcf"				// Particle system model for projectile.
 		"ProjectileSpeed"			"900"								// Speed of projectile.
 	
@@ -7653,9 +7648,9 @@
 					"Invade"
 					{
 						"Name"				"Invade"
-						"Aggression"		"80.0"
+						"Aggression"		"100.0"
 						"Avoidance"			"0.0"
-						"Support"			"50.0"
+						"Support"			"00.0"
 					}
 				}
 	
@@ -7700,12 +7695,12 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"150"								// Damage range min.
-		"AttackDamageMax"			"200"								// Damage range max.
+		"AttackDamageMin"			"350"								// Damage range min.
+		"AttackDamageMax"			"400"								// Damage range max.
 		"AttackRate"				"1.6"								// Speed of attack.
 		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"500"								// Range within a target can be acquired.
-		"AttackRange"				"500"								// Range within a target can be attacked.
+		"AttackAcquisitionRange"	"900"								// Range within a target can be acquired.
+		"AttackRange"				"900"								// Range within a target can be attacked.
 		"ProjectileModel"			"particles/units/heroes/hero_clinkz/clinkz_base_attack.vpcf"				// Particle system model for projectile.
 		"ProjectileSpeed"			"900"								// Speed of projectile.
 
@@ -7732,7 +7727,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1250"			// Base health.
+		"StatusHealth"				"1800"			// Base health.
 		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
 		"StatusMana"				"300"			// Base mana.
 		"StatusManaRegen"			"0.75"			// Mana regeneration rate.
@@ -7809,7 +7804,7 @@
 		
 		// Abilities
 		//----------------------------------------------------------------
-		"AbilityLayout"		"5"
+		"AbilityLayout"		""
 		"Ability1"					"creep_cold_arrow"			// Ability 1. 
 		"Ability2"					""			// Ability 2.
 		"Ability3"					""			// Ability 3.
@@ -7827,12 +7822,12 @@
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"150"								// Damage range min.
-		"AttackDamageMax"			"200"								// Damage range max.
+		"AttackDamageMin"			"250"								// Damage range min.
+		"AttackDamageMax"			"300"								// Damage range max.
 		"AttackRate"				"1.6"								// Speed of attack.
 		"AttackAnimationPoint"		"0.3"								// Normalized time in animation cycle to attack.
-		"AttackAcquisitionRange"	"500"								// Range within a target can be acquired.
-		"AttackRange"				"600"								// Range within a target can be attacked.
+		"AttackAcquisitionRange"	"700"								// Range within a target can be acquired.
+		"AttackRange"				"700"								// Range within a target can be attacked.
 		"ProjectileModel"			"particles/items2_fx/necronomicon_archer_projectile.vpcf"				// Particle system model for projectile.
 		"ProjectileSpeed"			"800"								// Speed of projectile.
 	
@@ -7856,7 +7851,7 @@
 		
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1250"			// Base health.
+		"StatusHealth"				"1350"			// Base health.
 		"StatusHealthRegen"			"0.5"			// Health regeneration rate.
 		"StatusMana"				"300"			// Base mana.
 		"StatusManaRegen"			"0.75"			// Mana regeneration rate.
@@ -7888,7 +7883,7 @@
 		"SoundSet"					"n_creep_Melee"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"Level"						"1"
-		"ModelScale" 				"1.6"
+		"ModelScale" 				"1.4"
 		
 		//"UseNeutralCreepBehavior" 	"0"
 	
@@ -7901,15 +7896,15 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"55"			// Physical protection.
+		"ArmorPhysical"				"15"			// Physical protection.
 		"MagicalResistance"			"0"		// Magical protection (percentage).
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"200"		// Damage range min.
-		"AttackDamageMax"			"300"		// Damage range max.	
-		"AttackRate"				"2"		// Speed of attack.
+		"AttackDamageMin"			"300"		// Damage range min.
+		"AttackDamageMax"			"400"		// Damage range max.	
+		"AttackRate"				"1.4"		// Speed of attack.
 		"AttackAnimationPoint"		"0.38"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"500"		// Range within a target can be acquired.
 		"AttackRange"				"100"		// Range within a target can be attacked.
@@ -7930,11 +7925,11 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"				"200"		// Speed.
+		"MovementSpeed"				"235"		// Speed.
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"1500"		// Base health.
+		"StatusHealth"				"2500"		// Base health.
 		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
@@ -7973,9 +7968,9 @@
 					"Invade"
 					{
 						"Name"				"Invade"
-						"Aggression"		"80.0"
+						"Aggression"		"100.0"
 						"Avoidance"			"0.0"
-						"Support"			"50.0"
+						"Support"			"0.0"
 					}
 				}
 	
