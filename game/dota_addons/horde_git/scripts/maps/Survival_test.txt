@@ -104,7 +104,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Kobolds_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Kobolds_Title"
-		"MaxGold"					"3800"
+		"MaxGold"					"760"
 		"BagCount"					"50"
 		"BagVariance"				"30"
 		"FixedXP"					"5500"
@@ -180,7 +180,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Zombies_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Zombies_Title"
-		"MaxGold"					"4500"
+		"MaxGold"					"900"
 		"BagCount"					"40"
 		"BagVariance"				"10"
 		"FixedXP"					"3500"
@@ -415,7 +415,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Ogre_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Ogre_Title"
-		"MaxGold"					"4500" //600g from gold fountain ability
+		"MaxGold"					"900" //600g from gold fountain ability
 		"BagCount"					"20"
 		"BagVariance"				"75"
 		"FixedXP"					"4000"
@@ -541,7 +541,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Slithereen_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Slithereen_Title"
-		"MaxGold"					"5000"
+		"MaxGold"					"1000"
 		"BagCount"					"40"
 		"BagVariance"				"50"
 		"FixedXP"					"6500"
@@ -679,7 +679,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Trees_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Trees_Title"
-		"MaxGold"					"3500" //0g from gold fountain ability (king_treant)
+		"MaxGold"					"700" //0g from gold fountain ability (king_treant)
 		"BagCount"					"15"
 		"BagVariance"				"50"
 		"FixedXP"					"6500"
@@ -745,7 +745,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Roshan_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Roshan_Title"
-		"MaxGold"					"3500" //4500 from gold bag fountain ability
+		"MaxGold"					"700" //4500 from gold bag fountain ability
 		"BagCount"					"12"
 		"BagVariance"				"150"
 		"FixedXP"					"6000"
@@ -798,7 +798,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Splitter_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Splitter_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"875"
 		"BagCount"					"15"
 		"BagVariance"				"40"
 		"FixedXP"					"5500"
@@ -863,7 +863,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_StayFrosty_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_StayFrosty_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"700"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1032,7 +1032,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Gyrocopter_Quest_Title"
 		"round_name"				"#DOTA_Holdout_Round_Gyrocopter"
-		"MaxGold"					"3500"
+		"MaxGold"					"700"
 		"BagCount"					"100"
 		"BagVariance"				"20"
 		"FixedXP"					"9000"
@@ -1134,7 +1134,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_BearForceOne_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_BearForceOne_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"750"
 		"BagCount"					"45"
 		"BagVariance"				"100"
 		"FixedXP"					"12000"
@@ -1277,7 +1277,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Skeletons_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Skeletons_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"750"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1322,7 +1322,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Dragons_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Dragons_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"700"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1359,7 +1359,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Wolfs_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Wolfs_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"700"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1388,7 +1388,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Harpys_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Harpys_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"700"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1417,7 +1417,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Centaurs_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Centaurs_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"775"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1480,7 +1480,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Creeps_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Creeps_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"750"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1529,7 +1529,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Ghosts_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Ghosts_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"750"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1591,7 +1591,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Roshans_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Roshans_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"700"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1628,7 +1628,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Bonus_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Bonus_Title"
-		"MaxGold"					"3500"
+		"MaxGold"					"760"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
