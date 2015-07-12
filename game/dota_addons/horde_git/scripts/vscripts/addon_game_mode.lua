@@ -22,7 +22,7 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/items2_fx/veil_of_discord.vpcf", context )	
 	PrecacheResource( "particle_folder", "particles/frostivus_gameplay", context )
 	PrecacheItemByNameSync( "item_tombstone", context )
-	PrecacheItemByNameSync( "item_bag_of_gold", context )
+	PrecacheItemByNameSync( "item_bag_of_gold_survival", context )
 	PrecacheItemByNameSync( "item_slippers_of_halcyon", context )
 	PrecacheItemByNameSync( "item_greater_clarity", context )
 end
@@ -57,12 +57,12 @@ function CHoldoutGameMode:InitGameMode()
 	GameRules:SetPreGameTime( 30.0 )
 	GameRules:SetPostGameTime( 60.0 )
 	GameRules:SetTreeRegrowTime( 60.0 )
-	GameRules:SetHeroMinimapIconScale( 1.0 )
-	GameRules:SetCreepMinimapIconScale( 1.0 )
-	GameRules:SetRuneMinimapIconScale( 1.0 )
+	GameRules:SetHeroMinimapIconScale( 0.7 )
+	GameRules:SetCreepMinimapIconScale( 0.7 )
+	GameRules:SetRuneMinimapIconScale( 0.7 )
 	GameRules:SetGoldTickTime( 60.0 )
 	GameRules:SetGoldPerTick( 0 )
-	GameRules:GetGameModeEntity():SetRemoveIllusionsOnDeath( false )
+	GameRules:GetGameModeEntity():SetRemoveIllusionsOnDeath( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesOverride( true )
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible( false )
 	GameRules:GetGameModeEntity():SetCameraDistanceOverride( 1300 )
@@ -98,6 +98,7 @@ function CHoldoutGameMode:InitGameMode()
 	ListenToGameEvent( "player_reconnected", Dynamic_Wrap( CHoldoutGameMode, 'OnPlayerReconnected' ), self )
 	ListenToGameEvent( "entity_killed", Dynamic_Wrap( CHoldoutGameMode, 'OnEntityKilled' ), self )
 	ListenToGameEvent( "game_rules_state_change", Dynamic_Wrap( CHoldoutGameMode, "OnGameRulesStateChange" ), self )
+
 
 	-- Register OnThink with the game engine so it is called every 0.25 seconds
 	GameRules:GetGameModeEntity():SetThink( "OnThink", self, 0.25 )
@@ -148,6 +149,33 @@ function CHoldoutGameMode:_ReadRandomSpawnsConfiguration( kvSpawns )
 			szSpawnerName = sp.SpawnerName or "",
 			szFirstWaypoint = sp.Waypoint or ""
 		} )
+	end
+end
+
+function CHoldoutGameMode:LookForAbandoned()
+
+	for i = 0, DOTA_MAX_TEAM_PLAYERS-1 do
+		hero = PlayerResource:GetSelectedHeroEntity(i)
+		if not(hero == nil) then
+			if hero:HasOwnerAbandoned() then
+				self:_RedistributeGold(i)
+			end
+		end
+	end
+
+end
+
+
+function CHoldoutGameMode:_RedistributeGold( playerID )
+
+	qPlayers = PlayerResource:GetTeamPlayerCount()
+	goldAmnt = PlayerResource:GetGold(playerID)
+	goldDistAmnt = goldAmnt/qPlayers
+
+	for i = 0, DOTA_MAX_TEAM_PLAYERS-1 do
+		if PlayerResource:IsValidPlayer(i) then
+			PlayerResource:ModifyGold(i, goldAmmt, true, DOTA_ModifyGold_AbandonedRedistribute )
+		end
 	end
 end
 
@@ -203,6 +231,7 @@ function CHoldoutGameMode:OnThink()
 		self:_CheckForDefeat()
 		self:_UpdateTowerInvulStatus()
 		self:_ThinkLootExpiry()
+		self:LookForAbandoned()
 		if self._flPrepTimeEnd ~= nil then
 			self:_ThinkPrepTime()
 		elseif self._currentRound ~= nil then
@@ -360,7 +389,7 @@ function CHoldoutGameMode:_ThinkLootExpiry()
 
 	for _,item in pairs( Entities:FindAllByClassname( "dota_item_drop")) do
 		local containedItem = item:GetContainedItem()
-		if containedItem:GetAbilityName() == "item_bag_of_gold" or item.Holdout_IsLootDrop then
+		if containedItem:GetAbilityName() == "item_bag_of_gold_survival" or item.Holdout_IsLootDrop then
 			self:_ProcessItemForLootExpiry( item, flCutoffTime )
 		end
 	end
@@ -376,7 +405,7 @@ function CHoldoutGameMode:_ProcessItemForLootExpiry( item, flCutoffTime )
 	end
 
 	local containedItem = item:GetContainedItem()
-	if containedItem and containedItem:GetAbilityName() == "item_bag_of_gold" then
+	if containedItem and containedItem:GetAbilityName() == "item_bag_of_gold_survival" then
 		if self._currentRound and self._currentRound.OnGoldBagExpired then
 			self._currentRound:OnGoldBagExpired()
 		end
@@ -613,7 +642,7 @@ function CHoldoutGameMode:_TestRoundConsoleCommand( cmdName, roundNumber, delay 
 end
 
 function CHoldoutGameMode:_GoldDropConsoleCommand( cmdName, goldToDrop )
-	local newItem = CreateItem( "item_bag_of_gold", nil, nil )
+	local newItem = CreateItem( "item_bag_of_gold_survival", nil, nil )
 	newItem:SetPurchaseTime( 0 )
 	if goldToDrop == nil then goldToDrop = 100 end
 	newItem:SetCurrentCharges( goldToDrop )

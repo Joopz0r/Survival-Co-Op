@@ -262,7 +262,7 @@ end
 
 
 function CHoldoutGameRound:OnItemPickedUp( event )
-	if event.itemname == "item_bag_of_gold" then
+	if event.itemname == "item_bag_of_gold_survival" then
 		local playerStats = self._vPlayerStats[ event.PlayerID ]
 		if playerStats then
 			playerStats.nGoldBagsCollected = playerStats.nGoldBagsCollected + 1
@@ -299,7 +299,7 @@ function CHoldoutGameRound:_CheckForGoldBagDrop( killedUnit )
 	self._nGoldRemainingInRound = math.max( 0, self._nGoldRemainingInRound - nGoldToDrop )
 	self._nGoldBagsRemaining = math.max( 0, self._nGoldBagsRemaining - 1 )
 
-	local newItem = CreateItem( "item_bag_of_gold", nil, nil )
+	local newItem = CreateItem( "item_bag_of_gold_survival", nil, nil )
 	newItem:SetPurchaseTime( 0 )
 	newItem:SetCurrentCharges( nGoldToDrop )
 	local drop = CreateItemOnPositionSync( killedUnit:GetAbsOrigin(), newItem )
