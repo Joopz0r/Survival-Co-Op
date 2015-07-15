@@ -1,6 +1,61 @@
 "DOTAAbilities"
 {
 	//=================================================================================================================
+	// Bag of Gold Survival
+	//=================================================================================================================
+	"item_bag_of_gold_survival"
+	{
+	
+		"precache"
+	    {
+	        "soundfile" "sounds/bagpickup.vsnd"
+	    }
+	
+	
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"2053"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName"			"item_bag_of_gold_survival"
+		
+		"Model"							"models/props_gameplay/gold_bag.vmdl"
+		"ItemKillable"					"0"
+		
+		
+		// auto cast
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+		"ItemCastOnPickup"				"1"
+	
+	
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		//"ItemCost"					"0"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemKillable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+	
+	
+	
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"			"scripts/vscripts/bag_of_gold_survival.lua"
+				"Function"				"BagOfGoldPicked"
+			}
+			"SpendCharge"
+			{}
+		}
+	}
+	//=================================================================================================================
 	// Arcane Boots 2
 	//=================================================================================================================
 	"item_arcane_boots2"
@@ -53,63 +108,6 @@
 			}
 		}
 	}
-
-//=================================================================================================================
-// Bag of Gold Survival
-//=================================================================================================================
-"item_bag_of_gold_survival"
-{
-
-	"precache"
-    {
-        "soundfile" "sounds/bagpickup.vsnd"
-    }
-
-
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"ID"							"2053"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-	"BaseClass"						"item_datadriven"
-	"AbilityTextureName"			"item_bag_of_gold_survival"
-	
-	"Model"							"models/props_gameplay/gold_bag.vmdl"
-	"ItemKillable"					"0"
-	
-	
-	// auto cast
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCastRange"				"100"
-	"AbilityCastPoint"				"0.0"
-	"ItemCastOnPickup"				"1"
-
-
-	// Item Info
-	//-------------------------------------------------------------------------------------------------------------
-	//"ItemCost"					"0"
-	"ItemPurchasable"				"0"
-	"ItemShopTags"					"consumable"
-	"ItemQuality"					"consumable"
-	"ItemStackable"					"1"
-	"ItemKillable"					"0"
-	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
-	"ItemPermanent"					"0"
-	"ItemInitialCharges"			"1"
-
-
-	"OnSpellStart"
-	{
-		"RunScript"
-		{
-			"ScriptFile"			"scripts/vscripts/bag_of_gold_survival.lua"
-			"Function"				"BagOfGoldPicked"
-			"Charges"				"650"
-		}
-		"SpendCharge"
-		{}
-	}
-}
-
 	//=================================================================================================================
 	// Bag of Gold
 	//=================================================================================================================
