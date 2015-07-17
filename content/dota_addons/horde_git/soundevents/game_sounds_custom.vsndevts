@@ -19,14 +19,32 @@
 					}
 					"volume"
 					{
-						"value"		"0.800000"
-					}					
+						"value" "1.000000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
-					
+					"soundlevel"
+					{
+						"value" "78.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Ultimates"
+					}
+					"spread_radius"
+					{
+						"value"		"1200.000000"
+					}
 				}
 			}
 		}
@@ -51,6 +69,10 @@
 							"value0"		"sounds/ui/item_drop_gem_shop.vsnd"
 						}
 					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
 					
 					"memory_type"
 					{
@@ -74,7 +96,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -84,11 +106,26 @@
 							"value0"		"sounds/fragments_loop.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.250000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.250000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -107,7 +144,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -117,11 +154,26 @@
 							"value0"		"sounds/fragments_end.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.500000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.500000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -140,7 +192,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -150,11 +202,26 @@
 							"value0"		"sounds/tally_rise_gold.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.299805"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.299805"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -173,7 +240,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -183,11 +250,26 @@
 							"value0"		"sounds/tally_end_gold.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.399902"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.399902"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -206,7 +288,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -216,11 +298,26 @@
 							"value0"		"sounds/tally_rise_missed.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.250000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.250000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -239,7 +336,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -249,11 +346,26 @@
 							"value0"		"sounds/tally_end.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.399902"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.399902"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -272,7 +384,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -282,11 +394,26 @@
 							"value0"		"sounds/tally_rise_kills.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.299805"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.299805"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -305,7 +432,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -315,11 +442,26 @@
 							"value0"		"sounds/tally_end_kills.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.399902"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.399902"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -348,8 +490,11 @@
 							"value0"		"sounds/tally_bags.vsnd"
 						}
 					}
-					
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -382,7 +527,11 @@
 							"value0"		"sounds/tally_bags.vsnd"
 						}
 					}
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -405,7 +554,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -415,11 +564,26 @@
 							"value0"		"sounds/ui/menu/option_toggle.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -448,7 +612,11 @@
 							"value0"		"sounds/tally_bagsmissed.vsnd"
 						}
 					}
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -471,7 +639,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -481,11 +649,26 @@
 							"value0"		"sounds/ui/magic_immune.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -504,7 +687,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -514,11 +697,26 @@
 							"value0"		"sounds/tally_bags.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -537,7 +735,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -547,11 +745,26 @@
 							"value0"		"sounds/weapons/hero/axe/attack01.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -580,7 +793,11 @@
 							"value0"		"sounds/ui/menu/profile_open.vsnd"
 						}
 					}
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -613,7 +830,11 @@
 							"value0"		"sounds/ui/menu/profile_close.vsnd"
 						}
 					}
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -646,7 +867,11 @@
 							"value0"		"sounds/ui/menu/report_open.vsnd"
 						}
 					}
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -679,7 +904,11 @@
 							"value0"		"sounds/tally_towers.vsnd"
 						}
 					}
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -712,7 +941,11 @@
 							"value0"		"sounds/tally_towerslost.vsnd"
 						}
 					}
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -745,6 +978,11 @@
 							"value0"		"sounds/tally_towerslost.vsnd"
 						}
 					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -767,7 +1005,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -780,11 +1018,26 @@
 							"wave3"		"sounds/last_hit_soul_04.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.500000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.500000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"4"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -803,7 +1056,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -813,16 +1066,38 @@
 							"value0"		"sounds/bagdrop.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"90.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"90.000000"
+					}
 				}
 			}
 		}
@@ -837,7 +1112,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -847,11 +1122,26 @@
 							"value0"		"sounds/bagpickup.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.500000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.500000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"4"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -870,7 +1160,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_limit_speakers_ui"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -880,7 +1170,11 @@
 							"value0"		"sounds/tally_rise.vsnd"
 						}
 					}
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -913,7 +1207,11 @@
 							"value0"		"sounds/tally_end.vsnd"
 						}
 					}
-					
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+
 					"memory_type"
 					{
 						"value"		"0"
@@ -936,7 +1234,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -947,16 +1245,38 @@
 							"wave1"		"sounds/ogre_whoosh_02.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.599609"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.599609"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"81.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"81.000000"
+					}
 				}
 			}
 		}
@@ -971,7 +1291,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -982,16 +1302,38 @@
 							"wave1"		"sounds/ogre_smash_02.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.599609"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.599609"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"81.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"81.000000"
+					}
 				}
 			}
 		}
@@ -1006,7 +1348,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1019,16 +1361,38 @@
 							"wave3"		"sounds/minislark_leap_04.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.799805"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.799805"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"120.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"120.000000"
+					}
 				}
 			}
 		}
@@ -1043,7 +1407,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1055,16 +1419,38 @@
 							"wave2"		"sounds/minislark_impact_03.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.799805"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.799805"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"120.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"120.000000"
+					}
 				}
 			}
 		}
@@ -1079,7 +1465,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1090,16 +1476,42 @@
 							"wave1"		"sounds/bigtreant_step_02.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.799805"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.799805"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"4"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"90.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"90.000000"
+					}
+					"distance_max"
+					{
+						"value"		"3000.000000"
+					}
 				}
 			}
 		}
@@ -1114,7 +1526,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1124,16 +1536,42 @@
 							"value0"		"sounds/physics/deaths/specials/treeant_death.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.899902"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.899902"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"4"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-				
+					"soundlevel_min"
+					{
+						"value"		"110.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"110.000000"
+					}
+					"distance_max"
+					{
+						"value"		"2000.000000"
+					}
 				}
 			}
 		}
@@ -1148,7 +1586,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1160,16 +1598,42 @@
 							"wave2"		"sounds/weapons/hero/shared/large_blade/whoosh03.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.699707"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.699707"
+					}
+					"pitch_min"
+					{
+						"value"		"0.900000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"75.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"75.000000"
+					}
+					"distance_max"
+					{
+						"value"		"2500.000000"
+					}
 				}
 			}
 		}
@@ -1184,7 +1648,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1199,16 +1663,38 @@
 							"wave5"		"sounds/weapons/creep/roshan/grunt06.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.099976"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.699585"
+					}
+					"pitch_min"
+					{
+						"value"		"1.050000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.150000"
+					}
+					"event_type"
+					{
+						"value"		"4"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"75.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"75.000000"
+					}
 				}
 			}
 		}
@@ -1223,7 +1709,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1235,16 +1721,42 @@
 							"wave2"		"sounds/weapons/creep/roshan/attack03.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.699707"
 					}
-		
+					"volume_max"
+					{
+						"value"		"0.799683"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"75.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"75.000000"
+					}
+					"distance_max"
+					{
+						"value"		"2500.000000"
+					}
 				}
 			}
 		}
@@ -1259,7 +1771,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1271,16 +1783,42 @@
 							"wave2"		"sounds/weapons/hero/shared/large_blade/follow_thru03.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.500000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.500000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"1"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"75.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"75.000000"
+					}
+					"distance_max"
+					{
+						"value"		"2500.000000"
+					}
 				}
 			}
 		}
@@ -1295,7 +1833,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1308,16 +1846,42 @@
 							"wave3"		"sounds/physics/footsteps/creeps/roshan/footstep04.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.399902"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.599854"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"4"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"75.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"75.000000"
+					}
+					"distance_max"
+					{
+						"value"		"3000.000000"
+					}
 				}
 			}
 		}
@@ -1332,7 +1896,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1342,16 +1906,38 @@
 							"value0"		"sounds/minirosh_death.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.799805"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.799805"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"75.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"75.000000"
+					}
 				}
 			}
 		}
@@ -1366,7 +1952,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1380,11 +1966,26 @@
 							"wave4"		"sounds/music/stingers/05.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -1403,7 +2004,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1413,11 +2014,26 @@
 							"value0"		"sounds/music/stingers/boss.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -1436,7 +2052,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1446,11 +2062,26 @@
 							"value0"		"sounds/music/stingers/lose.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -1469,7 +2100,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1479,11 +2110,26 @@
 							"value0"		"sounds/music/stingers/win.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -1514,13 +2160,24 @@
 					}
 					"volume"
 					{
-						"value"		"0.800000"
-					}					
+						"value" "1.000000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel"
+					{
+						"value" "81.000000"
+					}
 					"mixgroup"
 					{
 						"value"		"Weapons"
@@ -1559,13 +2216,32 @@
 					}
 					"volume"
 					{
-						"value"		"0.800000"
-					}				
+						"value" "1.000000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel"
+					{
+						"value" "78.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
 				}
 			}
 		}
@@ -1580,7 +2256,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1590,16 +2266,38 @@
 							"value0"		"sounds/weapons/hero/axe/culling_blade_success.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"1"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"99.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"99.000000"
+					}
 				}
 			}
 		}
@@ -1614,7 +2312,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1624,16 +2322,38 @@
 							"value0"		"sounds/weapons/hero/axe/culling_blade_fail.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"1"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"81.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"81.000000"
+					}
 				}
 			}
 		}
@@ -1648,7 +2368,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1659,16 +2379,38 @@
 							"wave1"		"sounds/weapons/hero/juggernaut/omnislash_attack2.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"1"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"99.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"99.000000"
+					}
 				}
 			}
 		}
@@ -1683,7 +2425,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1693,16 +2435,38 @@
 							"value0"		"sounds/mini_rosh_firebreath.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"90.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"90.000000"
+					}
 				}
 			}
 		}
@@ -1717,7 +2481,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1727,16 +2491,38 @@
 							"value0"		"sounds/weapons/hero/slardar/slithereen_crush.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"1"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"84.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"84.000000"
+					}
 				}
 			}
 		}
@@ -1751,7 +2537,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1761,16 +2547,38 @@
 							"value0"		"sounds/weapons/hero/leshrac/split_earth.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"84.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"84.000000"
+					}
 				}
 			}
 		}
@@ -1785,7 +2593,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1795,16 +2603,38 @@
 							"value0"		"sounds/weapons/hero/ogre_magi/bloodlust_cast.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.500000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.500000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"1"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"81.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"81.000000"
+					}
 				}
 			}
 		}
@@ -1819,7 +2649,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1829,16 +2659,38 @@
 							"value0"		"sounds/weapons/hero/ogre_magi/bloodlust_target.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.500000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.500000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"1"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"81.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"81.000000"
+					}
 				}
 			}
 		}
@@ -1853,7 +2705,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1863,16 +2715,38 @@
 							"value0"		"sounds/null.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"84.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"84.000000"
+					}
 				}
 			}
 		}
@@ -1887,7 +2761,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1899,16 +2773,50 @@
 							"wave2"		"sounds/weapons/hero/venomancer/venomancer_venomous_gale_impact3.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
-					}					
+						"value"		"0.399902"
+					}
+					"volume_max"
+					{
+						"value"		"0.399902"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"4"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
-					
+					"soundlevel_min"
+					{
+						"value"		"81.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"81.000000"
+					}
+					"distance_max"
+					{
+						"value"		"2500.000000"
+					}
+					"voice_limiter_on"
+					{
+						"value"		"1.000000"
+					}
+					"voice_limiter_max"
+					{
+						"value"		"3.000000"
+					}
 				}
 			}
 		}
@@ -1923,7 +2831,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1933,16 +2841,38 @@
 							"value0"		"sounds/weapons/hero/furion/sprout.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.500000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.500000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"1"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"81.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"81.000000"
+					}
 				}
 			}
 		}
@@ -1957,7 +2887,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -1967,11 +2897,26 @@
 							"value0"		"sounds/ui/power_up_02.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"0.699707"
 					}
-					
+					"volume_max"
+					{
+						"value"		"0.699707"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
 					"memory_type"
 					{
 						"value"		"0"
@@ -2002,11 +2947,23 @@
 					}
 					"volume"
 					{
-						"value"		"0.800000"
-					}					
+						"value" "1.000000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "81.000000"
 					}
 					"mixgroup"
 					{
@@ -2042,15 +2999,58 @@
 							"wave2"		"sounds/weapons/hero/shared/large_blade/whoosh03.vsnd"
 						}
 					}
+					"volume"
+					{
+						"value" "0.799560"
+					}
+					"volume_rand_min"
+					{
+						"value" "-0.199952"
+					}
+					"volume_rand_max"
+					{
+						"value" "0.199952"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"pitch_rand_min"
+					{
+						"value" "-0.050000"
+					}
+					"pitch_rand_max"
+					{
+						"value" "0.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					"volume"
+					"soundlevel"
 					{
-						"value"		"0.800000"
+						"value" "90.000000"
 					}
-					
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"delay"
+					{
+						"value"		"0.200000"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
+					"distance_max"
+					{
+						"value"		"1500.000000"
+					}
 				}
 			}
 		}
@@ -2077,14 +3077,53 @@
 							"wave2"		"sounds/weapons/hero/skeleton_king/attack03.vsnd"
 						}
 					}
-										
+					"volume"
+					{
+						"value" "0.899780"
+					}
+					"volume_rand_min"
+					{
+						"value" "-0.099975"
+					}
+					"volume_rand_max"
+					{
+						"value" "0.099975"
+					}
+					"pitch"
+					{
+						"value" "0.950000"
+					}
+					"pitch_rand_min"
+					{
+						"value" "-0.050000"
+					}
+					"pitch_rand_max"
+					{
+						"value" "0.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					"volume"
+					"soundlevel"
 					{
-						"value"		"0.800000"
+						"value" "90.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
+					"distance_max"
+					{
+						"value"		"2500.000000"
 					}
 				}
 			}
@@ -2100,7 +3139,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -2114,16 +3153,38 @@
 							"wave4"		"sounds/null.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
+					{
+						"value"		"0.099976"
+					}
+					"volume_max"
+					{
+						"value"		"0.899780"
+					}
+					"pitch_min"
 					{
 						"value"		"0.800000"
 					}
-					
+					"pitch_max"
+					{
+						"value"		"0.900000"
+					}
+					"event_type"
+					{
+						"value"		"1"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"78.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"78.000000"
+					}
 				}
 			}
 		}
@@ -2138,7 +3199,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -2148,16 +3209,38 @@
 							"value0"		"sounds/weapons/hero/undying/decay_cast.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"99.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"99.000000"
+					}
 				}
 			}
 		}
@@ -2172,7 +3255,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_3d"
+				"reference_stack"		"dota_addon_src1_3d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -2182,16 +3265,38 @@
 							"value0"		"sounds/weapons/hero/undying/tombstone.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
+					"soundlevel_min"
+					{
+						"value"		"99.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"99.000000"
+					}
 				}
 			}
 		}
@@ -2218,14 +3323,40 @@
 					}
 					"volume"
 					{
-						"value"		"0.800000"
-					}					
+						"value" "0.799805"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
 					"memory_type"
 					{
 						"value"		"0"
 					}
-					
-					
+					"soundlevel"
+					{
+						"value" "120.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Ultimates"
+					}
+					"volume_falloff_max"
+					{
+						"value"		"3000.000000"
+					}
+					"spread_radius"
+					{
+						"value"		"3000.000000"
+					}
+					"distance_max"
+					{
+						"value"		"2500.000000"
+					}
 				}
 			}
 		}
@@ -2240,7 +3371,7 @@
 			"reference_operator"
 			{
 				"operator"		"sos_reference_stack"
-				"reference_stack"		"src1_2d"
+				"reference_stack"		"dota_addon_src1_2d"
 				"operator_variables"
 				{
 					"vsnd_files"
@@ -2252,11 +3383,26 @@
 							"wave2"		"sounds/vo/skeleton_king/wraith_lose_03.vsnd"
 						}
 					}
-					"volume"
+					"volume_min"
 					{
-						"value"		"0.800000"
+						"value"		"1.000000"
 					}
-					
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"2"
+					}
 					"memory_type"
 					{
 						"value"		"0"
