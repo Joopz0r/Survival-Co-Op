@@ -57,6 +57,9 @@ function CHoldoutGameRound:Begin()
 		}
 	end
 
+	local messageinfo = { message = self._szRoundTitle, duration = 5}
+		FireGameEvent("show_center_message",messageinfo)
+
 	self._nGoldRemainingInRound = self._nMaxGold
 	self._nGoldBagsRemaining = self._nBagCount
 	self._nGoldBagsExpired = 0
