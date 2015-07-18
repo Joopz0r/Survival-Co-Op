@@ -91,6 +91,7 @@ function CHoldoutGameMode:InitGameMode()
 	Convars:RegisterCommand( "holdout_test_round", function(...) return self:_TestRoundConsoleCommand( ... ) end, "Test a round of holdout.", FCVAR_CHEAT )
 	Convars:RegisterCommand( "holdout_spawn_gold", function(...) return self._GoldDropConsoleCommand( ... ) end, "Spawn a gold bag.", FCVAR_CHEAT )
 	Convars:RegisterCommand( "holdout_status_report", function(...) return self:_StatusReportConsoleCommand( ... ) end, "Report the status of the current holdout game.", FCVAR_CHEAT )
+	Convars:RegisterCommand( "holdout_gold_redist", function(...) return  self:_RedistributeGold( 0 ) end, "gold redistribution tester", FCVAR_CHEAT )
 	-- Set all towers invulnerable
 	for _, tower in pairs( Entities:FindAllByName( "npc_dota_holdout_tower_spawn_protection" ) ) do
 		tower:AddNewModifier( tower, nil, "modifier_invulnerable", {} )
@@ -173,13 +174,13 @@ function CHoldoutGameMode:_RedistributeGold( playerID )
 
 	qPlayers = PlayerResource:GetTeamPlayerCount()
 	goldAmnt = PlayerResource:GetGold(playerID)
-	goldDistAmnt = goldAmnt/qPlayers
 
 	for i = 0, DOTA_MAX_TEAM_PLAYERS-1 do
 		if PlayerResource:IsValidPlayer(i) then
-			PlayerResource:ModifyGold(i, goldAmmt, true, DOTA_ModifyGold_AbandonedRedistribute )
+			PlayerResource:ModifyGold(i, goldAmnt/qPlayers, true, DOTA_ModifyGold_AbandonedRedistribute )
 		end
 	end
+	PlayerResource:ModifyGold(playerID, -1*goldAmnt, true, DOTA_ModifyGold_AbandonedRedistribute )
 end
 
 
