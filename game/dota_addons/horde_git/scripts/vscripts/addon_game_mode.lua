@@ -27,6 +27,7 @@ function Precache( context )
 	PrecacheItemByNameSync( "item_bag_of_gold_survival", context )
 	PrecacheItemByNameSync( "item_slippers_of_halcyon", context )
 	PrecacheItemByNameSync( "item_greater_clarity", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_custom.vsndevts", context)
 end
 
 -- Actually make the game mode when we activate

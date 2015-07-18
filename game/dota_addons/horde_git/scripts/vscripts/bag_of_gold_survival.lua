@@ -1,6 +1,5 @@
 function BagOfGoldPicked( event )
 	item = event.ability
-	PrecacheResource( "soundfile", "soundevents/game_sounds_custom.vsndevts", context)
 	item:EmitSound("GoldBagDrop")
 	
 	for i = 0, DOTA_MAX_TEAM_PLAYERS-1 do
