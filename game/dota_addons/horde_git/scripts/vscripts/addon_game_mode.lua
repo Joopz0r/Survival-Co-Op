@@ -174,13 +174,13 @@ function CHoldoutGameMode:_RedistributeGold( playerID )
 
 	qPlayers = PlayerResource:GetTeamPlayerCount()
 	goldAmnt = PlayerResource:GetGold(playerID)
+	PlayerResource:ModifyGold(playerID, -1*goldAmnt, true, DOTA_ModifyGold_AbandonedRedistribute )
 
 	for i = 0, DOTA_MAX_TEAM_PLAYERS-1 do
 		if PlayerResource:IsValidPlayer(i) then
 			PlayerResource:ModifyGold(i, goldAmnt/qPlayers, true, DOTA_ModifyGold_AbandonedRedistribute )
 		end
 	end
-	PlayerResource:ModifyGold(playerID, -1*goldAmnt, true, DOTA_ModifyGold_AbandonedRedistribute )
 end
 
 

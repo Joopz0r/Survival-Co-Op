@@ -5,7 +5,7 @@
 	"RestoreHPAfterRound"			"1"
 	"RestoreMPAfterRound"			"1"
 	"RewardForTowersStanding"		"1"
-	"TowerRewardAmount"				"20"
+	"TowerRewardAmount"				"25"
 	"TowerScalingRewardPerRound"	"1"
 	
 	"ItemDrops"
@@ -104,7 +104,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Kobolds_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Kobolds_Title"
-		"MaxGold"					"760"
+		"MaxGold"					"980"
 		"BagCount"					"50"
 		"BagVariance"				"30"
 		"FixedXP"					"5500"
@@ -180,10 +180,10 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Zombies_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Zombies_Title"
-		"MaxGold"					"900"
+		"MaxGold"					"1050"
 		"BagCount"					"40"
 		"BagVariance"				"10"
-		"FixedXP"					"3500"
+		"FixedXP"					"6000"
 		
 		// Stage 1 ================================================
 		"UnitZombie_1a"
@@ -473,7 +473,7 @@
 			"GroupWithUnit"			"UnitMelee_2"
 			
 			"NPCName"				"npc_dota_creature_ogre_tank"
-			"TotalUnitsToSpawn"		"1"
+			"TotalUnitsToSpawn"		"3"
 			"UnitsPerSpawn"			"1"
 		}
 
@@ -729,7 +729,7 @@
 		"MaxGold"					"0" // 8300 from gold fountain ability
 		"BagCount"					"0"
 		"BagVariance"				"0"
-		"FixedXP"					"250"
+		"FixedXP"					"2500"
 
 		// Stage 1 ================================================
 		"UnitMelee_1"
@@ -745,7 +745,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Roshan_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Roshan_Title"
-		"MaxGold"					"700" //4500 from gold bag fountain ability
+		"MaxGold"					"950" //4500 from gold bag fountain ability
 		"BagCount"					"12"
 		"BagVariance"				"150"
 		"FixedXP"					"6000"
@@ -798,9 +798,9 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Splitter_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Splitter_Title"
-		"MaxGold"					"875"
+		"MaxGold"					"1200"
 		"BagCount"					"15"
-		"BagVariance"				"40"
+		"BagVariance"				"20"
 		"FixedXP"					"5500"
 
 		// Stage 1 ================================================
@@ -863,7 +863,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_StayFrosty_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_StayFrosty_Title"
-		"MaxGold"					"700"
+		"MaxGold"					"900"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1032,7 +1032,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Gyrocopter_Quest_Title"
 		"round_name"				"#DOTA_Holdout_Round_Gyrocopter"
-		"MaxGold"					"700"
+		"MaxGold"					"900"
 		"BagCount"					"100"
 		"BagVariance"				"20"
 		"FixedXP"					"9000"
@@ -1134,7 +1134,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_BearForceOne_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_BearForceOne_Title"
-		"MaxGold"					"750"
+		"MaxGold"					"950"
 		"BagCount"					"45"
 		"BagVariance"				"100"
 		"FixedXP"					"12000"
@@ -1277,7 +1277,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Skeletons_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Skeletons_Title"
-		"MaxGold"					"750"
+		"MaxGold"					"950"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1288,9 +1288,9 @@
 			"WaitForTime"			"10"
 			
 			"NPCName"				"npc_skeleton_warrior"
-			"TotalUnitsToSpawn"		"20"
-			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"5"
+			"TotalUnitsToSpawn"		"32"
+			"UnitsPerSpawn"			"8"
+			"SpawnInterval"			"12"
 		}
 		"UnitRange_1"
 		{
@@ -1305,16 +1305,16 @@
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_frost_skeleton_archer"
-			"TotalUnitsToSpawn"		"4"
-			"UnitsPerSpawn"			"1"
+			"TotalUnitsToSpawn"		"8"
+			"UnitsPerSpawn"			"2"
 		}
 		"UnitRange_1c"
 		{	
 			"GroupWithUnit"			"UnitMelee_1"
 
 			"NPCName"				"npc_burning_skeleton_archer"
-			"TotalUnitsToSpawn"		"4"
-			"UnitsPerSpawn"			"1"
+			"TotalUnitsToSpawn"		"8"
+			"UnitsPerSpawn"			"2"
 		}
 	}
 	
@@ -1322,7 +1322,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Dragons_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Dragons_Title"
-		"MaxGold"					"700"
+		"MaxGold"					"900"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1359,7 +1359,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Wolfs_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Wolfs_Title"
-		"MaxGold"					"700"
+		"MaxGold"					"900"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1388,7 +1388,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Harpys_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Harpys_Title"
-		"MaxGold"					"700"
+		"MaxGold"					"800"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1417,7 +1417,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Centaurs_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Centaurs_Title"
-		"MaxGold"					"775"
+		"MaxGold"					"875"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1454,7 +1454,7 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Creeps_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Creeps_Title"
-		"MaxGold"					"750"
+		"MaxGold"					"950"
 		"BagCount"					"55"
 		"BagVariance"				"30"
 		"FixedXP"					"11500"
@@ -1596,5 +1596,117 @@
 			"TotalUnitsToSpawn"		"8"
 			"UnitsPerSpawn"			"1"
 		}
+	}
+
+	"Round21"  // One of each boss
+	{
+		"round_quest_title"			"#DOTA_Holdout_Round_Bonus_Quest_Title"
+		"round_title"				"#DOTA_Holdout_Round_Bonus_Title"
+		"MaxGold"					"760"
+		"BagCount"					"55"
+		"BagVariance"				"30"
+		"FixedXP"					"11500"
+
+		// Stage 1 ================================================
+		"Boss_1"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_bear_chieftain"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_2"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_big_bear"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_3"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_boss_pudge"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_4"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_broodking"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_5"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_centaur_boss"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_6"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_corpselord"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_7"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_ogre_tank"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_8"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_king_treant"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_9"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_mini_roshan"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_10"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_king_treant"
+			"TotalUnitsToSpawn"		"1"
+			"UnitsPerSpawn"			"1"
+			//"SpawnInterval"			"5"
+		}
+		"Boss_11"
+		{			
+			"WaitForTime"			"10"
+			
+			"NPCName"				"npc_dota_creature_basic_zombie_exploding"
+			"TotalUnitsToSpawn"		"10"
+			"UnitsPerSpawn"			"1"
+			"SpawnInterval"			"5"
+		}
+		
 	}
 }
