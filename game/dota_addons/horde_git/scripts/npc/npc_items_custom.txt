@@ -22,7 +22,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
-		"ItemCastOnPickup"				"0"
+		"ItemCastOnPickup"				"1"
 	
 	
 		// Item Info

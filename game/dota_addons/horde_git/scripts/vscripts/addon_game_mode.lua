@@ -391,8 +391,10 @@ function CHoldoutGameMode:_ThinkLootExpiry()
 
 	for _,item in pairs( Entities:FindAllByClassname( "dota_item_drop")) do
 		local containedItem = item:GetContainedItem()
-		if containedItem:GetAbilityName() == "item_bag_of_gold_survival" or item.Holdout_IsLootDrop then
-			self:_ProcessItemForLootExpiry( item, flCutoffTime )
+		if containedItem then
+			if containedItem:GetAbilityName() == "item_bag_of_gold_survival" or item.Holdout_IsLootDrop then
+				self:_ProcessItemForLootExpiry( item, flCutoffTime )
+			end
 		end
 	end
 end
